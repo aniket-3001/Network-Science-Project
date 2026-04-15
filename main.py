@@ -2,7 +2,9 @@
 Network-Based Structural and Influence Analysis of Financial Systems
 =====================================================================
 
-Single entry point that runs all 5 deliverables sequentially.
+Single entry point that runs all 5 deliverables sequentially, now
+building a correlation-based financial network from real stock price
+data.
 
 Usage:
     python main.py
@@ -31,33 +33,45 @@ from src import event_simulation
 from src import structural_insights
 
 
+# ── Configuration ────────────────────────────────────────────────────────────
+CORRELATION_THRESHOLD = 0.3     # |ρ| > τ  to create an edge
+PRICE_PERIOD          = "2y"    # How far back to fetch prices
+
+
 def main():
     """Run the complete analysis pipeline."""
     start_time = time.time()
 
     # Paths
-    csv_path = os.path.join(PROJECT_ROOT, "data", "sp500_companies.csv")
+    csv_path   = os.path.join(PROJECT_ROOT, "data", "sp500_companies.csv")
     output_dir = os.path.join(PROJECT_ROOT, "outputs")
 
     print("╔" + "═" * 62 + "╗")
     print("║  Network-Based Structural & Influence Analysis               ║")
     print("║  of Financial Systems Using S&P 500 Data                     ║")
+    print("║                                                              ║")
+    print(f"║  Correlation threshold τ = {CORRELATION_THRESHOLD:<6}                          ║")
+    print(f"║  Price history           = {PRICE_PERIOD:<6}                          ║")
     print("╚" + "═" * 62 + "╝")
 
     # ── Deliverable 1: Network Construction ──
-    G = network_construction.run(csv_path, output_dir)
+    G, mst, corr_matrix, meta_df = network_construction.run(
+        csv_path, output_dir,
+        threshold=CORRELATION_THRESHOLD,
+        price_period=PRICE_PERIOD,
+    )
 
-    # ── Deliverable 2: Centrality Analysis ──
-    centrality_df = centrality_analysis.run(G, output_dir)
+    # ── Deliverable 2: Scale-Free, Small-World & Centrality ──
+    centrality_df, sw_stats = centrality_analysis.run(G, output_dir)
 
-    # ── Deliverable 3: Multi-Hop Influence Propagation ──
+    # ── Deliverable 3: Influence Propagation & SIR ──
     influence_propagation.run(G, output_dir)
 
     # ── Deliverable 4: Event-Based Simulation ──
     event_simulation.run(G, output_dir)
 
-    # ── Deliverable 5: Structural Insights ──
-    structural_insights.run(G, centrality_df, output_dir)
+    # ── Deliverable 5: Structural Insights & Robustness ──
+    structural_insights.run(G, centrality_df, output_dir, sw_stats=sw_stats)
 
     # ── Summary ──
     elapsed = time.time() - start_time

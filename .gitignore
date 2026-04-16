@@ -24,7 +24,7 @@ env/
 Thumbs.db
 
 # Output (keep structure, ignore generated files)
-outputs/figures/*.png
+# outputs/figures/*.png
 outputs/results/*.csv
 outputs/results/*.txt
 outputs/results/*.graphml

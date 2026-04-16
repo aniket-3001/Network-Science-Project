@@ -149,14 +149,36 @@ def compare_er(G: nx.Graph, save_path: str):
 # ─────────────────────────────────────────────────────────────────────────────
 # 2.3  Small-world analysis
 # ─────────────────────────────────────────────────────────────────────────────
+def _make_simple_config_model(degree_sequence, seed=0):
+    """Create a simple graph from a configuration model (no multi-edges/self-loops).
+
+    Falls back to the standard nx.configuration_model and then simplifies.
+    """
+    # Ensure even sum of degrees
+    deg_seq = list(degree_sequence)
+    if sum(deg_seq) % 2 != 0:
+        deg_seq[0] += 1
+
+    G_multi = nx.configuration_model(deg_seq, seed=seed)
+    # Remove self-loops and collapse multi-edges
+    G_simple = nx.Graph(G_multi)
+    G_simple.remove_edges_from(nx.selfloop_edges(G_simple))
+    return G_simple
+
+
 def small_world_analysis(G: nx.Graph, n_random: int = 5) -> dict:
     """Compute small-world metrics on the largest connected component.
+
+    Compares against TWO null models:
+        1. Erdős–Rényi G(n, p) — preserves density.
+        2. Configuration model — preserves the degree sequence.
 
     Metrics
     -------
     C : global clustering coefficient.
     L : average shortest path length (in the GCC).
-    σ = (C / C_rand) / (L / L_rand)   [Humphries & Gurney 2008]
+    σ_ER    = (C / C_er)     / (L / L_er)       [Humphries & Gurney 2008]
+    σ_config = (C / C_config) / (L / L_config)
 
     A network is "small-world" if σ > 1, typically σ >> 1.
     """
@@ -171,7 +193,7 @@ def small_world_analysis(G: nx.Graph, n_random: int = 5) -> dict:
     C = nx.average_clustering(GCC)
     L = nx.average_shortest_path_length(GCC)
 
-    # Average over several ER random graphs
+    # ── ER null model ──
     C_rand_list, L_rand_list = [], []
     for seed in range(n_random):
         G_r = nx.erdos_renyi_graph(n, p, seed=seed)
@@ -193,14 +215,45 @@ def small_world_analysis(G: nx.Graph, n_random: int = 5) -> dict:
     else:
         sigma = (C / C_rand) / (L / L_rand)
 
+    # ── Configuration model null ──
+    degree_seq = [d for _, d in GCC.degree()]
+    C_config_list, L_config_list = [], []
+    for seed in range(n_random):
+        try:
+            G_c = _make_simple_config_model(degree_seq, seed=seed)
+            if not nx.is_connected(G_c):
+                gcc_c = max(nx.connected_components(G_c), key=len)
+                G_c = G_c.subgraph(gcc_c).copy()
+            if G_c.number_of_nodes() < 3:
+                continue
+            C_config_list.append(nx.average_clustering(G_c))
+            L_config_list.append(nx.average_shortest_path_length(G_c))
+        except Exception:
+            continue
+
+    C_config = np.mean(C_config_list) if C_config_list else 0.0
+    L_config = np.mean(L_config_list) if L_config_list else 0.0
+
+    if C_config == 0 or L_config == 0:
+        print("    ⚠ Could not compute valid config-model baselines for σ")
+        sigma_config = 0.0
+    else:
+        sigma_config = (C / C_config) / (L / L_config)
+
     return {
         "gcc_size":  len(gcc_nodes),
         "C":         C,
         "L":         L,
+        # ER null
         "C_rand":    C_rand,
         "L_rand":    L_rand,
         "sigma":     sigma,
+        # Configuration model null
+        "C_config":      C_config,
+        "L_config":      L_config,
+        "sigma_config":  sigma_config,
         "is_small_world": sigma > 1,
+        "is_small_world_config": sigma_config > 1,
     }
 
 
@@ -436,10 +489,16 @@ def run(G: nx.Graph, output_dir: str) -> tuple:
     print(f"      GCC size          = {sw['gcc_size']}")
     print(f"      C (clustering)    = {sw['C']:.4f}")
     print(f"      L (avg path len)  = {sw['L']:.4f}")
+    print(f"      --- ER null model ---")
     print(f"      C_random          = {sw['C_rand']:.4f}")
     print(f"      L_random          = {sw['L_rand']:.4f}")
-    print(f"      σ (small-world)   = {sw['sigma']:.2f}")
-    print(f"      Small-world?      = {'YES ✓' if sw['is_small_world'] else 'NO'}")
+    print(f"      σ_ER              = {sw['sigma']:.2f}")
+    print(f"      --- Configuration model null ---")
+    print(f"      C_config          = {sw['C_config']:.4f}")
+    print(f"      L_config          = {sw['L_config']:.4f}")
+    print(f"      σ_config          = {sw['sigma_config']:.2f}")
+    print(f"      Small-world (ER)?     = {'YES ✓' if sw['is_small_world'] else 'NO'}")
+    print(f"      Small-world (config)? = {'YES ✓' if sw['is_small_world_config'] else 'NO'}")
 
     plot_clustering_vs_degree(G, os.path.join(fig_dir, "clustering_vs_degree.png"))
 

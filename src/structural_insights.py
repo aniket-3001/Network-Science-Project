@@ -278,12 +278,34 @@ def robustness_analysis(G: nx.Graph, n_random_trials: int = 3,
             removed += 1
         gcc_er.append(_gcc_fraction(G_er))
 
+    # ── 5. Configuration model baseline (random failure) ──
+    degree_seq = [d for _, d in G.degree()]
+    if sum(degree_seq) % 2 != 0:
+        degree_seq[0] += 1
+    try:
+        G_config_multi = nx.configuration_model(degree_seq, seed=seed)
+        G_config = nx.Graph(G_config_multi)
+        G_config.remove_edges_from(nx.selfloop_edges(G_config))
+    except Exception:
+        G_config = nx.erdos_renyi_graph(n, p, seed=seed + 100)
+
+    config_nodes = list(G_config.nodes())
+    order = rng.permutation(config_nodes).tolist()
+    gcc_config = []
+    removed = 0
+    for target in removal_counts:
+        while removed < target and order:
+            G_config.remove_node(order.pop(0))
+            removed += 1
+        gcc_config.append(_gcc_fraction(G_config))
+
     return {
         "fractions_removed": fractions.tolist(),
         "gcc_random_failure": gcc_random.tolist(),
         "gcc_targeted_degree": gcc_targeted_deg,
         "gcc_targeted_betweenness": gcc_targeted_bet,
         "gcc_er_random": gcc_er,
+        "gcc_config_random": gcc_config,
     }
 
 
@@ -429,6 +451,10 @@ def plot_robustness(robustness_results: dict, save_path: str):
             "m:", lw=2, label="Targeted Attack (Betweenness)")
     ax.plot(f, robustness_results["gcc_er_random"],
             "g-.", lw=1.5, alpha=0.7, label="ER Random Failure (baseline)")
+    if "gcc_config_random" in robustness_results:
+        ax.plot(f, robustness_results["gcc_config_random"],
+                "c--", lw=1.5, alpha=0.7,
+                label="Config Model Random Failure (baseline)")
 
     ax.set_xlabel("Fraction of Nodes Removed", fontsize=12)
     ax.set_ylabel("Giant Component Fraction", fontsize=12)
@@ -554,12 +580,21 @@ def generate_report(G: nx.Graph, centrality_df: pd.DataFrame,
 
     # Small-world
     if sw_stats:
-        lines.append(f"   • Small-world coefficient σ = {sw_stats['sigma']:.2f} "
-                     f"({'YES' if sw_stats['is_small_world'] else 'NO'} small-world)")
+        lines.append(f"   • Small-world σ_ER = {sw_stats['sigma']:.2f} "
+                     f"({'YES' if sw_stats['is_small_world'] else 'NO'} "
+                     f"small-world vs ER null)")
+        lines.append(f"   • Small-world σ_config = {sw_stats.get('sigma_config', 0):.2f} "
+                     f"({'YES' if sw_stats.get('is_small_world_config', False) else 'NO'} "
+                     f"small-world vs configuration model null)")
         lines.append(f"   • Clustering C = {sw_stats['C']:.4f} "
-                     f"(C_random = {sw_stats['C_rand']:.4f})")
+                     f"(C_ER = {sw_stats['C_rand']:.4f}, "
+                     f"C_config = {sw_stats.get('C_config', 0):.4f})")
         lines.append(f"   • Avg path length L = {sw_stats['L']:.4f} "
-                     f"(L_random = {sw_stats['L_rand']:.4f})")
+                     f"(L_ER = {sw_stats['L_rand']:.4f}, "
+                     f"L_config = {sw_stats.get('L_config', 0):.4f})")
+        if sw_stats.get('sigma_config', 0) > 1:
+            lines.append("     → Network is small-world even when controlling "
+                         "for degree sequence (configuration model).")
 
     # Assortativity
     try:

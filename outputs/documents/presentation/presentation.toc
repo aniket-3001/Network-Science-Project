@@ -1,0 +1,6 @@
+\beamer@sectionintoc {1}{1. Introduction \& Network Formation}{3}{0}{1}
+\beamer@sectionintoc {2}{2. Degree Distribution \& Topological Validation}{4}{0}{2}
+\beamer@sectionintoc {3}{3. Financial Influence \& Contagion}{6}{0}{3}
+\beamer@sectionintoc {4}{4. Real Event Validation}{7}{0}{4}
+\beamer@sectionintoc {5}{5. Market Structure \& Latent Communities}{8}{0}{5}
+\beamer@sectionintoc {6}{6. Temporal Elasticity \& Rolling Dynamics}{9}{0}{6}

@@ -405,13 +405,15 @@ def run(csv_path: str, output_dir: str,
     Returns
     -------
     G : nx.Graph
-        The thresholded correlation graph.
+        The thresholded correlation graph (market-mode filtered).
     mst : nx.Graph
-        The Minimum Spanning Tree.
+        The Minimum Spanning Tree (from raw correlations).
     corr_matrix : pd.DataFrame
-        The full correlation matrix.
+        The market-mode filtered correlation matrix.
     meta_df : pd.DataFrame
         Company metadata.
+    log_returns : pd.DataFrame
+        Daily log-returns (for temporal/bootstrap analysis).
     """
     print("\n" + "=" * 64)
     print("  DELIVERABLE 1: Financial Network Construction & Validation")
@@ -427,25 +429,53 @@ def run(csv_path: str, output_dir: str,
     prices = download_prices(yf_tickers, period=price_period,
                              cache_path=cache_path)
 
-    # ── Log-returns & correlation ──
+    # ── Log-returns ──
     log_ret = compute_log_returns(prices)
-    corr_matrix = compute_correlation_matrix(log_ret)
-    print(f"  Correlation matrix: {corr_matrix.shape[0]} × {corr_matrix.shape[1]}")
+
+    # ── Raw correlation ──
+    raw_corr = compute_correlation_matrix(log_ret)
+    print(f"  Raw correlation matrix: {raw_corr.shape[0]} × {raw_corr.shape[1]}")
+
+    # ── Market-mode filtered correlation ──
+    from .market_filtering import (filter_market_mode,
+                                    compute_partial_correlations)
+    residuals = filter_market_mode(log_ret)
+    filtered_corr = residuals.corr()
+    print(f"  Filtered correlation matrix: "
+          f"{filtered_corr.shape[0]} × {filtered_corr.shape[1]}")
+
+    # Show correlation reduction
+    raw_upper = raw_corr.values[np.triu_indices_from(raw_corr.values, k=1)]
+    filt_upper = filtered_corr.values[
+        np.triu_indices_from(filtered_corr.values, k=1)]
+    print(f"  Average |ρ| — raw: {np.nanmean(np.abs(raw_upper)):.4f}, "
+          f"filtered: {np.nanmean(np.abs(filt_upper)):.4f}")
+
+    # Use filtered correlation as primary
+    corr_matrix = filtered_corr
 
     # ── Build graphs ──
     G = build_correlation_graph(corr_matrix, meta_df, threshold=threshold)
-    print(f"  Correlation graph (τ={threshold}): "
+    print(f"  Filtered graph (τ={threshold}): "
           f"{G.number_of_nodes()} nodes, {G.number_of_edges()} edges")
 
-    mst = build_mst(corr_matrix, meta_df)
+    # Also build raw graph for comparison
+    G_raw = build_correlation_graph(raw_corr, meta_df, threshold=threshold)
+    print(f"  Raw graph (τ={threshold}): "
+          f"{G_raw.number_of_nodes()} nodes, {G_raw.number_of_edges()} edges")
+
+    mst = build_mst(raw_corr, meta_df)
     print(f"  MST: {mst.number_of_nodes()} nodes, {mst.number_of_edges()} edges")
 
     # ── Validate ──
-    stats_g = validate_graph(G, "Correlation Graph")
+    stats_g = validate_graph(G, "Filtered Correlation Graph")
+    stats_raw = validate_graph(G_raw, "Raw Correlation Graph")
     stats_m = validate_graph(mst, "Minimum Spanning Tree")
     report_g = print_stats(stats_g)
+    report_raw = print_stats(stats_raw)
     report_m = print_stats(stats_m)
     print(report_g)
+    print(report_raw)
     print(report_m)
 
     # ── Save reports ──
@@ -453,7 +483,7 @@ def run(csv_path: str, output_dir: str,
     os.makedirs(results_dir, exist_ok=True)
     with open(os.path.join(results_dir, "graph_summary.txt"), "w",
               encoding="utf-8") as f:
-        f.write(report_g + "\n\n" + report_m)
+        f.write(report_g + "\n\n" + report_raw + "\n\n" + report_m)
 
     # ── Save GraphML ──
     nx.write_graphml(G, os.path.join(results_dir, "network.graphml"))
@@ -465,10 +495,16 @@ def run(csv_path: str, output_dir: str,
     os.makedirs(fig_dir, exist_ok=True)
 
     plot_degree_distribution(G, os.path.join(fig_dir, "degree_distribution.png"))
+
+    # Side-by-side heatmaps: raw vs filtered
+    _plot_raw_vs_filtered_heatmap(
+        raw_corr, corr_matrix,
+        os.path.join(fig_dir, "correlation_heatmap_comparison.png"))
+
     plot_correlation_heatmap(corr_matrix,
                              os.path.join(fig_dir, "correlation_heatmap.png"))
     plot_network(G, os.path.join(fig_dir, "network_visualization.png"),
-                 title=f"S&P 500 Correlation Network (τ = {threshold})")
+                 title=f"S&P 500 Filtered Correlation Network (τ = {threshold})")
     plot_mst(mst, os.path.join(fig_dir, "mst_visualization.png"))
     plot_sector_summary(G, os.path.join(fig_dir, "sector_summary.png"))
 
@@ -479,4 +515,33 @@ def run(csv_path: str, output_dir: str,
         save_path=os.path.join(fig_dir, "threshold_exploration.png"),
     )
 
-    return G, mst, corr_matrix, meta_df
+    return G, mst, corr_matrix, meta_df, log_ret
+
+
+def _plot_raw_vs_filtered_heatmap(raw_corr: pd.DataFrame,
+                                    filtered_corr: pd.DataFrame,
+                                    save_path: str):
+    """Side-by-side comparison of raw vs market-mode filtered correlations."""
+    fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(20, 9))
+
+    sns.heatmap(raw_corr, cmap="RdYlBu_r", vmin=-1, vmax=1,
+                xticklabels=False, yticklabels=False, ax=ax1,
+                cbar_kws={"label": "Pearson ρ", "shrink": 0.7})
+    ax1.set_title("Raw Pearson Correlations\n(market factor included)",
+                  fontsize=13, fontweight="bold")
+
+    sns.heatmap(filtered_corr, cmap="RdYlBu_r", vmin=-1, vmax=1,
+                xticklabels=False, yticklabels=False, ax=ax2,
+                cbar_kws={"label": "Pearson ρ", "shrink": 0.7})
+    ax2.set_title("Market-Mode Filtered Correlations\n"
+                  "(common market factor subtracted)",
+                  fontsize=13, fontweight="bold")
+
+    fig.suptitle("Market-Mode Filtering — Removing the Common Factor\n"
+                 "Reference: Onnela et al. (2003)",
+                 fontsize=15, fontweight="bold", y=1.02)
+    fig.tight_layout()
+    fig.savefig(save_path, dpi=150, bbox_inches="tight")
+    plt.close(fig)
+    print(f"  ✓ Saved raw vs filtered heatmap → {save_path}")
+

@@ -114,6 +114,3 @@ In `main.py`, you can adjust:
 - **scikit-learn** — NMI computation
 - **SciPy** — MST, hierarchical clustering
 
-## Author
-
-Aniket Gupta

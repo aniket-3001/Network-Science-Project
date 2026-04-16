@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.1.23)  17 APR 2026 02:53
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.1.23)  17 APR 2026 03:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -863,15 +863,17 @@ ine 143.
 [6
 
  <../../figures/robustness_analysis.png>]
-<../../figures/Tariff_Shock_2025_validation.png, id=253, 722.7pt x 578.16pt>
-File: ../../figures/Tariff_Shock_2025_validation.png Graphic file (type png)
-<use ../../figures/Tariff_Shock_2025_validation.png>
-Package pdftex.def Info: ../../figures/Tariff_Shock_2025_validation.png  used o
-n input line 173.
+<../../figures/AI_Semiconductor_Rally_validation.png, id=253, 722.7pt x 578.16p
+t>
+File: ../../figures/AI_Semiconductor_Rally_validation.png Graphic file (type pn
+g)
+<use ../../figures/AI_Semiconductor_Rally_validation.png>
+Package pdftex.def Info: ../../figures/AI_Semiconductor_Rally_validation.png  u
+sed on input line 173.
 (pdftex.def)             Requested size: 195.85942pt x 156.68753pt.
 [7
 
- <../../figures/Tariff_Shock_2025_validation.png>]
+ <../../figures/AI_Semiconductor_Rally_validation.png>]
 <../../figures/community_detection.png, id=283, 1156.32pt x 1011.78pt>
 File: ../../figures/community_detection.png Graphic file (type png)
 <use ../../figures/community_detection.png>
@@ -920,7 +922,7 @@ Package rerunfilecheck Info: File `presentation.out' has not changed.
  ) 
 Here is how much of TeX's memory you used:
  23103 strings out of 476182
- 449111 string characters out of 5795595
+ 449146 string characters out of 5795595
  1936975 words of memory out of 5000000
  44628 multiletter control sequences out of 15000+600000
  565145 words of font info for 62 fonts, out of 8000000 for 9000
@@ -938,7 +940,7 @@ blic/amsfonts/cm/cmssi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
 amsfonts/cm/cmssi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
 ts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/
 cmsy7.pfb>
-Output written on presentation.pdf (11 pages, 2847628 bytes).
+Output written on presentation.pdf (11 pages, 2845528 bytes).
 PDF statistics:
  468 PDF objects out of 1000 (max. 8388607)
  374 compressed objects within 4 object streams

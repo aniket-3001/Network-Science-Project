@@ -170,6 +170,15 @@ The ER model ignores degree heterogeneity. A stricter test uses the configuratio
 \end{align}
 Since $\sigma_{\text{config}} > 1$, the financial network exhibits small-world clustering \emph{beyond} what degree heterogeneity alone would produce.
 
+\subsection{Weighted Clustering}
+The standard clustering coefficient $C$ treats all edges equally, ignoring correlation strength. The \emph{weighted} clustering coefficient~\citep{barrat2004architecture} incorporates edge weights:
+\begin{equation}
+    C_i^{w} = \frac{1}{s_i (k_i - 1)} \sum_{j,h} \frac{w_{ij} + w_{ih}}{2}\, a_{ij}\, a_{ih}\, a_{jh},
+\end{equation}
+where $s_i = \sum_j w_{ij}$ is the strength (sum of incident edge weights) and $k_i$ is the degree of node $i$.
+
+For the S\&P 500 GCC, the network-averaged weighted clustering is $C^{w} \approx 0.22$, compared with the unweighted $C = 0.643$. The ratio $C^{w}/C \approx 0.34$ indicates that triangles formed by \emph{stronger} correlations are less prevalent than those formed by weaker ones. In financial terms, while many three-stock cliques exist topologically, the underlying pairwise correlations within those cliques are often modest---the strongest co-movements tend to occur along paths rather than closed triads.
+
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.65\textwidth]{../../figures/er_comparison.png}
@@ -363,6 +372,7 @@ Connected components & 47 \\
 GCC fraction & 89.4\% \\
 Power-law $\gamma$ & $2.14 \pm 0.58$ \\
 Clustering $C$ & 0.643 \\
+Weighted clustering $C^w$ & 0.22 \\
 Avg.\ path length $L$ & 2.703 \\
 $\sigma_{ER}$ & 4.56 \\
 $\sigma_{\text{config}}$ & 1.75 \\
@@ -382,6 +392,11 @@ The S\&P 500 correlation network, after market-mode filtering, is scale-free, sm
 % References
 % ===================================================================
 \begin{thebibliography}{99}
+
+\bibitem[Barrat et al.(2004)]{barrat2004architecture}
+Barrat, A., Barth\'elemy, M., Pastor-Satorras, R. and Vespignani, A. (2004).
+\newblock The architecture of complex weighted networks.
+\newblock \emph{Proceedings of the National Academy of Sciences}, 101(11), 3747--3752.
 
 \bibitem[Albert et al.(2000)]{albert2000error}
 Albert, R., Jeong, H. and Barab\'asi, A.-L. (2000).

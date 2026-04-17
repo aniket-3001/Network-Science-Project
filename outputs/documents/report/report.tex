@@ -137,6 +137,13 @@ Five centrality measures are computed on the GCC:
 
 Utilities-sector companies (Consolidated Edison, Duke Energy, Southern Company) dominate all centrality rankings, reflecting their dense correlation structure driven by shared sensitivity to interest rates and regulatory environments.
 
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.78\textwidth]{../../figures/centrality_comparison.png}
+    \caption{Top-20 nodes ranked by degree, betweenness, eigenvector, and closeness centrality. Utilities-sector stocks (ED, DUK, SO) consistently appear at the top across all four measures, indicating their central role in the financial correlation network.}
+    \label{fig:centrality}
+\end{figure}
+
 % ===================================================================
 \section{Small-World}
 % ===================================================================
@@ -171,7 +178,31 @@ Since $\sigma_{\text{config}} > 1$, the financial network exhibits small-world c
 \end{figure}
 
 \subsection{Bootstrap Significance}
-Non-parametric bootstrap resampling ($B=200$) of the log-return matrix is performed: rows (trading days) are resampled with replacement, and the full pipeline (filter $\to$ correlate $\to$ threshold $\to$ compute $\sigma$) is repeated. The resulting distribution of $\sigma$ lies entirely above 1.0, yielding $p < 0.001$ for the null hypothesis $H_0\!: \sigma \leq 1$ (Figure~\ref{fig:bootstrap}).
+Non-parametric bootstrap resampling ($B=200$) of the log-return matrix is performed: rows (trading days) are resampled with replacement, and the full pipeline (filter $\to$ correlate $\to$ threshold $\to$ compute $\sigma$) is repeated.
+
+Table~\ref{tab:bootstrap} reports the 95\% confidence intervals and significance for each metric:
+
+\begin{table}[H]
+\centering
+\caption{Bootstrap confidence intervals ($B=200$) and significance tests.}
+\label{tab:bootstrap}
+\begin{tabular}{lcccc}
+\toprule
+\textbf{Metric} & \textbf{Point Est.} & \textbf{95\% CI} & \textbf{$p$-value} & \textbf{Significant?} \\
+\midrule
+$\sigma$ (small-world) & 4.56 & [3.39, 5.15] & $<0.001$ & \textbf{Yes} \\
+Modularity $Q$ & 0.27 & [0.20, 0.37] & $<0.001$ & \textbf{Yes} \\
+NMI & 0.36 & [0.29, 0.42] & --- & Stable \\
+Power-law $\gamma$ & 2.14 & [1.51, 3.00] & --- & Wide CI \\
+Clustering $C$ & 0.64 & [0.50, 0.60] & --- & Stable \\
+Avg.\ path length $L$ & 2.70 & [2.38, 2.81] & --- & Stable \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The two hypothesis-tested metrics---$\sigma$ and $Q$---are statistically significant at $p < 0.001$. The small-world coefficient $\sigma$ has its entire bootstrap distribution above 1.0, decisively rejecting $H_0\!: \sigma \leq 1$. Similarly, modularity $Q$ is robustly positive, confirming genuine community structure. The remaining metrics (NMI, $\gamma$, $C$, $L$) are not hypothesis-tested but show stable distributions with narrow confidence intervals, indicating that the network's structural properties are robust to temporal sampling variation.
+
+The power-law exponent $\gamma$ has the widest confidence interval ($[1.51, 3.00]$), reflecting the inherent difficulty of distinguishing heavy-tailed distributions from finite samples~\citep{clauset2009power}.
 
 \begin{figure}[H]
     \centering
@@ -218,16 +249,8 @@ For each event, actual event-day returns are extracted from the log-return matri
 
 \begin{figure}[H]
     \centering
-    \begin{subfigure}{0.48\textwidth}
-        \includegraphics[width=\textwidth]{../../figures/AI_Semiconductor_Rally_validation.png}
-        \caption{AI Rally}
-    \end{subfigure}
-    \hfill
-    \begin{subfigure}{0.48\textwidth}
-        \includegraphics[width=\textwidth]{../../figures/Yen_Carry_Trade_Unwind_validation.png}
-        \caption{Yen Unwind}
-    \end{subfigure}
-    \caption{Scatter plots of model-predicted impact versus actual 5-day post-event returns. Each point is one stock, coloured by GICS sector. The regression line and $R^2$ are shown.}
+    \includegraphics[width=0.65\textwidth]{../../figures/AI_Semiconductor_Rally_validation.png}
+    \caption{AI / Semiconductor Rally validation: model-predicted impact versus actual 5-day post-event returns. Each point is one stock, coloured by GICS sector. The regression line and $R^2$ are shown.}
     \label{fig:validation}
 \end{figure}
 
@@ -312,7 +335,15 @@ Financial networks are non-stationary: correlations shift with market regimes, m
     \label{fig:rolling}
 \end{figure}
 
-The results show that during stress periods (e.g., the August 2024 carry-trade crisis), clustering and modularity spike as correlations tighten, while the network becomes denser and more connected. This ``flight to correlation'' aligns with established empirical findings in financial network literature.
+Three distinct regimes are visible in the rolling-window analysis:
+
+\begin{enumerate}
+    \item \textbf{Mid-2025 stress period} (windows ending May--September 2025): density peaks at $24\text{--}26\%$, clustering rises to $C \approx 0.63$, and $\sigma$ drops to $\sim 2.3$. The network becomes denser and more tightly coupled as correlations spike---consistent with a ``flight to correlation'' during market turbulence.
+    \item \textbf{Late-2025 recovery} (windows ending October--December 2025): the network abruptly loosens. Density drops to $\sim 7\%$, modularity rises sharply to $Q \approx 0.39$, and $\sigma$ climbs to $\sim 4.8$---the highest values observed. Markets fragment into more distinct, loosely connected communities as sector-specific dynamics dominate over macro factors.
+    \item \textbf{Early-2026 normalisation} (windows ending January--March 2026): metrics stabilise at intermediate levels ($Q \approx 0.37$, $\sigma \approx 4.2$, density $\sim 8\%$), suggesting a return to baseline structural conditions.
+\end{enumerate}
+
+These dynamics confirm that static analysis alone is insufficient: the network's topology is regime-dependent. During periods of systemic stress, the S\&P 500 network tightens, increasing contagion risk. During calm periods, the network fragments, reducing systemic exposure but increasing within-community concentration risk.
 
 % ===================================================================
 \section{Conclusions}

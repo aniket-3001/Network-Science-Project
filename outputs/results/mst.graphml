@@ -1,0 +1,4014 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key id="d3" for="edge" attr.name="weight" attr.type="float" />
+  <key id="d2" for="node" attr.name="name" attr.type="string" />
+  <key id="d1" for="node" attr.name="sub_industry" attr.type="string" />
+  <key id="d0" for="node" attr.name="sector" attr.type="string" />
+  <graph edgedefault="undirected">
+    <node id="A">
+      <data key="d0">Health Care</data>
+      <data key="d1">Life Sciences Tools &amp; Services</data>
+      <data key="d2">Agilent Technologies</data>
+    </node>
+    <node id="AAPL">
+      <data key="d0">Information Technology</data>
+      <data key="d1">Technology Hardware, Storage &amp; Peripherals</data>
+      <data key="d2">Apple Inc.</data>
+    </node>
+    <node id="ABBV">
+      <data key="d0">Health Care</data>
+      <data key="d1">Biotechnology</data>
+      <data key="d2">AbbVie</data>
+    </node>
+    <node id="ABNB">
+      <data key="d0">Consumer Discretionary</data>
+      <data key="d1">Hotels, Resorts &amp; Cruise Lines</data>
+      <data key="d2">Airbnb</data>
+    </node>
+    <node id="ABT">
+      <data key="d0">Health Care</data>
+      <data key="d1">Health Care Equipment</data>
+      <data key="d2">Abbott Laboratories</data>
+    </node>
+    <node id="ACGL">
+      <data key="d0">Financials</data>
+      <data key="d1">Property &amp; Casualty Insurance</data>
+      <data key="d2">Arch Capital Group</data>
+    </node>
+    <node id="ACN">
+      <data key="d0">Information Technology</data>
+      <data key="d1">IT Consulting &amp; Other Services</data>
+      <data key="d2">Accenture</data>
+    </node>
+    <node id="ADBE">
+      <data key="d0">Information Technology</data>
+      <data key="d1">Application Software</data>
+      <data key="d2">Adobe Inc.</data>
+    </node>
+    <node id="ADI">
+      <data key="d0">Information Technology</data>
+      <data key="d1">Semiconductors</data>
+      <data key="d2">Analog Devices</data>
+    </node>
+    <node id="ADM">
+      <data key="d0">Consumer Staples</data>
+      <data key="d1">Agricultural Products &amp; Services</data>
+      <data key="d2">Archer Daniels Midland</data>
+    </node>
+    <node id="ADP">
+      <data key="d0">Industrials</data>
+      <data key="d1">Human Resource &amp; Employment Services</data>
+      <data key="d2">Automatic Data Processing</data>
+    </node>
+    <node id="ADSK">
+      <data key="d0">Information Technology</data>
+      <data key="d1">Application Software</data>
+      <data key="d2">Autodesk</data>
+    </node>
+    <node id="AEE">
+      <data key="d0">Utilities</data>
+      <data key="d1">Multi-Utilities</data>
+      <data key="d2">Ameren</data>
+    </node>
+    <node id="AEP">
+      <data key="d0">Utilities</data>
+      <data key="d1">Electric Utilities</data>
+      <data key="d2">American Electric Power</data>
+    </node>
+    <node id="AES">
+      <data key="d0">Utilities</data>
+      <data key="d1">Independent Power Producers &amp; Energy Traders</data>
+      <data key="d2">AES Corporation</data>
+    </node>
+    <node id="AFL">
+      <data key="d0">Financials</data>
+      <data key="d1">Life &amp; Health Insurance</data>
+      <data key="d2">Aflac</data>
+    </node>
+    <node id="AIG">
+      <data key="d0">Financials</data>
+      <data key="d1">Multi-line Insurance</data>
+      <data key="d2">American International Group</data>
+    </node>
+    <node id="AIZ">
+      <data key="d0">Financials</data>
+      <data key="d1">Multi-line Insurance</data>
+      <data key="d2">Assurant</data>
+    </node>
+    <node id="AJG">
+      <data key="d0">Financials</data>
+      <data key="d1">Insurance Brokers</data>
+      <data key="d2">Arthur J. Gallagher &amp; Co.</data>
+    </node>
+    <node id="AKAM">
+      <data key="d0">Information Technology</data>
+      <data key="d1">Internet Services &amp; Infrastructure</data>
+      <data key="d2">Akamai Technologies</data>
+    </node>
+    <node id="ALB">
+      <data key="d0">Materials</data>
+      <data key="d1">Specialty Chemicals</data>
+      <data key="d2">Albemarle Corporation</data>
+    </node>
+    <node id="ALGN">
+      <data key="d0">Health Care</data>
+      <data key="d1">Health Care Supplies</data>
+      <data key="d2">Align Technology</data>
+    </node>
+    <node id="ALL">
+      <data key="d0">Financials</data>
+      <data key="d1">Property &amp; Casualty Insurance</data>
+      <data key="d2">Allstate</data>
+    </node>
+    <node id="ALLE">
+      <data key="d0">Industrials</data>
+      <data key="d1">Building Products</data>
+      <data key="d2">Allegion</data>
+    </node>
+    <node id="AMAT">
+      <data key="d0">Information Technology</data>
+      <data key="d1">Semiconductor Materials &amp; Equipment</data>
+      <data key="d2">Applied Materials</data>
+    </node>
+    <node id="AMCR">
+      <data key="d0">Materials</data>
+      <data key="d1">Paper &amp; Plastic Packaging Products &amp; Materials</data>
+      <data key="d2">Amcor</data>
+    </node>
+    <node id="AMD">
+      <data key="d0">Information Technology</data>
+      <data key="d1">Semiconductors</data>
+      <data key="d2">Advanced Micro Devices</data>
+    </node>
+    <node id="AME">
+      <data key="d0">Industrials</data>
+      <data key="d1">Electrical Components &amp; Equipment</data>
+      <data key="d2">Ametek</data>
+    </node>
+    <node id="AMGN">
+      <data key="d0">Health Care</data>
+      <data key="d1">Biotechnology</data>
+      <data key="d2">Amgen</data>
+    </node>
+    <node id="AMP">
+      <data key="d0">Financials</data>
+      <data key="d1">Asset Management &amp; Custody Banks</data>
+      <data key="d2">Ameriprise Financial</data>
+    </node>
+    <node id="AMT">
+      <data key="d0">Real Estate</data>
+      <data key="d1">Telecom Tower REITs</data>
+      <data key="d2">American Tower</data>
+    </node>
+    <node id="AMZN">
+      <data key="d0">Consumer Discretionary</data>
+      <data key="d1">Broadline Retail</data>
+      <data key="d2">Amazon</data>
+    </node>
+    <node id="ANET">
+      <data key="d0">Information Technology</data>
+      <data key="d1">Communications Equipment</data>
+      <data key="d2">Arista Networks</data>
+    </node>
+    <node id="AON">
+      <data key="d0">Financials</data>
+      <data key="d1">Insurance Brokers</data>
+      <data key="d2">Aon plc</data>
+    </node>
+    <node id="AOS">
+      <data key="d0">Industrials</data>
+      <data key="d1">Building Products</data>
+      <data key="d2">A. O. Smith</data>
+    </node>
+    <node id="APA">
+      <data key="d0">Energy</data>
+      <data key="d1">Oil &amp; Gas Exploration &amp; Production</data>
+      <data key="d2">APA Corporation</data>
+    </node>
+    <node id="APD">
+      <data key="d0">Materials</data>
+      <data key="d1">Industrial Gases</data>
+      <data key="d2">Air Products</data>
+    </node>
+    <node id="APH">
+      <data key="d0">Information Technology</data>
+      <data key="d1">Electronic Components</data>
+      <data key="d2">Amphenol</data>
+    </node>
+    <node id="APO">
+      <data key="d0">Financials</data>
+      <data key="d1">Asset Management &amp; Custody Banks</data>
+      <data key="d2">Apollo Global Management</data>
+    </node>
+    <node id="APP">
+      <data key="d0">Information Technology</data>
+      <data key="d1">Application Software</data>
+      <data key="d2">AppLovin</data>
+    </node>
+    <node id="APTV">
+      <data key="d0">Consumer Discretionary</data>
+      <data key="d1">Automotive Parts &amp; Equipment</data>
+      <data key="d2">Aptiv</data>
+    </node>
+    <node id="ARE">
+      <data key="d0">Real Estate</data>
+      <data key="d1">Office REITs</data>
+      <data key="d2">Alexandria Real Estate Equities</data>
+    </node>
+    <node id="ARES">
+      <data key="d0">Financials</data>
+      <data key="d1">Asset Management &amp; Custody Banks</data>
+      <data key="d2">Ares Management</data>
+    </node>
+    <node id="ATO">
+      <data key="d0">Utilities</data>
+      <data key="d1">Gas Utilities</data>
+      <data key="d2">Atmos Energy</data>
+    </node>
+    <node id="AVB">
+      <data key="d0">Real Estate</data>
+      <data key="d1">Multi-Family Residential REITs</data>
+      <data key="d2">AvalonBay Communities</data>
+    </node>
+    <node id="AVGO">
+      <data key="d0">Information Technology</data>
+      <data key="d1">Semiconductors</data>
+      <data key="d2">Broadcom</data>
+    </node>
+    <node id="AVY">
+      <data key="d0">Materials</data>
+      <data key="d1">Paper &amp; Plastic Packaging Products &amp; Materials</data>
+      <data key="d2">Avery Dennison</data>
+    </node>
+    <node id="AWK">
+      <data key="d0">Utilities</data>
+      <data key="d1">Water Utilities</data>
+      <data key="d2">American Water Works</data>
+    </node>
+    <node id="AXON">
+      <data key="d0">Industrials</data>
+      <data key="d1">Aerospace &amp; Defense</data>
+      <data key="d2">Axon Enterprise</data>
+    </node>
+    <node id="AXP">
+      <data key="d0">Financials</data>
+      <data key="d1">Consumer Finance</data>
+      <data key="d2">American Express</data>
+    </node>
+    <node id="AZO">
+      <data key="d0">Consumer Discretionary</data>
+      <data key="d1">Automotive Retail</data>
+      <data key="d2">AutoZone</data>
+    </node>
+    <node id="BA">
+      <data key="d0">Industrials</data>
+      <data key="d1">Aerospace &amp; Defense</data>
+      <data key="d2">Boeing</data>
+    </node>
+    <node id="BAC">
+      <data key="d0">Financials</data>
+      <data key="d1">Diversified Banks</data>
+      <data key="d2">Bank of America</data>
+    </node>
+    <node id="BALL">
+      <data key="d0">Materials</data>
+      <data key="d1">Metal, Glass &amp; Plastic Containers</data>
+      <data key="d2">Ball Corporation</data>
+    </node>
+    <node id="BAX">
+      <data key="d0">Health Care</data>
+      <data key="d1">Health Care Equipment</data>
+      <data key="d2">Baxter International</data>
+    </node>
+    <node id="BBY">
+      <data key="d0">Consumer Discretionary</data>
+      <data key="d1">Computer &amp; Electronics Retail</data>
+      <data key="d2">Best Buy</data>
+    </node>
+    <node id="BDX">
+      <data key="d0">Health Care</data>
+      <data key="d1">Health Care Equipment</data>
+      <data key="d2">Becton Dickinson</data>
+    </node>
+    <node id="BEN">
+      <data key="d0">Financials</data>
+      <data key="d1">Asset Management &amp; Custody Banks</data>
+      <data key="d2">Franklin Resources</data>
+    </node>
+    <node id="BF-B">
+      <data key="d0">Consumer Staples</data>
+      <data key="d1">Distillers &amp; Vintners</data>
+      <data key="d2">Brown–Forman</data>
+    </node>
+    <node id="BG">
+      <data key="d0">Consumer Staples</data>
+      <data key="d1">Agricultural Products &amp; Services</data>
+      <data key="d2">Bunge Global</data>
+    </node>
+    <node id="BIIB">
+      <data key="d0">Health Care</data>
+      <data key="d1">Biotechnology</data>
+      <data key="d2">Biogen</data>
+    </node>
+    <node id="BK">
+      <data key="d0">Financials</data>
+      <data key="d1">Asset Management &amp; Custody Banks</data>
+      <data key="d2">BNY Mellon</data>
+    </node>
+    <node id="BKNG">
+      <data key="d0">Consumer Discretionary</data>
+      <data key="d1">Hotels, Resorts &amp; Cruise Lines</data>
+      <data key="d2">Booking Holdings</data>
+    </node>
+    <node id="BKR">
+      <data key="d0">Energy</data>
+      <data key="d1">Oil &amp; Gas Equipment &amp; Services</data>
+      <data key="d2">Baker Hughes</data>
+    </node>
+    <node id="BLDR">
+      <data key="d0">Industrials</data>
+      <data key="d1">Building Products</data>
+      <data key="d2">Builders FirstSource</data>
+    </node>
+    <node id="BLK">
+      <data key="d0">Financials</data>
+      <data key="d1">Asset Management &amp; Custody Banks</data>
+      <data key="d2">BlackRock</data>
+    </node>
+    <node id="BMY">
+      <data key="d0">Health Care</data>
+      <data key="d1">Pharmaceuticals</data>
+      <data key="d2">Bristol Myers Squibb</data>
+    </node>
+    <node id="BR">
+      <data key="d0">Industrials</data>
+      <data key="d1">Data Processing &amp; Outsourced Services</data>
+      <data key="d2">Broadridge Financial Solutions</data>
+    </node>
+    <node id="BRK-B">
+      <data key="d0">Financials</data>
+      <data key="d1">Multi-Sector Holdings</data>
+      <data key="d2">Berkshire Hathaway</data>
+    </node>
+    <node id="BRO">
+      <data key="d0">Financials</data>
+      <data key="d1">Insurance Brokers</data>
+      <data key="d2">Brown &amp; Brown</data>
+    </node>
+    <node id="BSX">
+      <data key="d0">Health Care</data>
+      <data key="d1">Health Care Equipment</data>
+      <data key="d2">Boston Scientific</data>
+    </node>
+    <node id="BX">
+      <data key="d0">Financials</data>
+      <data key="d1">Asset Management &amp; Custody Banks</data>
+      <data key="d2">Blackstone Inc.</data>
+    </node>
+    <node id="BXP">
+      <data key="d0">Real Estate</data>
+      <data key="d1">Office REITs</data>
+      <data key="d2">BXP, Inc.</data>
+    </node>
+    <node id="C">
+      <data key="d0">Financials</data>
+      <data key="d1">Diversified Banks</data>
+      <data key="d2">Citigroup</data>
+    </node>
+    <node id="CAG">
+      <data key="d0">Consumer Staples</data>
+      <data key="d1">Packaged Foods &amp; Meats</data>
+      <data key="d2">Conagra Brands</data>
+    </node>
+    <node id="CAH">
+      <data key="d0">Health Care</data>
+      <data key="d1">Health Care Distributors</data>
+      <data key="d2">Cardinal Health</data>
+    </node>
+    <node id="CARR">
+      <data key="d0">Industrials</data>
+      <data key="d1">Building Products</data>
+      <data key="d2">Carrier Global</data>
+    </node>
+    <node id="CASY">
+      <data key="d0">Consumer Staples</data>
+      <data key="d1">Food Retail</data>
+      <data key="d2">Casey's</data>
+    </node>
+    <node id="CAT">
+      <data key="d0">Industrials</data>
+      <data key="d1">Construction Machinery &amp; Heavy Transportation Equipment</data>
+      <data key="d2">Caterpillar Inc.</data>
+    </node>
+    <node id="CB">
+      <data key="d0">Financials</data>
+      <data key="d1">Property &amp; Casualty Insurance</data>
+      <data key="d2">Chubb Limited</data>
+    </node>
+    <node id="CBOE">
+      <data key="d0">Financials</data>
+      <data key="d1">Financial Exchanges &amp; Data</data>
+      <data key="d2">Cboe Global Markets</data>
+    </node>
+    <node id="CBRE">
+      <data key="d0">Real Estate</data>
+      <data key="d1">Real Estate Services</data>
+      <data key="d2">CBRE Group</data>
+    </node>
+    <node id="CCI">
+      <data key="d0">Real Estate</data>
+      <data key="d1">Telecom Tower REITs</data>
+      <data key="d2">Crown Castle</data>
+    </node>
+    <node id="CCL">
+      <data key="d0">Consumer Discretionary</data>
+      <data key="d1">Hotels, Resorts &amp; Cruise Lines</data>
+      <data key="d2">Carnival</data>
+    </node>
+    <node id="CDNS">
+      <data key="d0">Information Technology</data>
+      <data key="d1">Application Software</data>
+      <data key="d2">Cadence Design Systems</data>
+    </node>
+    <node id="CDW">
+      <data key="d0">Information Technology</data>
+      <data key="d1">Technology Distributors</data>
+      <data key="d2">CDW Corporation</data>
+    </node>
+    <node id="CEG">
+      <data key="d0">Utilities</data>
+      <data key="d1">Electric Utilities</data>
+      <data key="d2">Constellation Energy</data>
+    </node>
+    <node id="CF">
+      <data key="d0">Materials</data>
+      <data key="d1">Fertilizers &amp; Agricultural Chemicals</data>
+      <data key="d2">CF Industries</data>
+    </node>
+    <node id="CFG">
+      <data key="d0">Financials</data>
+      <data key="d1">Regional Banks</data>
+      <data key="d2">Citizens Financial Group</data>
+    </node>
+    <node id="CHD">
+      <data key="d0">Consumer Staples</data>
+      <data key="d1">Household Products</data>
+      <data key="d2">Church &amp; Dwight</data>
+    </node>
+    <node id="CHRW">
+      <data key="d0">Industrials</data>
+      <data key="d1">Air Freight &amp; Logistics</data>
+      <data key="d2">C.H. Robinson</data>
+    </node>
+    <node id="CHTR">
+      <data key="d0">Communication Services</data>
+      <data key="d1">Cable &amp; Satellite</data>
+      <data key="d2">Charter Communications</data>
+    </node>
+    <node id="CI">
+      <data key="d0">Health Care</data>
+      <data key="d1">Health Care Services</data>
+      <data key="d2">Cigna</data>
+    </node>
+    <node id="CIEN">
+      <data key="d0">Information Technology</data>
+      <data key="d1">Communications Equipment</data>
+      <data key="d2">Ciena</data>
+    </node>
+    <node id="CINF">
+      <data key="d0">Financials</data>
+      <data key="d1">Property &amp; Casualty Insurance</data>
+      <data key="d2">Cincinnati Financial</data>
+    </node>
+    <node id="CL">
+      <data key="d0">Consumer Staples</data>
+      <data key="d1">Household Products</data>
+      <data key="d2">Colgate-Palmolive</data>
+    </node>
+    <node id="CLX">
+      <data key="d0">Consumer Staples</data>
+      <data key="d1">Household Products</data>
+      <data key="d2">Clorox</data>
+    </node>
+    <node id="CMCSA">
+      <data key="d0">Communication Services</data>
+      <data key="d1">Cable &amp; Satellite</data>
+      <data key="d2">Comcast</data>
+    </node>
+    <node id="CME">
+      <data key="d0">Financials</data>
+      <data key="d1">Financial Exchanges &amp; Data</data>
+      <data key="d2">CME Group</data>
+    </node>
+    <node id="CMG">
+      <data key="d0">Consumer Discretionary</data>
+      <data key="d1">Restaurants</data>
+      <data key="d2">Chipotle Mexican Grill</data>
+    </node>
+    <node id="CMI">
+      <data key="d0">Industrials</data>
+      <data key="d1">Construction Machinery &amp; Heavy Transportation Equipment</data>
+      <data key="d2">Cummins</data>
+    </node>
+    <node id="CMS">
+      <data key="d0">Utilities</data>
+      <data key="d1">Multi-Utilities</data>
+      <data key="d2">CMS Energy</data>
+    </node>
+    <node id="CNC">
+      <data key="d0">Health Care</data>
+      <data key="d1">Managed Health Care</data>
+      <data key="d2">Centene Corporation</data>
+    </node>
+    <node id="CNP">
+      <data key="d0">Utilities</data>
+      <data key="d1">Multi-Utilities</data>
+      <data key="d2">CenterPoint Energy</data>
+    </node>
+    <node id="COF">
+      <data key="d0">Financials</data>
+      <data key="d1">Consumer Finance</data>
+      <data key="d2">Capital One</data>
+    </node>
+    <node id="COHR">
+      <data key="d0">Information Technology</data>
+      <data key="d1">Electronic Components</data>
+      <data key="d2">Coherent Corp.</data>
+    </node>
+    <node id="COIN">
+      <data key="d0">Financials</data>
+      <data key="d1">Financial Exchanges &amp; Data</data>
+      <data key="d2">Coinbase</data>
+    </node>
+    <node id="COO">
+      <data key="d0">Health Care</data>
+      <data key="d1">Health Care Supplies</data>
+      <data key="d2">Cooper Companies (The)</data>
+    </node>
+    <node id="COP">
+      <data key="d0">Energy</data>
+      <data key="d1">Oil &amp; Gas Exploration &amp; Production</data>
+      <data key="d2">ConocoPhillips</data>
+    </node>
+    <node id="COR">
+      <data key="d0">Health Care</data>
+      <data key="d1">Health Care Distributors</data>
+      <data key="d2">Cencora</data>
+    </node>
+    <node id="COST">
+      <data key="d0">Consumer Staples</data>
+      <data key="d1">Consumer Staples Merchandise Retail</data>
+      <data key="d2">Costco</data>
+    </node>
+    <node id="CPAY">
+      <data key="d0">Financials</data>
+      <data key="d1">Transaction &amp; Payment Processing Services</data>
+      <data key="d2">Corpay</data>
+    </node>
+    <node id="CPB">
+      <data key="d0">Consumer Staples</data>
+      <data key="d1">Packaged Foods &amp; Meats</data>
+      <data key="d2">Campbell's Company (The)</data>
+    </node>
+    <node id="CPRT">
+      <data key="d0">Industrials</data>
+      <data key="d1">Diversified Support Services</data>
+      <data key="d2">Copart</data>
+    </node>
+    <node id="CPT">
+      <data key="d0">Real Estate</data>
+      <data key="d1">Multi-Family Residential REITs</data>
+      <data key="d2">Camden Property Trust</data>
+    </node>
+    <node id="CRH">
+      <data key="d0">Materials</data>
+      <data key="d1">Construction Materials</data>
+      <data key="d2">CRH plc</data>
+    </node>
+    <node id="CRL">
+      <data key="d0">Health Care</data>
+      <data key="d1">Life Sciences Tools &amp; Services</data>
+      <data key="d2">Charles River Laboratories</data>
+    </node>
+    <node id="CRM">
+      <data key="d0">Information Technology</data>
+      <data key="d1">Application Software</data>
+      <data key="d2">Salesforce</data>
+    </node>
+    <node id="CRWD">
+      <data key="d0">Information Technology</data>
+      <data key="d1">Systems Software</data>
+      <data key="d2">CrowdStrike</data>
+    </node>
+    <node id="CSCO">
+      <data key="d0">Information Technology</data>
+      <data key="d1">Communications Equipment</data>
+      <data key="d2">Cisco</data>
+    </node>
+    <node id="CSGP">
+      <data key="d0">Real Estate</data>
+      <data key="d1">Real Estate Services</data>
+      <data key="d2">CoStar Group</data>
+    </node>
+    <node id="CSX">
+      <data key="d0">Industrials</data>
+      <data key="d1">Rail Transportation</data>
+      <data key="d2">CSX Corporation</data>
+    </node>
+    <node id="CTAS">
+      <data key="d0">Industrials</data>
+      <data key="d1">Diversified Support Services</data>
+      <data key="d2">Cintas</data>
+    </node>
+    <node id="CTRA">
+      <data key="d0">Energy</data>
+      <data key="d1">Oil &amp; Gas Exploration &amp; Production</data>
+      <data key="d2">Coterra</data>
+    </node>
+    <node id="CTSH">
+      <data key="d0">Information Technology</data>
+      <data key="d1">IT Consulting &amp; Other Services</data>
+      <data key="d2">Cognizant</data>
+    </node>
+    <node id="CTVA">
+      <data key="d0">Materials</data>
+      <data key="d1">Fertilizers &amp; Agricultural Chemicals</data>
+      <data key="d2">Corteva</data>
+    </node>
+    <node id="CVNA">
+      <data key="d0">Consumer Discretionary</data>
+      <data key="d1">Automotive Retail</data>
+      <data key="d2">Carvana</data>
+    </node>
+    <node id="CVS">
+      <data key="d0">Health Care</data>
+      <data key="d1">Health Care Services</data>
+      <data key="d2">CVS Health</data>
+    </node>
+    <node id="CVX">
+      <data key="d0">Energy</data>
+      <data key="d1">Integrated Oil &amp; Gas</data>
+      <data key="d2">Chevron Corporation</data>
+    </node>
+    <node id="D">
+      <data key="d0">Utilities</data>
+      <data key="d1">Multi-Utilities</data>
+      <data key="d2">Dominion Energy</data>
+    </node>
+    <node id="DAL">
+      <data key="d0">Industrials</data>
+      <data key="d1">Passenger Airlines</data>
+      <data key="d2">Delta Air Lines</data>
+    </node>
+    <node id="DASH">
+      <data key="d0">Consumer Discretionary</data>
+      <data key="d1">Specialized Consumer Services</data>
+      <data key="d2">DoorDash</data>
+    </node>
+    <node id="DD">
+      <data key="d0">Materials</data>
+      <data key="d1">Specialty Chemicals</data>
+      <data key="d2">DuPont</data>
+    </node>
+    <node id="DDOG">
+      <data key="d0">Information Technology</data>
+      <data key="d1">Application Software</data>
+      <data key="d2">Datadog</data>
+    </node>
+    <node id="DE">
+      <data key="d0">Industrials</data>
+      <data key="d1">Agricultural &amp; Farm Machinery</data>
+      <data key="d2">Deere &amp; Company</data>
+    </node>
+    <node id="DECK">
+      <data key="d0">Consumer Discretionary</data>
+      <data key="d1">Footwear</data>
+      <data key="d2">Deckers Brands</data>
+    </node>
+    <node id="DELL">
+      <data key="d0">Information Technology</data>
+      <data key="d1">Technology Hardware, Storage &amp; Peripherals</data>
+      <data key="d2">Dell Technologies</data>
+    </node>
+    <node id="DG">
+      <data key="d0">Consumer Staples</data>
+      <data key="d1">Consumer Staples Merchandise Retail</data>
+      <data key="d2">Dollar General</data>
+    </node>
+    <node id="DGX">
+      <data key="d0">Health Care</data>
+      <data key="d1">Health Care Services</data>
+      <data key="d2">Quest Diagnostics</data>
+    </node>
+    <node id="DHI">
+      <data key="d0">Consumer Discretionary</data>
+      <data key="d1">Homebuilding</data>
+      <data key="d2">D. R. Horton</data>
+    </node>
+    <node id="DHR">
+      <data key="d0">Health Care</data>
+      <data key="d1">Life Sciences Tools &amp; Services</data>
+      <data key="d2">Danaher Corporation</data>
+    </node>
+    <node id="DIS">
+      <data key="d0">Communication Services</data>
+      <data key="d1">Movies &amp; Entertainment</data>
+      <data key="d2">Walt Disney Company (The)</data>
+    </node>
+    <node id="DLR">
+      <data key="d0">Real Estate</data>
+      <data key="d1">Data Center REITs</data>
+      <data key="d2">Digital Realty</data>
+    </node>
+    <node id="DLTR">
+      <data key="d0">Consumer Staples</data>
+      <data key="d1">Consumer Staples Merchandise Retail</data>
+      <data key="d2">Dollar Tree</data>
+    </node>
+    <node id="DOC">
+      <data key="d0">Real Estate</data>
+      <data key="d1">Health Care REITs</data>
+      <data key="d2">Healthpeak Properties</data>
+    </node>
+    <node id="DOV">
+      <data key="d0">Industrials</data>
+      <data key="d1">Industrial Machinery &amp; Supplies &amp; Components</data>
+      <data key="d2">Dover Corporation</data>
+    </node>
+    <node id="DOW">
+      <data key="d0">Materials</data>
+      <data key="d1">Commodity Chemicals</data>
+      <data key="d2">Dow Inc.</data>
+    </node>
+    <node id="DPZ">
+      <data key="d0">Consumer Discretionary</data>
+      <data key="d1">Restaurants</data>
+      <data key="d2">Domino's</data>
+    </node>
+    <node id="DRI">
+      <data key="d0">Consumer Discretionary</data>
+      <data key="d1">Restaurants</data>
+      <data key="d2">Darden Restaurants</data>
+    </node>
+    <node id="DTE">
+      <data key="d0">Utilities</data>
+      <data key="d1">Multi-Utilities</data>
+      <data key="d2">DTE Energy</data>
+    </node>
+    <node id="DUK">
+      <data key="d0">Utilities</data>
+      <data key="d1">Electric Utilities</data>
+      <data key="d2">Duke Energy</data>
+    </node>
+    <node id="DVA">
+      <data key="d0">Health Care</data>
+      <data key="d1">Health Care Services</data>
+      <data key="d2">DaVita</data>
+    </node>
+    <node id="DVN">
+      <data key="d0">Energy</data>
+      <data key="d1">Oil &amp; Gas Exploration &amp; Production</data>
+      <data key="d2">Devon Energy</data>
+    </node>
+    <node id="DXCM">
+      <data key="d0">Health Care</data>
+      <data key="d1">Health Care Equipment</data>
+      <data key="d2">Dexcom</data>
+    </node>
+    <node id="EA">
+      <data key="d0">Communication Services</data>
+      <data key="d1">Interactive Home Entertainment</data>
+      <data key="d2">Electronic Arts</data>
+    </node>
+    <node id="EBAY">
+      <data key="d0">Consumer Discretionary</data>
+      <data key="d1">Broadline Retail</data>
+      <data key="d2">eBay Inc.</data>
+    </node>
+    <node id="ECL">
+      <data key="d0">Materials</data>
+      <data key="d1">Specialty Chemicals</data>
+      <data key="d2">Ecolab</data>
+    </node>
+    <node id="ED">
+      <data key="d0">Utilities</data>
+      <data key="d1">Multi-Utilities</data>
+      <data key="d2">Consolidated Edison</data>
+    </node>
+    <node id="EFX">
+      <data key="d0">Industrials</data>
+      <data key="d1">Research &amp; Consulting Services</data>
+      <data key="d2">Equifax</data>
+    </node>
+    <node id="EG">
+      <data key="d0">Financials</data>
+      <data key="d1">Reinsurance</data>
+      <data key="d2">Everest Group</data>
+    </node>
+    <node id="EIX">
+      <data key="d0">Utilities</data>
+      <data key="d1">Electric Utilities</data>
+      <data key="d2">Edison International</data>
+    </node>
+    <node id="EL">
+      <data key="d0">Consumer Staples</data>
+      <data key="d1">Personal Care Products</data>
+      <data key="d2">Estée Lauder Companies (The)</data>
+    </node>
+    <node id="ELV">
+      <data key="d0">Health Care</data>
+      <data key="d1">Managed Health Care</data>
+      <data key="d2">Elevance Health</data>
+    </node>
+    <node id="EME">
+      <data key="d0">Industrials</data>
+      <data key="d1">Construction &amp; Engineering</data>
+      <data key="d2">Emcor</data>
+    </node>
+    <node id="EMR">
+      <data key="d0">Industrials</data>
+      <data key="d1">Electrical Components &amp; Equipment</data>
+      <data key="d2">Emerson Electric</data>
+    </node>
+    <node id="EOG">
+      <data key="d0">Energy</data>
+      <data key="d1">Oil &amp; Gas Exploration &amp; Production</data>
+      <data key="d2">EOG Resources</data>
+    </node>
+    <node id="EPAM">
+      <data key="d0">Information Technology</data>
+      <data key="d1">IT Consulting &amp; Other Services</data>
+      <data key="d2">EPAM Systems</data>
+    </node>
+    <node id="EQIX">
+      <data key="d0">Real Estate</data>
+      <data key="d1">Data Center REITs</data>
+      <data key="d2">Equinix</data>
+    </node>
+    <node id="EQR">
+      <data key="d0">Real Estate</data>
+      <data key="d1">Multi-Family Residential REITs</data>
+      <data key="d2">Equity Residential</data>
+    </node>
+    <node id="EQT">
+      <data key="d0">Energy</data>
+      <data key="d1">Oil &amp; Gas Exploration &amp; Production</data>
+      <data key="d2">EQT Corporation</data>
+    </node>
+    <node id="ERIE">
+      <data key="d0">Financials</data>
+      <data key="d1">Insurance Brokers</data>
+      <data key="d2">Erie Indemnity</data>
+    </node>
+    <node id="ES">
+      <data key="d0">Utilities</data>
+      <data key="d1">Electric Utilities</data>
+      <data key="d2">Eversource Energy</data>
+    </node>
+    <node id="ESS">
+      <data key="d0">Real Estate</data>
+      <data key="d1">Multi-Family Residential REITs</data>
+      <data key="d2">Essex Property Trust</data>
+    </node>
+    <node id="ETN">
+      <data key="d0">Industrials</data>
+      <data key="d1">Electrical Components &amp; Equipment</data>
+      <data key="d2">Eaton Corporation</data>
+    </node>
+    <node id="ETR">
+      <data key="d0">Utilities</data>
+      <data key="d1">Electric Utilities</data>
+      <data key="d2">Entergy</data>
+    </node>
+    <node id="EVRG">
+      <data key="d0">Utilities</data>
+      <data key="d1">Electric Utilities</data>
+      <data key="d2">Evergy</data>
+    </node>
+    <node id="EW">
+      <data key="d0">Health Care</data>
+      <data key="d1">Health Care Equipment</data>
+      <data key="d2">Edwards Lifesciences</data>
+    </node>
+    <node id="EXC">
+      <data key="d0">Utilities</data>
+      <data key="d1">Electric Utilities</data>
+      <data key="d2">Exelon</data>
+    </node>
+    <node id="EXE">
+      <data key="d0">Energy</data>
+      <data key="d1">Oil &amp; Gas Exploration &amp; Production</data>
+      <data key="d2">Expand Energy</data>
+    </node>
+    <node id="EXPD">
+      <data key="d0">Industrials</data>
+      <data key="d1">Air Freight &amp; Logistics</data>
+      <data key="d2">Expeditors International</data>
+    </node>
+    <node id="EXPE">
+      <data key="d0">Consumer Discretionary</data>
+      <data key="d1">Hotels, Resorts &amp; Cruise Lines</data>
+      <data key="d2">Expedia Group</data>
+    </node>
+    <node id="EXR">
+      <data key="d0">Real Estate</data>
+      <data key="d1">Self-Storage REITs</data>
+      <data key="d2">Extra Space Storage</data>
+    </node>
+    <node id="F">
+      <data key="d0">Consumer Discretionary</data>
+      <data key="d1">Automobile Manufacturers</data>
+      <data key="d2">Ford Motor Company</data>
+    </node>
+    <node id="FANG">
+      <data key="d0">Energy</data>
+      <data key="d1">Oil &amp; Gas Exploration &amp; Production</data>
+      <data key="d2">Diamondback Energy</data>
+    </node>
+    <node id="FAST">
+      <data key="d0">Industrials</data>
+      <data key="d1">Trading Companies &amp; Distributors</data>
+      <data key="d2">Fastenal</data>
+    </node>
+    <node id="FCX">
+      <data key="d0">Materials</data>
+      <data key="d1">Copper</data>
+      <data key="d2">Freeport-McMoRan</data>
+    </node>
+    <node id="FDS">
+      <data key="d0">Financials</data>
+      <data key="d1">Financial Exchanges &amp; Data</data>
+      <data key="d2">FactSet</data>
+    </node>
+    <node id="FDX">
+      <data key="d0">Industrials</data>
+      <data key="d1">Air Freight &amp; Logistics</data>
+      <data key="d2">FedEx</data>
+    </node>
+    <node id="FE">
+      <data key="d0">Utilities</data>
+      <data key="d1">Electric Utilities</data>
+      <data key="d2">FirstEnergy</data>
+    </node>
+    <node id="FFIV">
+      <data key="d0">Information Technology</data>
+      <data key="d1">Communications Equipment</data>
+      <data key="d2">F5, Inc.</data>
+    </node>
+    <node id="FICO">
+      <data key="d0">Information Technology</data>
+      <data key="d1">Application Software</data>
+      <data key="d2">Fair Isaac</data>
+    </node>
+    <node id="FIS">
+      <data key="d0">Financials</data>
+      <data key="d1">Transaction &amp; Payment Processing Services</data>
+      <data key="d2">Fidelity National Information Services</data>
+    </node>
+    <node id="FISV">
+      <data key="d0">Financials</data>
+      <data key="d1">Transaction &amp; Payment Processing Services</data>
+      <data key="d2">Fiserv</data>
+    </node>
+    <node id="FITB">
+      <data key="d0">Financials</data>
+      <data key="d1">Regional Banks</data>
+      <data key="d2">Fifth Third Bancorp</data>
+    </node>
+    <node id="FIX">
+      <data key="d0">Industrials</data>
+      <data key="d1">Construction &amp; Engineering</data>
+      <data key="d2">Comfort Systems USA</data>
+    </node>
+    <node id="FOX">
+      <data key="d0">Communication Services</data>
+      <data key="d1">Broadcasting</data>
+      <data key="d2">Fox Corporation (Class B)</data>
+    </node>
+    <node id="FOXA">
+      <data key="d0">Communication Services</data>
+      <data key="d1">Broadcasting</data>
+      <data key="d2">Fox Corporation (Class A)</data>
+    </node>
+    <node id="FRT">
+      <data key="d0">Real Estate</data>
+      <data key="d1">Retail REITs</data>
+      <data key="d2">Federal Realty Investment Trust</data>
+    </node>
+    <node id="FSLR">
+      <data key="d0">Information Technology</data>
+      <data key="d1">Semiconductors</data>
+      <data key="d2">First Solar</data>
+    </node>
+    <node id="FTNT">
+      <data key="d0">Information Technology</data>
+      <data key="d1">Systems Software</data>
+      <data key="d2">Fortinet</data>
+    </node>
+    <node id="FTV">
+      <data key="d0">Industrials</data>
+      <data key="d1">Industrial Machinery &amp; Supplies &amp; Components</data>
+      <data key="d2">Fortive</data>
+    </node>
+    <node id="GD">
+      <data key="d0">Industrials</data>
+      <data key="d1">Aerospace &amp; Defense</data>
+      <data key="d2">General Dynamics</data>
+    </node>
+    <node id="GDDY">
+      <data key="d0">Information Technology</data>
+      <data key="d1">Internet Services &amp; Infrastructure</data>
+      <data key="d2">GoDaddy</data>
+    </node>
+    <node id="GE">
+      <data key="d0">Industrials</data>
+      <data key="d1">Aerospace &amp; Defense</data>
+      <data key="d2">GE Aerospace</data>
+    </node>
+    <node id="GEHC">
+      <data key="d0">Health Care</data>
+      <data key="d1">Health Care Equipment</data>
+      <data key="d2">GE HealthCare</data>
+    </node>
+    <node id="GEN">
+      <data key="d0">Information Technology</data>
+      <data key="d1">Systems Software</data>
+      <data key="d2">Gen Digital</data>
+    </node>
+    <node id="GEV">
+      <data key="d0">Industrials</data>
+      <data key="d1">Heavy Electrical Equipment</data>
+      <data key="d2">GE Vernova</data>
+    </node>
+    <node id="GILD">
+      <data key="d0">Health Care</data>
+      <data key="d1">Biotechnology</data>
+      <data key="d2">Gilead Sciences</data>
+    </node>
+    <node id="GIS">
+      <data key="d0">Consumer Staples</data>
+      <data key="d1">Packaged Foods &amp; Meats</data>
+      <data key="d2">General Mills</data>
+    </node>
+    <node id="GL">
+      <data key="d0">Financials</data>
+      <data key="d1">Life &amp; Health Insurance</data>
+      <data key="d2">Globe Life</data>
+    </node>
+    <node id="GLW">
+      <data key="d0">Information Technology</data>
+      <data key="d1">Electronic Components</data>
+      <data key="d2">Corning Inc.</data>
+    </node>
+    <node id="GM">
+      <data key="d0">Consumer Discretionary</data>
+      <data key="d1">Automobile Manufacturers</data>
+      <data key="d2">General Motors</data>
+    </node>
+    <node id="GNRC">
+      <data key="d0">Industrials</data>
+      <data key="d1">Electrical Components &amp; Equipment</data>
+      <data key="d2">Generac</data>
+    </node>
+    <node id="GOOG">
+      <data key="d0">Communication Services</data>
+      <data key="d1">Interactive Media &amp; Services</data>
+      <data key="d2">Alphabet Inc. (Class C)</data>
+    </node>
+    <node id="GOOGL">
+      <data key="d0">Communication Services</data>
+      <data key="d1">Interactive Media &amp; Services</data>
+      <data key="d2">Alphabet Inc. (Class A)</data>
+    </node>
+    <node id="GPC">
+      <data key="d0">Consumer Discretionary</data>
+      <data key="d1">Distributors</data>
+      <data key="d2">Genuine Parts Company</data>
+    </node>
+    <node id="GPN">
+      <data key="d0">Financials</data>
+      <data key="d1">Transaction &amp; Payment Processing Services</data>
+      <data key="d2">Global Payments</data>
+    </node>
+    <node id="GRMN">
+      <data key="d0">Consumer Discretionary</data>
+      <data key="d1">Consumer Electronics</data>
+      <data key="d2">Garmin</data>
+    </node>
+    <node id="GS">
+      <data key="d0">Financials</data>
+      <data key="d1">Investment Banking &amp; Brokerage</data>
+      <data key="d2">Goldman Sachs</data>
+    </node>
+    <node id="GWW">
+      <data key="d0">Industrials</data>
+      <data key="d1">Industrial Machinery &amp; Supplies &amp; Components</data>
+      <data key="d2">W. W. Grainger</data>
+    </node>
+    <node id="HAL">
+      <data key="d0">Energy</data>
+      <data key="d1">Oil &amp; Gas Equipment &amp; Services</data>
+      <data key="d2">Halliburton</data>
+    </node>
+    <node id="HAS">
+      <data key="d0">Consumer Discretionary</data>
+      <data key="d1">Leisure Products</data>
+      <data key="d2">Hasbro</data>
+    </node>
+    <node id="HBAN">
+      <data key="d0">Financials</data>
+      <data key="d1">Regional Banks</data>
+      <data key="d2">Huntington Bancshares</data>
+    </node>
+    <node id="HCA">
+      <data key="d0">Health Care</data>
+      <data key="d1">Health Care Facilities</data>
+      <data key="d2">HCA Healthcare</data>
+    </node>
+    <node id="HD">
+      <data key="d0">Consumer Discretionary</data>
+      <data key="d1">Home Improvement Retail</data>
+      <data key="d2">Home Depot (The)</data>
+    </node>
+    <node id="HIG">
+      <data key="d0">Financials</data>
+      <data key="d1">Property &amp; Casualty Insurance</data>
+      <data key="d2">Hartford (The)</data>
+    </node>
+    <node id="HII">
+      <data key="d0">Industrials</data>
+      <data key="d1">Aerospace &amp; Defense</data>
+      <data key="d2">Huntington Ingalls Industries</data>
+    </node>
+    <node id="HLT">
+      <data key="d0">Consumer Discretionary</data>
+      <data key="d1">Hotels, Resorts &amp; Cruise Lines</data>
+      <data key="d2">Hilton Worldwide</data>
+    </node>
+    <node id="HON">
+      <data key="d0">Industrials</data>
+      <data key="d1">Industrial Conglomerates</data>
+      <data key="d2">Honeywell</data>
+    </node>
+    <node id="HOOD">
+      <data key="d0">Financials</data>
+      <data key="d1">Investment Banking &amp; Brokerage</data>
+      <data key="d2">Robinhood Markets</data>
+    </node>
+    <node id="HPE">
+      <data key="d0">Information Technology</data>
+      <data key="d1">Technology Hardware, Storage &amp; Peripherals</data>
+      <data key="d2">Hewlett Packard Enterprise</data>
+    </node>
+    <node id="HPQ">
+      <data key="d0">Information Technology</data>
+      <data key="d1">Technology Hardware, Storage &amp; Peripherals</data>
+      <data key="d2">HP Inc.</data>
+    </node>
+    <node id="HRL">
+      <data key="d0">Consumer Staples</data>
+      <data key="d1">Packaged Foods &amp; Meats</data>
+      <data key="d2">Hormel Foods</data>
+    </node>
+    <node id="HSIC">
+      <data key="d0">Health Care</data>
+      <data key="d1">Health Care Distributors</data>
+      <data key="d2">Henry Schein</data>
+    </node>
+    <node id="HST">
+      <data key="d0">Real Estate</data>
+      <data key="d1">Hotel &amp; Resort REITs</data>
+      <data key="d2">Host Hotels &amp; Resorts</data>
+    </node>
+    <node id="HSY">
+      <data key="d0">Consumer Staples</data>
+      <data key="d1">Packaged Foods &amp; Meats</data>
+      <data key="d2">Hershey Company (The)</data>
+    </node>
+    <node id="HUBB">
+      <data key="d0">Industrials</data>
+      <data key="d1">Industrial Machinery &amp; Supplies &amp; Components</data>
+      <data key="d2">Hubbell Incorporated</data>
+    </node>
+    <node id="HUM">
+      <data key="d0">Health Care</data>
+      <data key="d1">Managed Health Care</data>
+      <data key="d2">Humana</data>
+    </node>
+    <node id="HWM">
+      <data key="d0">Industrials</data>
+      <data key="d1">Aerospace &amp; Defense</data>
+      <data key="d2">Howmet Aerospace</data>
+    </node>
+    <node id="IBKR">
+      <data key="d0">Financials</data>
+      <data key="d1">Investment Banking &amp; Brokerage</data>
+      <data key="d2">Interactive Brokers</data>
+    </node>
+    <node id="IBM">
+      <data key="d0">Information Technology</data>
+      <data key="d1">IT Consulting &amp; Other Services</data>
+      <data key="d2">IBM</data>
+    </node>
+    <node id="ICE">
+      <data key="d0">Financials</data>
+      <data key="d1">Financial Exchanges &amp; Data</data>
+      <data key="d2">Intercontinental Exchange</data>
+    </node>
+    <node id="IDXX">
+      <data key="d0">Health Care</data>
+      <data key="d1">Health Care Equipment</data>
+      <data key="d2">Idexx Laboratories</data>
+    </node>
+    <node id="IEX">
+      <data key="d0">Industrials</data>
+      <data key="d1">Industrial Machinery &amp; Supplies &amp; Components</data>
+      <data key="d2">IDEX Corporation</data>
+    </node>
+    <node id="IFF">
+      <data key="d0">Materials</data>
+      <data key="d1">Specialty Chemicals</data>
+      <data key="d2">International Flavors &amp; Fragrances</data>
+    </node>
+    <node id="INCY">
+      <data key="d0">Health Care</data>
+      <data key="d1">Biotechnology</data>
+      <data key="d2">Incyte</data>
+    </node>
+    <node id="INTC">
+      <data key="d0">Information Technology</data>
+      <data key="d1">Semiconductors</data>
+      <data key="d2">Intel</data>
+    </node>
+    <node id="INTU">
+      <data key="d0">Information Technology</data>
+      <data key="d1">Application Software</data>
+      <data key="d2">Intuit</data>
+    </node>
+    <node id="INVH">
+      <data key="d0">Real Estate</data>
+      <data key="d1">Single-Family Residential REITs</data>
+      <data key="d2">Invitation Homes</data>
+    </node>
+    <node id="IP">
+      <data key="d0">Materials</data>
+      <data key="d1">Paper &amp; Plastic Packaging Products &amp; Materials</data>
+      <data key="d2">International Paper</data>
+    </node>
+    <node id="IQV">
+      <data key="d0">Health Care</data>
+      <data key="d1">Life Sciences Tools &amp; Services</data>
+      <data key="d2">IQVIA</data>
+    </node>
+    <node id="IR">
+      <data key="d0">Industrials</data>
+      <data key="d1">Industrial Machinery &amp; Supplies &amp; Components</data>
+      <data key="d2">Ingersoll Rand</data>
+    </node>
+    <node id="IRM">
+      <data key="d0">Real Estate</data>
+      <data key="d1">Other Specialized REITs</data>
+      <data key="d2">Iron Mountain</data>
+    </node>
+    <node id="ISRG">
+      <data key="d0">Health Care</data>
+      <data key="d1">Health Care Equipment</data>
+      <data key="d2">Intuitive Surgical</data>
+    </node>
+    <node id="IT">
+      <data key="d0">Information Technology</data>
+      <data key="d1">IT Consulting &amp; Other Services</data>
+      <data key="d2">Gartner</data>
+    </node>
+    <node id="ITW">
+      <data key="d0">Industrials</data>
+      <data key="d1">Industrial Machinery &amp; Supplies &amp; Components</data>
+      <data key="d2">Illinois Tool Works</data>
+    </node>
+    <node id="IVZ">
+      <data key="d0">Financials</data>
+      <data key="d1">Asset Management &amp; Custody Banks</data>
+      <data key="d2">Invesco</data>
+    </node>
+    <node id="J">
+      <data key="d0">Industrials</data>
+      <data key="d1">Construction &amp; Engineering</data>
+      <data key="d2">Jacobs Solutions</data>
+    </node>
+    <node id="JBHT">
+      <data key="d0">Industrials</data>
+      <data key="d1">Cargo Ground Transportation</data>
+      <data key="d2">J.B. Hunt</data>
+    </node>
+    <node id="JBL">
+      <data key="d0">Information Technology</data>
+      <data key="d1">Electronic Manufacturing Services</data>
+      <data key="d2">Jabil</data>
+    </node>
+    <node id="JCI">
+      <data key="d0">Industrials</data>
+      <data key="d1">Building Products</data>
+      <data key="d2">Johnson Controls</data>
+    </node>
+    <node id="JKHY">
+      <data key="d0">Financials</data>
+      <data key="d1">Transaction &amp; Payment Processing Services</data>
+      <data key="d2">Jack Henry &amp; Associates</data>
+    </node>
+    <node id="JNJ">
+      <data key="d0">Health Care</data>
+      <data key="d1">Pharmaceuticals</data>
+      <data key="d2">Johnson &amp; Johnson</data>
+    </node>
+    <node id="JPM">
+      <data key="d0">Financials</data>
+      <data key="d1">Diversified Banks</data>
+      <data key="d2">JPMorgan Chase</data>
+    </node>
+    <node id="KDP">
+      <data key="d0">Consumer Staples</data>
+      <data key="d1">Soft Drinks &amp; Non-alcoholic Beverages</data>
+      <data key="d2">Keurig Dr Pepper</data>
+    </node>
+    <node id="KEY">
+      <data key="d0">Financials</data>
+      <data key="d1">Regional Banks</data>
+      <data key="d2">KeyCorp</data>
+    </node>
+    <node id="KEYS">
+      <data key="d0">Information Technology</data>
+      <data key="d1">Electronic Equipment &amp; Instruments</data>
+      <data key="d2">Keysight Technologies</data>
+    </node>
+    <node id="KHC">
+      <data key="d0">Consumer Staples</data>
+      <data key="d1">Packaged Foods &amp; Meats</data>
+      <data key="d2">Kraft Heinz</data>
+    </node>
+    <node id="KIM">
+      <data key="d0">Real Estate</data>
+      <data key="d1">Retail REITs</data>
+      <data key="d2">Kimco Realty</data>
+    </node>
+    <node id="KKR">
+      <data key="d0">Financials</data>
+      <data key="d1">Asset Management &amp; Custody Banks</data>
+      <data key="d2">KKR &amp; Co.</data>
+    </node>
+    <node id="KLAC">
+      <data key="d0">Information Technology</data>
+      <data key="d1">Semiconductor Materials &amp; Equipment</data>
+      <data key="d2">KLA Corporation</data>
+    </node>
+    <node id="KMB">
+      <data key="d0">Consumer Staples</data>
+      <data key="d1">Household Products</data>
+      <data key="d2">Kimberly-Clark</data>
+    </node>
+    <node id="KMI">
+      <data key="d0">Energy</data>
+      <data key="d1">Oil &amp; Gas Storage &amp; Transportation</data>
+      <data key="d2">Kinder Morgan</data>
+    </node>
+    <node id="KO">
+      <data key="d0">Consumer Staples</data>
+      <data key="d1">Soft Drinks &amp; Non-alcoholic Beverages</data>
+      <data key="d2">Coca-Cola Company (The)</data>
+    </node>
+    <node id="KR">
+      <data key="d0">Consumer Staples</data>
+      <data key="d1">Food Retail</data>
+      <data key="d2">Kroger</data>
+    </node>
+    <node id="KVUE">
+      <data key="d0">Consumer Staples</data>
+      <data key="d1">Personal Care Products</data>
+      <data key="d2">Kenvue</data>
+    </node>
+    <node id="L">
+      <data key="d0">Financials</data>
+      <data key="d1">Multi-line Insurance</data>
+      <data key="d2">Loews Corporation</data>
+    </node>
+    <node id="LDOS">
+      <data key="d0">Industrials</data>
+      <data key="d1">Diversified Support Services</data>
+      <data key="d2">Leidos</data>
+    </node>
+    <node id="LEN">
+      <data key="d0">Consumer Discretionary</data>
+      <data key="d1">Homebuilding</data>
+      <data key="d2">Lennar</data>
+    </node>
+    <node id="LH">
+      <data key="d0">Health Care</data>
+      <data key="d1">Health Care Services</data>
+      <data key="d2">Labcorp</data>
+    </node>
+    <node id="LHX">
+      <data key="d0">Industrials</data>
+      <data key="d1">Aerospace &amp; Defense</data>
+      <data key="d2">L3Harris</data>
+    </node>
+    <node id="LII">
+      <data key="d0">Industrials</data>
+      <data key="d1">Building Products</data>
+      <data key="d2">Lennox International</data>
+    </node>
+    <node id="LIN">
+      <data key="d0">Materials</data>
+      <data key="d1">Industrial Gases</data>
+      <data key="d2">Linde plc</data>
+    </node>
+    <node id="LITE">
+      <data key="d0">Information Technology</data>
+      <data key="d1">Communications Equipment</data>
+      <data key="d2">Lumentum</data>
+    </node>
+    <node id="LLY">
+      <data key="d0">Health Care</data>
+      <data key="d1">Pharmaceuticals</data>
+      <data key="d2">Lilly (Eli)</data>
+    </node>
+    <node id="LMT">
+      <data key="d0">Industrials</data>
+      <data key="d1">Aerospace &amp; Defense</data>
+      <data key="d2">Lockheed Martin</data>
+    </node>
+    <node id="LNT">
+      <data key="d0">Utilities</data>
+      <data key="d1">Electric Utilities</data>
+      <data key="d2">Alliant Energy</data>
+    </node>
+    <node id="LOW">
+      <data key="d0">Consumer Discretionary</data>
+      <data key="d1">Home Improvement Retail</data>
+      <data key="d2">Lowe's</data>
+    </node>
+    <node id="LRCX">
+      <data key="d0">Information Technology</data>
+      <data key="d1">Semiconductor Materials &amp; Equipment</data>
+      <data key="d2">Lam Research</data>
+    </node>
+    <node id="LULU">
+      <data key="d0">Consumer Discretionary</data>
+      <data key="d1">Apparel, Accessories &amp; Luxury Goods</data>
+      <data key="d2">Lululemon Athletica</data>
+    </node>
+    <node id="LUV">
+      <data key="d0">Industrials</data>
+      <data key="d1">Passenger Airlines</data>
+      <data key="d2">Southwest Airlines</data>
+    </node>
+    <node id="LVS">
+      <data key="d0">Consumer Discretionary</data>
+      <data key="d1">Casinos &amp; Gaming</data>
+      <data key="d2">Las Vegas Sands</data>
+    </node>
+    <node id="LYB">
+      <data key="d0">Materials</data>
+      <data key="d1">Specialty Chemicals</data>
+      <data key="d2">LyondellBasell</data>
+    </node>
+    <node id="LYV">
+      <data key="d0">Communication Services</data>
+      <data key="d1">Movies &amp; Entertainment</data>
+      <data key="d2">Live Nation Entertainment</data>
+    </node>
+    <node id="MA">
+      <data key="d0">Financials</data>
+      <data key="d1">Transaction &amp; Payment Processing Services</data>
+      <data key="d2">Mastercard</data>
+    </node>
+    <node id="MAA">
+      <data key="d0">Real Estate</data>
+      <data key="d1">Multi-Family Residential REITs</data>
+      <data key="d2">Mid-America Apartment Communities</data>
+    </node>
+    <node id="MAR">
+      <data key="d0">Consumer Discretionary</data>
+      <data key="d1">Hotels, Resorts &amp; Cruise Lines</data>
+      <data key="d2">Marriott International</data>
+    </node>
+    <node id="MAS">
+      <data key="d0">Industrials</data>
+      <data key="d1">Building Products</data>
+      <data key="d2">Masco</data>
+    </node>
+    <node id="MCD">
+      <data key="d0">Consumer Discretionary</data>
+      <data key="d1">Restaurants</data>
+      <data key="d2">McDonald's</data>
+    </node>
+    <node id="MCHP">
+      <data key="d0">Information Technology</data>
+      <data key="d1">Semiconductors</data>
+      <data key="d2">Microchip Technology</data>
+    </node>
+    <node id="MCK">
+      <data key="d0">Health Care</data>
+      <data key="d1">Health Care Distributors</data>
+      <data key="d2">McKesson Corporation</data>
+    </node>
+    <node id="MCO">
+      <data key="d0">Financials</data>
+      <data key="d1">Financial Exchanges &amp; Data</data>
+      <data key="d2">Moody's Corporation</data>
+    </node>
+    <node id="MDLZ">
+      <data key="d0">Consumer Staples</data>
+      <data key="d1">Packaged Foods &amp; Meats</data>
+      <data key="d2">Mondelez International</data>
+    </node>
+    <node id="MDT">
+      <data key="d0">Health Care</data>
+      <data key="d1">Health Care Equipment</data>
+      <data key="d2">Medtronic</data>
+    </node>
+    <node id="MET">
+      <data key="d0">Financials</data>
+      <data key="d1">Life &amp; Health Insurance</data>
+      <data key="d2">MetLife</data>
+    </node>
+    <node id="META">
+      <data key="d0">Communication Services</data>
+      <data key="d1">Interactive Media &amp; Services</data>
+      <data key="d2">Meta Platforms</data>
+    </node>
+    <node id="MGM">
+      <data key="d0">Consumer Discretionary</data>
+      <data key="d1">Casinos &amp; Gaming</data>
+      <data key="d2">MGM Resorts</data>
+    </node>
+    <node id="MKC">
+      <data key="d0">Consumer Staples</data>
+      <data key="d1">Packaged Foods &amp; Meats</data>
+      <data key="d2">McCormick &amp; Company</data>
+    </node>
+    <node id="MLM">
+      <data key="d0">Materials</data>
+      <data key="d1">Construction Materials</data>
+      <data key="d2">Martin Marietta Materials</data>
+    </node>
+    <node id="MMM">
+      <data key="d0">Industrials</data>
+      <data key="d1">Industrial Conglomerates</data>
+      <data key="d2">3M</data>
+    </node>
+    <node id="MNST">
+      <data key="d0">Consumer Staples</data>
+      <data key="d1">Soft Drinks &amp; Non-alcoholic Beverages</data>
+      <data key="d2">Monster Beverage</data>
+    </node>
+    <node id="MO">
+      <data key="d0">Consumer Staples</data>
+      <data key="d1">Tobacco</data>
+      <data key="d2">Altria</data>
+    </node>
+    <node id="MOS">
+      <data key="d0">Materials</data>
+      <data key="d1">Fertilizers &amp; Agricultural Chemicals</data>
+      <data key="d2">Mosaic Company (The)</data>
+    </node>
+    <node id="MPC">
+      <data key="d0">Energy</data>
+      <data key="d1">Oil &amp; Gas Refining &amp; Marketing</data>
+      <data key="d2">Marathon Petroleum</data>
+    </node>
+    <node id="MPWR">
+      <data key="d0">Information Technology</data>
+      <data key="d1">Semiconductors</data>
+      <data key="d2">Monolithic Power Systems</data>
+    </node>
+    <node id="MRK">
+      <data key="d0">Health Care</data>
+      <data key="d1">Pharmaceuticals</data>
+      <data key="d2">Merck &amp; Co.</data>
+    </node>
+    <node id="MRNA">
+      <data key="d0">Health Care</data>
+      <data key="d1">Biotechnology</data>
+      <data key="d2">Moderna</data>
+    </node>
+    <node id="MRSH">
+      <data key="d0">Financials</data>
+      <data key="d1">Insurance Brokers</data>
+      <data key="d2">Marsh McLennan</data>
+    </node>
+    <node id="MS">
+      <data key="d0">Financials</data>
+      <data key="d1">Investment Banking &amp; Brokerage</data>
+      <data key="d2">Morgan Stanley</data>
+    </node>
+    <node id="MSCI">
+      <data key="d0">Financials</data>
+      <data key="d1">Financial Exchanges &amp; Data</data>
+      <data key="d2">MSCI Inc.</data>
+    </node>
+    <node id="MSFT">
+      <data key="d0">Information Technology</data>
+      <data key="d1">Systems Software</data>
+      <data key="d2">Microsoft</data>
+    </node>
+    <node id="MSI">
+      <data key="d0">Information Technology</data>
+      <data key="d1">Communications Equipment</data>
+      <data key="d2">Motorola Solutions</data>
+    </node>
+    <node id="MTB">
+      <data key="d0">Financials</data>
+      <data key="d1">Regional Banks</data>
+      <data key="d2">M&amp;T Bank</data>
+    </node>
+    <node id="MTD">
+      <data key="d0">Health Care</data>
+      <data key="d1">Life Sciences Tools &amp; Services</data>
+      <data key="d2">Mettler Toledo</data>
+    </node>
+    <node id="MU">
+      <data key="d0">Information Technology</data>
+      <data key="d1">Semiconductors</data>
+      <data key="d2">Micron Technology</data>
+    </node>
+    <node id="NCLH">
+      <data key="d0">Consumer Discretionary</data>
+      <data key="d1">Hotels, Resorts &amp; Cruise Lines</data>
+      <data key="d2">Norwegian Cruise Line Holdings</data>
+    </node>
+    <node id="NDAQ">
+      <data key="d0">Financials</data>
+      <data key="d1">Financial Exchanges &amp; Data</data>
+      <data key="d2">Nasdaq, Inc.</data>
+    </node>
+    <node id="NDSN">
+      <data key="d0">Industrials</data>
+      <data key="d1">Industrial Machinery &amp; Supplies &amp; Components</data>
+      <data key="d2">Nordson Corporation</data>
+    </node>
+    <node id="NEE">
+      <data key="d0">Utilities</data>
+      <data key="d1">Multi-Utilities</data>
+      <data key="d2">NextEra Energy</data>
+    </node>
+    <node id="NEM">
+      <data key="d0">Materials</data>
+      <data key="d1">Gold</data>
+      <data key="d2">Newmont</data>
+    </node>
+    <node id="NFLX">
+      <data key="d0">Communication Services</data>
+      <data key="d1">Movies &amp; Entertainment</data>
+      <data key="d2">Netflix</data>
+    </node>
+    <node id="NI">
+      <data key="d0">Utilities</data>
+      <data key="d1">Multi-Utilities</data>
+      <data key="d2">NiSource</data>
+    </node>
+    <node id="NKE">
+      <data key="d0">Consumer Discretionary</data>
+      <data key="d1">Apparel, Accessories &amp; Luxury Goods</data>
+      <data key="d2">Nike, Inc.</data>
+    </node>
+    <node id="NOC">
+      <data key="d0">Industrials</data>
+      <data key="d1">Aerospace &amp; Defense</data>
+      <data key="d2">Northrop Grumman</data>
+    </node>
+    <node id="NOW">
+      <data key="d0">Information Technology</data>
+      <data key="d1">Systems Software</data>
+      <data key="d2">ServiceNow</data>
+    </node>
+    <node id="NRG">
+      <data key="d0">Utilities</data>
+      <data key="d1">Independent Power Producers &amp; Energy Traders</data>
+      <data key="d2">NRG Energy</data>
+    </node>
+    <node id="NSC">
+      <data key="d0">Industrials</data>
+      <data key="d1">Rail Transportation</data>
+      <data key="d2">Norfolk Southern</data>
+    </node>
+    <node id="NTAP">
+      <data key="d0">Information Technology</data>
+      <data key="d1">Technology Hardware, Storage &amp; Peripherals</data>
+      <data key="d2">NetApp</data>
+    </node>
+    <node id="NTRS">
+      <data key="d0">Financials</data>
+      <data key="d1">Asset Management &amp; Custody Banks</data>
+      <data key="d2">Northern Trust</data>
+    </node>
+    <node id="NUE">
+      <data key="d0">Materials</data>
+      <data key="d1">Steel</data>
+      <data key="d2">Nucor</data>
+    </node>
+    <node id="NVDA">
+      <data key="d0">Information Technology</data>
+      <data key="d1">Semiconductors</data>
+      <data key="d2">Nvidia</data>
+    </node>
+    <node id="NVR">
+      <data key="d0">Consumer Discretionary</data>
+      <data key="d1">Homebuilding</data>
+      <data key="d2">NVR, Inc.</data>
+    </node>
+    <node id="NWS">
+      <data key="d0">Communication Services</data>
+      <data key="d1">Publishing</data>
+      <data key="d2">News Corp (Class B)</data>
+    </node>
+    <node id="NWSA">
+      <data key="d0">Communication Services</data>
+      <data key="d1">Publishing</data>
+      <data key="d2">News Corp (Class A)</data>
+    </node>
+    <node id="NXPI">
+      <data key="d0">Information Technology</data>
+      <data key="d1">Semiconductors</data>
+      <data key="d2">NXP Semiconductors</data>
+    </node>
+    <node id="O">
+      <data key="d0">Real Estate</data>
+      <data key="d1">Retail REITs</data>
+      <data key="d2">Realty Income</data>
+    </node>
+    <node id="ODFL">
+      <data key="d0">Industrials</data>
+      <data key="d1">Cargo Ground Transportation</data>
+      <data key="d2">Old Dominion</data>
+    </node>
+    <node id="OKE">
+      <data key="d0">Energy</data>
+      <data key="d1">Oil &amp; Gas Storage &amp; Transportation</data>
+      <data key="d2">Oneok</data>
+    </node>
+    <node id="OMC">
+      <data key="d0">Communication Services</data>
+      <data key="d1">Advertising</data>
+      <data key="d2">Omnicom Group</data>
+    </node>
+    <node id="ON">
+      <data key="d0">Information Technology</data>
+      <data key="d1">Semiconductors</data>
+      <data key="d2">ON Semiconductor</data>
+    </node>
+    <node id="ORCL">
+      <data key="d0">Information Technology</data>
+      <data key="d1">Application Software</data>
+      <data key="d2">Oracle Corporation</data>
+    </node>
+    <node id="ORLY">
+      <data key="d0">Consumer Discretionary</data>
+      <data key="d1">Automotive Retail</data>
+      <data key="d2">O’Reilly Automotive</data>
+    </node>
+    <node id="OTIS">
+      <data key="d0">Industrials</data>
+      <data key="d1">Industrial Machinery &amp; Supplies &amp; Components</data>
+      <data key="d2">Otis Worldwide</data>
+    </node>
+    <node id="OXY">
+      <data key="d0">Energy</data>
+      <data key="d1">Oil &amp; Gas Exploration &amp; Production</data>
+      <data key="d2">Occidental Petroleum</data>
+    </node>
+    <node id="PANW">
+      <data key="d0">Information Technology</data>
+      <data key="d1">Systems Software</data>
+      <data key="d2">Palo Alto Networks</data>
+    </node>
+    <node id="PAYX">
+      <data key="d0">Industrials</data>
+      <data key="d1">Human Resource &amp; Employment Services</data>
+      <data key="d2">Paychex</data>
+    </node>
+    <node id="PCAR">
+      <data key="d0">Industrials</data>
+      <data key="d1">Construction Machinery &amp; Heavy Transportation Equipment</data>
+      <data key="d2">Paccar</data>
+    </node>
+    <node id="PCG">
+      <data key="d0">Utilities</data>
+      <data key="d1">Multi-Utilities</data>
+      <data key="d2">PG&amp;E Corporation</data>
+    </node>
+    <node id="PEG">
+      <data key="d0">Utilities</data>
+      <data key="d1">Electric Utilities</data>
+      <data key="d2">Public Service Enterprise Group</data>
+    </node>
+    <node id="PEP">
+      <data key="d0">Consumer Staples</data>
+      <data key="d1">Soft Drinks &amp; Non-alcoholic Beverages</data>
+      <data key="d2">PepsiCo</data>
+    </node>
+    <node id="PFE">
+      <data key="d0">Health Care</data>
+      <data key="d1">Pharmaceuticals</data>
+      <data key="d2">Pfizer</data>
+    </node>
+    <node id="PFG">
+      <data key="d0">Financials</data>
+      <data key="d1">Life &amp; Health Insurance</data>
+      <data key="d2">Principal Financial Group</data>
+    </node>
+    <node id="PG">
+      <data key="d0">Consumer Staples</data>
+      <data key="d1">Personal Care Products</data>
+      <data key="d2">Procter &amp; Gamble</data>
+    </node>
+    <node id="PGR">
+      <data key="d0">Financials</data>
+      <data key="d1">Property &amp; Casualty Insurance</data>
+      <data key="d2">Progressive Corporation</data>
+    </node>
+    <node id="PH">
+      <data key="d0">Industrials</data>
+      <data key="d1">Industrial Machinery &amp; Supplies &amp; Components</data>
+      <data key="d2">Parker Hannifin</data>
+    </node>
+    <node id="PHM">
+      <data key="d0">Consumer Discretionary</data>
+      <data key="d1">Homebuilding</data>
+      <data key="d2">PulteGroup</data>
+    </node>
+    <node id="PKG">
+      <data key="d0">Materials</data>
+      <data key="d1">Paper &amp; Plastic Packaging Products &amp; Materials</data>
+      <data key="d2">Packaging Corporation of America</data>
+    </node>
+    <node id="PLD">
+      <data key="d0">Real Estate</data>
+      <data key="d1">Industrial REITs</data>
+      <data key="d2">Prologis</data>
+    </node>
+    <node id="PLTR">
+      <data key="d0">Information Technology</data>
+      <data key="d1">Application Software</data>
+      <data key="d2">Palantir Technologies</data>
+    </node>
+    <node id="PM">
+      <data key="d0">Consumer Staples</data>
+      <data key="d1">Tobacco</data>
+      <data key="d2">Philip Morris International</data>
+    </node>
+    <node id="PNC">
+      <data key="d0">Financials</data>
+      <data key="d1">Diversified Banks</data>
+      <data key="d2">PNC Financial Services</data>
+    </node>
+    <node id="PNR">
+      <data key="d0">Industrials</data>
+      <data key="d1">Industrial Machinery &amp; Supplies &amp; Components</data>
+      <data key="d2">Pentair</data>
+    </node>
+    <node id="PNW">
+      <data key="d0">Utilities</data>
+      <data key="d1">Multi-Utilities</data>
+      <data key="d2">Pinnacle West Capital</data>
+    </node>
+    <node id="PODD">
+      <data key="d0">Health Care</data>
+      <data key="d1">Health Care Equipment</data>
+      <data key="d2">Insulet Corporation</data>
+    </node>
+    <node id="POOL">
+      <data key="d0">Consumer Discretionary</data>
+      <data key="d1">Distributors</data>
+      <data key="d2">Pool Corporation</data>
+    </node>
+    <node id="PPG">
+      <data key="d0">Materials</data>
+      <data key="d1">Specialty Chemicals</data>
+      <data key="d2">PPG Industries</data>
+    </node>
+    <node id="PPL">
+      <data key="d0">Utilities</data>
+      <data key="d1">Electric Utilities</data>
+      <data key="d2">PPL Corporation</data>
+    </node>
+    <node id="PRU">
+      <data key="d0">Financials</data>
+      <data key="d1">Life &amp; Health Insurance</data>
+      <data key="d2">Prudential Financial</data>
+    </node>
+    <node id="PSA">
+      <data key="d0">Real Estate</data>
+      <data key="d1">Self-Storage REITs</data>
+      <data key="d2">Public Storage</data>
+    </node>
+    <node id="PSKY">
+      <data key="d0">Communication Services</data>
+      <data key="d1">Movies &amp; Entertainment</data>
+      <data key="d2">Paramount Skydance Corporation</data>
+    </node>
+    <node id="PSX">
+      <data key="d0">Energy</data>
+      <data key="d1">Oil &amp; Gas Refining &amp; Marketing</data>
+      <data key="d2">Phillips 66</data>
+    </node>
+    <node id="PTC">
+      <data key="d0">Information Technology</data>
+      <data key="d1">Application Software</data>
+      <data key="d2">PTC Inc.</data>
+    </node>
+    <node id="PWR">
+      <data key="d0">Industrials</data>
+      <data key="d1">Construction &amp; Engineering</data>
+      <data key="d2">Quanta Services</data>
+    </node>
+    <node id="PYPL">
+      <data key="d0">Financials</data>
+      <data key="d1">Transaction &amp; Payment Processing Services</data>
+      <data key="d2">PayPal</data>
+    </node>
+    <node id="QCOM">
+      <data key="d0">Information Technology</data>
+      <data key="d1">Semiconductors</data>
+      <data key="d2">Qualcomm</data>
+    </node>
+    <node id="RCL">
+      <data key="d0">Consumer Discretionary</data>
+      <data key="d1">Hotels, Resorts &amp; Cruise Lines</data>
+      <data key="d2">Royal Caribbean Group</data>
+    </node>
+    <node id="REG">
+      <data key="d0">Real Estate</data>
+      <data key="d1">Retail REITs</data>
+      <data key="d2">Regency Centers</data>
+    </node>
+    <node id="REGN">
+      <data key="d0">Health Care</data>
+      <data key="d1">Biotechnology</data>
+      <data key="d2">Regeneron Pharmaceuticals</data>
+    </node>
+    <node id="RF">
+      <data key="d0">Financials</data>
+      <data key="d1">Regional Banks</data>
+      <data key="d2">Regions Financial Corporation</data>
+    </node>
+    <node id="RJF">
+      <data key="d0">Financials</data>
+      <data key="d1">Investment Banking &amp; Brokerage</data>
+      <data key="d2">Raymond James Financial</data>
+    </node>
+    <node id="RL">
+      <data key="d0">Consumer Discretionary</data>
+      <data key="d1">Apparel, Accessories &amp; Luxury Goods</data>
+      <data key="d2">Ralph Lauren Corporation</data>
+    </node>
+    <node id="RMD">
+      <data key="d0">Health Care</data>
+      <data key="d1">Health Care Equipment</data>
+      <data key="d2">ResMed</data>
+    </node>
+    <node id="ROK">
+      <data key="d0">Industrials</data>
+      <data key="d1">Electrical Components &amp; Equipment</data>
+      <data key="d2">Rockwell Automation</data>
+    </node>
+    <node id="ROL">
+      <data key="d0">Industrials</data>
+      <data key="d1">Environmental &amp; Facilities Services</data>
+      <data key="d2">Rollins, Inc.</data>
+    </node>
+    <node id="ROP">
+      <data key="d0">Information Technology</data>
+      <data key="d1">Electronic Equipment &amp; Instruments</data>
+      <data key="d2">Roper Technologies</data>
+    </node>
+    <node id="ROST">
+      <data key="d0">Consumer Discretionary</data>
+      <data key="d1">Apparel Retail</data>
+      <data key="d2">Ross Stores</data>
+    </node>
+    <node id="RSG">
+      <data key="d0">Industrials</data>
+      <data key="d1">Environmental &amp; Facilities Services</data>
+      <data key="d2">Republic Services</data>
+    </node>
+    <node id="RTX">
+      <data key="d0">Industrials</data>
+      <data key="d1">Aerospace &amp; Defense</data>
+      <data key="d2">RTX Corporation</data>
+    </node>
+    <node id="RVTY">
+      <data key="d0">Health Care</data>
+      <data key="d1">Health Care Equipment</data>
+      <data key="d2">Revvity</data>
+    </node>
+    <node id="SATS">
+      <data key="d0">Communication Services</data>
+      <data key="d1">Wireless Telecommunication Services</data>
+      <data key="d2">EchoStar</data>
+    </node>
+    <node id="SBAC">
+      <data key="d0">Real Estate</data>
+      <data key="d1">Telecom Tower REITs</data>
+      <data key="d2">SBA Communications</data>
+    </node>
+    <node id="SBUX">
+      <data key="d0">Consumer Discretionary</data>
+      <data key="d1">Restaurants</data>
+      <data key="d2">Starbucks</data>
+    </node>
+    <node id="SCHW">
+      <data key="d0">Financials</data>
+      <data key="d1">Investment Banking &amp; Brokerage</data>
+      <data key="d2">Charles Schwab Corporation</data>
+    </node>
+    <node id="SHW">
+      <data key="d0">Materials</data>
+      <data key="d1">Specialty Chemicals</data>
+      <data key="d2">Sherwin-Williams</data>
+    </node>
+    <node id="SJM">
+      <data key="d0">Consumer Staples</data>
+      <data key="d1">Packaged Foods &amp; Meats</data>
+      <data key="d2">J.M. Smucker Company (The)</data>
+    </node>
+    <node id="SLB">
+      <data key="d0">Energy</data>
+      <data key="d1">Oil &amp; Gas Equipment &amp; Services</data>
+      <data key="d2">Schlumberger</data>
+    </node>
+    <node id="SMCI">
+      <data key="d0">Information Technology</data>
+      <data key="d1">Technology Hardware, Storage &amp; Peripherals</data>
+      <data key="d2">Supermicro</data>
+    </node>
+    <node id="SNA">
+      <data key="d0">Industrials</data>
+      <data key="d1">Industrial Machinery &amp; Supplies &amp; Components</data>
+      <data key="d2">Snap-on</data>
+    </node>
+    <node id="SNPS">
+      <data key="d0">Information Technology</data>
+      <data key="d1">Application Software</data>
+      <data key="d2">Synopsys</data>
+    </node>
+    <node id="SO">
+      <data key="d0">Utilities</data>
+      <data key="d1">Electric Utilities</data>
+      <data key="d2">Southern Company</data>
+    </node>
+    <node id="SOLV">
+      <data key="d0">Health Care</data>
+      <data key="d1">Health Care Technology</data>
+      <data key="d2">Solventum</data>
+    </node>
+    <node id="SPG">
+      <data key="d0">Real Estate</data>
+      <data key="d1">Retail REITs</data>
+      <data key="d2">Simon Property Group</data>
+    </node>
+    <node id="SPGI">
+      <data key="d0">Financials</data>
+      <data key="d1">Financial Exchanges &amp; Data</data>
+      <data key="d2">S&amp;P Global</data>
+    </node>
+    <node id="SRE">
+      <data key="d0">Utilities</data>
+      <data key="d1">Multi-Utilities</data>
+      <data key="d2">Sempra</data>
+    </node>
+    <node id="STE">
+      <data key="d0">Health Care</data>
+      <data key="d1">Health Care Equipment</data>
+      <data key="d2">Steris</data>
+    </node>
+    <node id="STLD">
+      <data key="d0">Materials</data>
+      <data key="d1">Steel</data>
+      <data key="d2">Steel Dynamics</data>
+    </node>
+    <node id="STT">
+      <data key="d0">Financials</data>
+      <data key="d1">Asset Management &amp; Custody Banks</data>
+      <data key="d2">State Street Corporation</data>
+    </node>
+    <node id="STX">
+      <data key="d0">Information Technology</data>
+      <data key="d1">Technology Hardware, Storage &amp; Peripherals</data>
+      <data key="d2">Seagate Technology</data>
+    </node>
+    <node id="STZ">
+      <data key="d0">Consumer Staples</data>
+      <data key="d1">Distillers &amp; Vintners</data>
+      <data key="d2">Constellation Brands</data>
+    </node>
+    <node id="SW">
+      <data key="d0">Materials</data>
+      <data key="d1">Paper &amp; Plastic Packaging Products &amp; Materials</data>
+      <data key="d2">Smurfit Westrock</data>
+    </node>
+    <node id="SWK">
+      <data key="d0">Industrials</data>
+      <data key="d1">Industrial Machinery &amp; Supplies &amp; Components</data>
+      <data key="d2">Stanley Black &amp; Decker</data>
+    </node>
+    <node id="SWKS">
+      <data key="d0">Information Technology</data>
+      <data key="d1">Semiconductors</data>
+      <data key="d2">Skyworks Solutions</data>
+    </node>
+    <node id="SYF">
+      <data key="d0">Financials</data>
+      <data key="d1">Consumer Finance</data>
+      <data key="d2">Synchrony Financial</data>
+    </node>
+    <node id="SYK">
+      <data key="d0">Health Care</data>
+      <data key="d1">Health Care Equipment</data>
+      <data key="d2">Stryker Corporation</data>
+    </node>
+    <node id="SYY">
+      <data key="d0">Consumer Staples</data>
+      <data key="d1">Food Distributors</data>
+      <data key="d2">Sysco</data>
+    </node>
+    <node id="T">
+      <data key="d0">Communication Services</data>
+      <data key="d1">Integrated Telecommunication Services</data>
+      <data key="d2">AT&amp;T</data>
+    </node>
+    <node id="TAP">
+      <data key="d0">Consumer Staples</data>
+      <data key="d1">Brewers</data>
+      <data key="d2">Molson Coors Beverage Company</data>
+    </node>
+    <node id="TDG">
+      <data key="d0">Industrials</data>
+      <data key="d1">Aerospace &amp; Defense</data>
+      <data key="d2">TransDigm Group</data>
+    </node>
+    <node id="TDY">
+      <data key="d0">Information Technology</data>
+      <data key="d1">Electronic Equipment &amp; Instruments</data>
+      <data key="d2">Teledyne Technologies</data>
+    </node>
+    <node id="TECH">
+      <data key="d0">Health Care</data>
+      <data key="d1">Life Sciences Tools &amp; Services</data>
+      <data key="d2">Bio-Techne</data>
+    </node>
+    <node id="TEL">
+      <data key="d0">Information Technology</data>
+      <data key="d1">Electronic Manufacturing Services</data>
+      <data key="d2">TE Connectivity</data>
+    </node>
+    <node id="TER">
+      <data key="d0">Information Technology</data>
+      <data key="d1">Semiconductor Materials &amp; Equipment</data>
+      <data key="d2">Teradyne</data>
+    </node>
+    <node id="TFC">
+      <data key="d0">Financials</data>
+      <data key="d1">Diversified Banks</data>
+      <data key="d2">Truist Financial</data>
+    </node>
+    <node id="TGT">
+      <data key="d0">Consumer Staples</data>
+      <data key="d1">Consumer Staples Merchandise Retail</data>
+      <data key="d2">Target Corporation</data>
+    </node>
+    <node id="TJX">
+      <data key="d0">Consumer Discretionary</data>
+      <data key="d1">Apparel Retail</data>
+      <data key="d2">TJX Companies</data>
+    </node>
+    <node id="TKO">
+      <data key="d0">Communication Services</data>
+      <data key="d1">Movies &amp; Entertainment</data>
+      <data key="d2">TKO Group Holdings</data>
+    </node>
+    <node id="TMO">
+      <data key="d0">Health Care</data>
+      <data key="d1">Life Sciences Tools &amp; Services</data>
+      <data key="d2">Thermo Fisher Scientific</data>
+    </node>
+    <node id="TMUS">
+      <data key="d0">Communication Services</data>
+      <data key="d1">Wireless Telecommunication Services</data>
+      <data key="d2">T-Mobile US</data>
+    </node>
+    <node id="TPL">
+      <data key="d0">Energy</data>
+      <data key="d1">Oil &amp; Gas Exploration &amp; Production</data>
+      <data key="d2">Texas Pacific Land Corporation</data>
+    </node>
+    <node id="TPR">
+      <data key="d0">Consumer Discretionary</data>
+      <data key="d1">Apparel, Accessories &amp; Luxury Goods</data>
+      <data key="d2">Tapestry, Inc.</data>
+    </node>
+    <node id="TRGP">
+      <data key="d0">Energy</data>
+      <data key="d1">Oil &amp; Gas Storage &amp; Transportation</data>
+      <data key="d2">Targa Resources</data>
+    </node>
+    <node id="TRMB">
+      <data key="d0">Information Technology</data>
+      <data key="d1">Electronic Equipment &amp; Instruments</data>
+      <data key="d2">Trimble Inc.</data>
+    </node>
+    <node id="TROW">
+      <data key="d0">Financials</data>
+      <data key="d1">Asset Management &amp; Custody Banks</data>
+      <data key="d2">T. Rowe Price</data>
+    </node>
+    <node id="TRV">
+      <data key="d0">Financials</data>
+      <data key="d1">Property &amp; Casualty Insurance</data>
+      <data key="d2">Travelers Companies (The)</data>
+    </node>
+    <node id="TSCO">
+      <data key="d0">Consumer Discretionary</data>
+      <data key="d1">Other Specialty Retail</data>
+      <data key="d2">Tractor Supply</data>
+    </node>
+    <node id="TSLA">
+      <data key="d0">Consumer Discretionary</data>
+      <data key="d1">Automobile Manufacturers</data>
+      <data key="d2">Tesla, Inc.</data>
+    </node>
+    <node id="TSN">
+      <data key="d0">Consumer Staples</data>
+      <data key="d1">Packaged Foods &amp; Meats</data>
+      <data key="d2">Tyson Foods</data>
+    </node>
+    <node id="TT">
+      <data key="d0">Industrials</data>
+      <data key="d1">Building Products</data>
+      <data key="d2">Trane Technologies</data>
+    </node>
+    <node id="TTD">
+      <data key="d0">Communication Services</data>
+      <data key="d1">Advertising</data>
+      <data key="d2">Trade Desk (The)</data>
+    </node>
+    <node id="TTWO">
+      <data key="d0">Communication Services</data>
+      <data key="d1">Interactive Home Entertainment</data>
+      <data key="d2">Take-Two Interactive</data>
+    </node>
+    <node id="TXN">
+      <data key="d0">Information Technology</data>
+      <data key="d1">Semiconductors</data>
+      <data key="d2">Texas Instruments</data>
+    </node>
+    <node id="TXT">
+      <data key="d0">Industrials</data>
+      <data key="d1">Aerospace &amp; Defense</data>
+      <data key="d2">Textron</data>
+    </node>
+    <node id="TYL">
+      <data key="d0">Information Technology</data>
+      <data key="d1">Application Software</data>
+      <data key="d2">Tyler Technologies</data>
+    </node>
+    <node id="UAL">
+      <data key="d0">Industrials</data>
+      <data key="d1">Passenger Airlines</data>
+      <data key="d2">United Airlines Holdings</data>
+    </node>
+    <node id="UBER">
+      <data key="d0">Industrials</data>
+      <data key="d1">Passenger Ground Transportation</data>
+      <data key="d2">Uber</data>
+    </node>
+    <node id="UDR">
+      <data key="d0">Real Estate</data>
+      <data key="d1">Multi-Family Residential REITs</data>
+      <data key="d2">UDR, Inc.</data>
+    </node>
+    <node id="UHS">
+      <data key="d0">Health Care</data>
+      <data key="d1">Health Care Facilities</data>
+      <data key="d2">Universal Health Services</data>
+    </node>
+    <node id="ULTA">
+      <data key="d0">Consumer Discretionary</data>
+      <data key="d1">Other Specialty Retail</data>
+      <data key="d2">Ulta Beauty</data>
+    </node>
+    <node id="UNH">
+      <data key="d0">Health Care</data>
+      <data key="d1">Managed Health Care</data>
+      <data key="d2">UnitedHealth Group</data>
+    </node>
+    <node id="UNP">
+      <data key="d0">Industrials</data>
+      <data key="d1">Rail Transportation</data>
+      <data key="d2">Union Pacific Corporation</data>
+    </node>
+    <node id="UPS">
+      <data key="d0">Industrials</data>
+      <data key="d1">Air Freight &amp; Logistics</data>
+      <data key="d2">United Parcel Service</data>
+    </node>
+    <node id="URI">
+      <data key="d0">Industrials</data>
+      <data key="d1">Trading Companies &amp; Distributors</data>
+      <data key="d2">United Rentals</data>
+    </node>
+    <node id="USB">
+      <data key="d0">Financials</data>
+      <data key="d1">Diversified Banks</data>
+      <data key="d2">U.S. Bancorp</data>
+    </node>
+    <node id="V">
+      <data key="d0">Financials</data>
+      <data key="d1">Transaction &amp; Payment Processing Services</data>
+      <data key="d2">Visa Inc.</data>
+    </node>
+    <node id="VICI">
+      <data key="d0">Real Estate</data>
+      <data key="d1">Hotel &amp; Resort REITs</data>
+      <data key="d2">Vici Properties</data>
+    </node>
+    <node id="VLO">
+      <data key="d0">Energy</data>
+      <data key="d1">Oil &amp; Gas Refining &amp; Marketing</data>
+      <data key="d2">Valero Energy</data>
+    </node>
+    <node id="VLTO">
+      <data key="d0">Industrials</data>
+      <data key="d1">Environmental &amp; Facilities Services</data>
+      <data key="d2">Veralto</data>
+    </node>
+    <node id="VMC">
+      <data key="d0">Materials</data>
+      <data key="d1">Construction Materials</data>
+      <data key="d2">Vulcan Materials Company</data>
+    </node>
+    <node id="VRSK">
+      <data key="d0">Industrials</data>
+      <data key="d1">Research &amp; Consulting Services</data>
+      <data key="d2">Verisk Analytics</data>
+    </node>
+    <node id="VRSN">
+      <data key="d0">Information Technology</data>
+      <data key="d1">Internet Services &amp; Infrastructure</data>
+      <data key="d2">Verisign</data>
+    </node>
+    <node id="VRT">
+      <data key="d0">Industrials</data>
+      <data key="d1">Electrical Components &amp; Equipment</data>
+      <data key="d2">Vertiv</data>
+    </node>
+    <node id="VRTX">
+      <data key="d0">Health Care</data>
+      <data key="d1">Biotechnology</data>
+      <data key="d2">Vertex Pharmaceuticals</data>
+    </node>
+    <node id="VST">
+      <data key="d0">Utilities</data>
+      <data key="d1">Electric Utilities</data>
+      <data key="d2">Vistra Corp.</data>
+    </node>
+    <node id="VTR">
+      <data key="d0">Real Estate</data>
+      <data key="d1">Health Care REITs</data>
+      <data key="d2">Ventas</data>
+    </node>
+    <node id="VTRS">
+      <data key="d0">Health Care</data>
+      <data key="d1">Pharmaceuticals</data>
+      <data key="d2">Viatris</data>
+    </node>
+    <node id="VZ">
+      <data key="d0">Communication Services</data>
+      <data key="d1">Integrated Telecommunication Services</data>
+      <data key="d2">Verizon</data>
+    </node>
+    <node id="WAB">
+      <data key="d0">Industrials</data>
+      <data key="d1">Construction Machinery &amp; Heavy Transportation Equipment</data>
+      <data key="d2">Wabtec</data>
+    </node>
+    <node id="WAT">
+      <data key="d0">Health Care</data>
+      <data key="d1">Life Sciences Tools &amp; Services</data>
+      <data key="d2">Waters Corporation</data>
+    </node>
+    <node id="WBD">
+      <data key="d0">Communication Services</data>
+      <data key="d1">Broadcasting</data>
+      <data key="d2">Warner Bros. Discovery</data>
+    </node>
+    <node id="WDAY">
+      <data key="d0">Information Technology</data>
+      <data key="d1">Application Software</data>
+      <data key="d2">Workday, Inc.</data>
+    </node>
+    <node id="WDC">
+      <data key="d0">Information Technology</data>
+      <data key="d1">Technology Hardware, Storage &amp; Peripherals</data>
+      <data key="d2">Western Digital</data>
+    </node>
+    <node id="WEC">
+      <data key="d0">Utilities</data>
+      <data key="d1">Electric Utilities</data>
+      <data key="d2">WEC Energy Group</data>
+    </node>
+    <node id="WELL">
+      <data key="d0">Real Estate</data>
+      <data key="d1">Health Care REITs</data>
+      <data key="d2">Welltower</data>
+    </node>
+    <node id="WFC">
+      <data key="d0">Financials</data>
+      <data key="d1">Diversified Banks</data>
+      <data key="d2">Wells Fargo</data>
+    </node>
+    <node id="WM">
+      <data key="d0">Industrials</data>
+      <data key="d1">Environmental &amp; Facilities Services</data>
+      <data key="d2">Waste Management</data>
+    </node>
+    <node id="WMB">
+      <data key="d0">Energy</data>
+      <data key="d1">Oil &amp; Gas Storage &amp; Transportation</data>
+      <data key="d2">Williams Companies</data>
+    </node>
+    <node id="WMT">
+      <data key="d0">Consumer Staples</data>
+      <data key="d1">Consumer Staples Merchandise Retail</data>
+      <data key="d2">Walmart</data>
+    </node>
+    <node id="WRB">
+      <data key="d0">Financials</data>
+      <data key="d1">Property &amp; Casualty Insurance</data>
+      <data key="d2">W. R. Berkley Corporation</data>
+    </node>
+    <node id="WSM">
+      <data key="d0">Consumer Discretionary</data>
+      <data key="d1">Homefurnishing Retail</data>
+      <data key="d2">Williams-Sonoma, Inc.</data>
+    </node>
+    <node id="WST">
+      <data key="d0">Health Care</data>
+      <data key="d1">Health Care Supplies</data>
+      <data key="d2">West Pharmaceutical Services</data>
+    </node>
+    <node id="WTW">
+      <data key="d0">Financials</data>
+      <data key="d1">Insurance Brokers</data>
+      <data key="d2">Willis Towers Watson</data>
+    </node>
+    <node id="WY">
+      <data key="d0">Real Estate</data>
+      <data key="d1">Timber REITs</data>
+      <data key="d2">Weyerhaeuser</data>
+    </node>
+    <node id="WYNN">
+      <data key="d0">Consumer Discretionary</data>
+      <data key="d1">Casinos &amp; Gaming</data>
+      <data key="d2">Wynn Resorts</data>
+    </node>
+    <node id="XEL">
+      <data key="d0">Utilities</data>
+      <data key="d1">Multi-Utilities</data>
+      <data key="d2">Xcel Energy</data>
+    </node>
+    <node id="XOM">
+      <data key="d0">Energy</data>
+      <data key="d1">Integrated Oil &amp; Gas</data>
+      <data key="d2">ExxonMobil</data>
+    </node>
+    <node id="XYL">
+      <data key="d0">Industrials</data>
+      <data key="d1">Industrial Machinery &amp; Supplies &amp; Components</data>
+      <data key="d2">Xylem Inc.</data>
+    </node>
+    <node id="XYZ">
+      <data key="d0">Financials</data>
+      <data key="d1">Transaction &amp; Payment Processing Services</data>
+      <data key="d2">Block, Inc.</data>
+    </node>
+    <node id="YUM">
+      <data key="d0">Consumer Discretionary</data>
+      <data key="d1">Restaurants</data>
+      <data key="d2">Yum! Brands</data>
+    </node>
+    <node id="ZBH">
+      <data key="d0">Health Care</data>
+      <data key="d1">Health Care Equipment</data>
+      <data key="d2">Zimmer Biomet</data>
+    </node>
+    <node id="ZBRA">
+      <data key="d0">Information Technology</data>
+      <data key="d1">Electronic Equipment &amp; Instruments</data>
+      <data key="d2">Zebra Technologies</data>
+    </node>
+    <node id="ZTS">
+      <data key="d0">Health Care</data>
+      <data key="d1">Pharmaceuticals</data>
+      <data key="d2">Zoetis</data>
+    </node>
+    <edge source="A" target="MTD">
+      <data key="d3">0.6523721894877802</data>
+    </edge>
+    <edge source="A" target="WAT">
+      <data key="d3">0.6978106736954679</data>
+    </edge>
+    <edge source="A" target="TMO">
+      <data key="d3">0.7010896605705488</data>
+    </edge>
+    <edge source="AAPL" target="SWKS">
+      <data key="d3">0.9746902059527682</data>
+    </edge>
+    <edge source="ABBV" target="AMGN">
+      <data key="d3">1.038202697685971</data>
+    </edge>
+    <edge source="ABNB" target="CCL">
+      <data key="d3">0.9748485659602447</data>
+    </edge>
+    <edge source="ABT" target="SYK">
+      <data key="d3">1.0465196465661801</data>
+    </edge>
+    <edge source="ACGL" target="HIG">
+      <data key="d3">0.7311626957494103</data>
+    </edge>
+    <edge source="ACGL" target="EG">
+      <data key="d3">0.7815690196007271</data>
+    </edge>
+    <edge source="ACN" target="CTSH">
+      <data key="d3">0.7058203469626034</data>
+    </edge>
+    <edge source="ACN" target="IT">
+      <data key="d3">0.9078648925382123</data>
+    </edge>
+    <edge source="ADBE" target="CRM">
+      <data key="d3">0.9196779869495313</data>
+    </edge>
+    <edge source="ADI" target="MCHP">
+      <data key="d3">0.5676711605555415</data>
+    </edge>
+    <edge source="ADI" target="NXPI">
+      <data key="d3">0.5705750406066727</data>
+    </edge>
+    <edge source="ADI" target="TXN">
+      <data key="d3">0.6007812072739676</data>
+    </edge>
+    <edge source="ADI" target="MPWR">
+      <data key="d3">0.7685987624406815</data>
+    </edge>
+    <edge source="ADI" target="SWKS">
+      <data key="d3">0.8781531096927967</data>
+    </edge>
+    <edge source="ADM" target="BG">
+      <data key="d3">0.782778355934626</data>
+    </edge>
+    <edge source="ADM" target="MOS">
+      <data key="d3">1.0784603687708045</data>
+    </edge>
+    <edge source="ADP" target="PAYX">
+      <data key="d3">0.5601456873355071</data>
+    </edge>
+    <edge source="ADP" target="BR">
+      <data key="d3">0.8762435645512536</data>
+    </edge>
+    <edge source="ADP" target="MA">
+      <data key="d3">0.8858675035039041</data>
+    </edge>
+    <edge source="ADP" target="ROP">
+      <data key="d3">0.9012313212438164</data>
+    </edge>
+    <edge source="ADP" target="FIS">
+      <data key="d3">0.9444557582103176</data>
+    </edge>
+    <edge source="ADP" target="CTAS">
+      <data key="d3">0.9922065740122094</data>
+    </edge>
+    <edge source="ADP" target="CPRT">
+      <data key="d3">1.0415425610534712</data>
+    </edge>
+    <edge source="ADP" target="FISV">
+      <data key="d3">1.0587868070898705</data>
+    </edge>
+    <edge source="ADSK" target="NOW">
+      <data key="d3">0.9016732080422125</data>
+    </edge>
+    <edge source="ADSK" target="PTC">
+      <data key="d3">0.9591020009059382</data>
+    </edge>
+    <edge source="AEE" target="LNT">
+      <data key="d3">0.56285529761582</data>
+    </edge>
+    <edge source="AEE" target="WEC">
+      <data key="d3">0.5712412045826842</data>
+    </edge>
+    <edge source="AEE" target="PPL">
+      <data key="d3">0.6394186584906372</data>
+    </edge>
+    <edge source="AEE" target="EVRG">
+      <data key="d3">0.6460273887532394</data>
+    </edge>
+    <edge source="AEE" target="PNW">
+      <data key="d3">0.6651579738982449</data>
+    </edge>
+    <edge source="AEE" target="NI">
+      <data key="d3">0.722254675053875</data>
+    </edge>
+    <edge source="AEP" target="DUK">
+      <data key="d3">0.7078932080278987</data>
+    </edge>
+    <edge source="AES" target="NEE">
+      <data key="d3">0.9996228102973846</data>
+    </edge>
+    <edge source="AES" target="FSLR">
+      <data key="d3">1.1099104199593959</data>
+    </edge>
+    <edge source="AFL" target="L">
+      <data key="d3">0.7821474923576645</data>
+    </edge>
+    <edge source="AIG" target="HIG">
+      <data key="d3">0.8441048974117963</data>
+    </edge>
+    <edge source="AIZ" target="L">
+      <data key="d3">0.7700318557889324</data>
+    </edge>
+    <edge source="AJG" target="BRO">
+      <data key="d3">0.6741902607532321</data>
+    </edge>
+    <edge source="AJG" target="MRSH">
+      <data key="d3">0.7154935055133809</data>
+    </edge>
+    <edge source="AJG" target="WTW">
+      <data key="d3">0.7721120690957092</data>
+    </edge>
+    <edge source="AKAM" target="NDSN">
+      <data key="d3">1.1242684549202207</data>
+    </edge>
+    <edge source="ALB" target="FCX">
+      <data key="d3">1.003416126751845</data>
+    </edge>
+    <edge source="ALGN" target="BAX">
+      <data key="d3">0.948262816306503</data>
+    </edge>
+    <edge source="ALGN" target="DXCM">
+      <data key="d3">1.1898350546651992</data>
+    </edge>
+    <edge source="ALL" target="HIG">
+      <data key="d3">0.7440131202374349</data>
+    </edge>
+    <edge source="ALL" target="PGR">
+      <data key="d3">0.761468467924917</data>
+    </edge>
+    <edge source="ALLE" target="ITW">
+      <data key="d3">0.8497326369389155</data>
+    </edge>
+    <edge source="AMAT" target="LRCX">
+      <data key="d3">0.4394722289527175</data>
+    </edge>
+    <edge source="AMAT" target="TER">
+      <data key="d3">0.7786869871950319</data>
+    </edge>
+    <edge source="AMCR" target="PPG">
+      <data key="d3">0.9534167295780637</data>
+    </edge>
+    <edge source="AMD" target="LRCX">
+      <data key="d3">0.8755372372543487</data>
+    </edge>
+    <edge source="AME" target="PH">
+      <data key="d3">0.7851073899460781</data>
+    </edge>
+    <edge source="AMGN" target="BIIB">
+      <data key="d3">0.961942990293618</data>
+    </edge>
+    <edge source="AMGN" target="PFE">
+      <data key="d3">0.9688569386838045</data>
+    </edge>
+    <edge source="AMGN" target="GILD">
+      <data key="d3">1.0833325202558663</data>
+    </edge>
+    <edge source="AMP" target="RJF">
+      <data key="d3">0.6651098250430579</data>
+    </edge>
+    <edge source="AMP" target="MS">
+      <data key="d3">0.7306360117397331</data>
+    </edge>
+    <edge source="AMP" target="CMG">
+      <data key="d3">1.072263218826681</data>
+    </edge>
+    <edge source="AMT" target="CCI">
+      <data key="d3">0.6328732142582213</data>
+    </edge>
+    <edge source="AMT" target="SBAC">
+      <data key="d3">0.719358903747734</data>
+    </edge>
+    <edge source="AMT" target="AWK">
+      <data key="d3">0.9330325927544707</data>
+    </edge>
+    <edge source="AMZN" target="META">
+      <data key="d3">0.8901856543182689</data>
+    </edge>
+    <edge source="AMZN" target="MSFT">
+      <data key="d3">0.9465851924543602</data>
+    </edge>
+    <edge source="AMZN" target="GOOGL">
+      <data key="d3">0.9470002709457384</data>
+    </edge>
+    <edge source="ANET" target="VRT">
+      <data key="d3">0.806177191126999</data>
+    </edge>
+    <edge source="AON" target="MRSH">
+      <data key="d3">0.7549343616906885</data>
+    </edge>
+    <edge source="AON" target="ERIE">
+      <data key="d3">1.002171549642004</data>
+    </edge>
+    <edge source="AOS" target="ITW">
+      <data key="d3">0.8140522735254767</data>
+    </edge>
+    <edge source="APA" target="DVN">
+      <data key="d3">0.5854853494112495</data>
+    </edge>
+    <edge source="APD" target="LIN">
+      <data key="d3">1.0146289469359162</data>
+    </edge>
+    <edge source="APH" target="ETN">
+      <data key="d3">0.8018406295930396</data>
+    </edge>
+    <edge source="APH" target="TEL">
+      <data key="d3">0.815225275618286</data>
+    </edge>
+    <edge source="APO" target="KKR">
+      <data key="d3">0.5627258041872646</data>
+    </edge>
+    <edge source="APP" target="HOOD">
+      <data key="d3">1.0046626502956935</data>
+    </edge>
+    <edge source="APTV" target="SWK">
+      <data key="d3">0.991699074539146</data>
+    </edge>
+    <edge source="APTV" target="EL">
+      <data key="d3">1.0514846432744245</data>
+    </edge>
+    <edge source="ARE" target="DOC">
+      <data key="d3">0.7991945015142301</data>
+    </edge>
+    <edge source="ARES" target="KKR">
+      <data key="d3">0.5651798660336153</data>
+    </edge>
+    <edge source="ATO" target="WEC">
+      <data key="d3">0.6996151109689928</data>
+    </edge>
+    <edge source="AVB" target="EQR">
+      <data key="d3">0.42677968212888545</data>
+    </edge>
+    <edge source="AVB" target="PSA">
+      <data key="d3">0.8355104196402471</data>
+    </edge>
+    <edge source="AVGO" target="NVDA">
+      <data key="d3">0.8213449134170596</data>
+    </edge>
+    <edge source="AVGO" target="ORCL">
+      <data key="d3">1.0037284445641574</data>
+    </edge>
+    <edge source="AVY" target="ITW">
+      <data key="d3">0.8713880969917384</data>
+    </edge>
+    <edge source="AWK" target="ED">
+      <data key="d3">0.768025603138084</data>
+    </edge>
+    <edge source="AWK" target="KR">
+      <data key="d3">1.1434789417383961</data>
+    </edge>
+    <edge source="AXON" target="PLTR">
+      <data key="d3">1.0129204284017819</data>
+    </edge>
+    <edge source="AXP" target="SYF">
+      <data key="d3">0.6245266616769888</data>
+    </edge>
+    <edge source="AXP" target="MET">
+      <data key="d3">0.719549663442988</data>
+    </edge>
+    <edge source="AXP" target="KKR">
+      <data key="d3">0.7571097469560709</data>
+    </edge>
+    <edge source="AXP" target="CPAY">
+      <data key="d3">0.8450379814098585</data>
+    </edge>
+    <edge source="AXP" target="DIS">
+      <data key="d3">0.9633522755332988</data>
+    </edge>
+    <edge source="AZO" target="ORLY">
+      <data key="d3">0.692462154716492</data>
+    </edge>
+    <edge source="BA" target="PH">
+      <data key="d3">1.0498729344202373</data>
+    </edge>
+    <edge source="BAC" target="WFC">
+      <data key="d3">0.5913299000375949</data>
+    </edge>
+    <edge source="BAC" target="C">
+      <data key="d3">0.5926640302301479</data>
+    </edge>
+    <edge source="BAC" target="PNC">
+      <data key="d3">0.6526009244279104</data>
+    </edge>
+    <edge source="BAC" target="STT">
+      <data key="d3">0.7222197585050142</data>
+    </edge>
+    <edge source="BALL" target="ITW">
+      <data key="d3">0.9363677646896155</data>
+    </edge>
+    <edge source="BAX" target="RVTY">
+      <data key="d3">1.02439239159943</data>
+    </edge>
+    <edge source="BAX" target="CI">
+      <data key="d3">1.0414594501450336</data>
+    </edge>
+    <edge source="BBY" target="HPQ">
+      <data key="d3">0.9166269861981715</data>
+    </edge>
+    <edge source="BBY" target="TGT">
+      <data key="d3">0.9955057801823397</data>
+    </edge>
+    <edge source="BDX" target="STE">
+      <data key="d3">1.0430122770201309</data>
+    </edge>
+    <edge source="BDX" target="ZBH">
+      <data key="d3">1.0608672226633895</data>
+    </edge>
+    <edge source="BEN" target="TROW">
+      <data key="d3">0.8538664576885551</data>
+    </edge>
+    <edge source="BF-B" target="STZ">
+      <data key="d3">0.9551910546789474</data>
+    </edge>
+    <edge source="BIIB" target="REGN">
+      <data key="d3">1.0177388943621644</data>
+    </edge>
+    <edge source="BIIB" target="LLY">
+      <data key="d3">1.12045665728441</data>
+    </edge>
+    <edge source="BK" target="STT">
+      <data key="d3">0.6663737202615106</data>
+    </edge>
+    <edge source="BK" target="CSCO">
+      <data key="d3">0.9716463782954877</data>
+    </edge>
+    <edge source="BKNG" target="EXPE">
+      <data key="d3">0.8720335701907862</data>
+    </edge>
+    <edge source="BKNG" target="KKR">
+      <data key="d3">0.9473146644684571</data>
+    </edge>
+    <edge source="BKR" target="SLB">
+      <data key="d3">0.7333958230083292</data>
+    </edge>
+    <edge source="BLDR" target="PHM">
+      <data key="d3">0.7312169574798998</data>
+    </edge>
+    <edge source="BLK" target="STT">
+      <data key="d3">0.7393730600718751</data>
+    </edge>
+    <edge source="BLK" target="IVZ">
+      <data key="d3">0.7740513815415914</data>
+    </edge>
+    <edge source="BMY" target="PFE">
+      <data key="d3">0.9637396459119415</data>
+    </edge>
+    <edge source="BR" target="SPGI">
+      <data key="d3">0.8536975164351293</data>
+    </edge>
+    <edge source="BR" target="VRSN">
+      <data key="d3">1.063586475046174</data>
+    </edge>
+    <edge source="BRK-B" target="L">
+      <data key="d3">0.7833289097397417</data>
+    </edge>
+    <edge source="BSX" target="SYK">
+      <data key="d3">1.0253173108686513</data>
+    </edge>
+    <edge source="BX" target="KKR">
+      <data key="d3">0.580473421348448</data>
+    </edge>
+    <edge source="BXP" target="FRT">
+      <data key="d3">0.8569989866464981</data>
+    </edge>
+    <edge source="BXP" target="CBRE">
+      <data key="d3">0.8920504594082764</data>
+    </edge>
+    <edge source="C" target="GS">
+      <data key="d3">0.6032464390482595</data>
+    </edge>
+    <edge source="CAG" target="GIS">
+      <data key="d3">0.6802467310269139</data>
+    </edge>
+    <edge source="CAG" target="MKC">
+      <data key="d3">0.9353157777810475</data>
+    </edge>
+    <edge source="CAG" target="TAP">
+      <data key="d3">1.0420356642479913</data>
+    </edge>
+    <edge source="CAH" target="COR">
+      <data key="d3">0.8692077883446442</data>
+    </edge>
+    <edge source="CAH" target="L">
+      <data key="d3">1.1243556582221887</data>
+    </edge>
+    <edge source="CARR" target="LII">
+      <data key="d3">0.7754618795665601</data>
+    </edge>
+    <edge source="CASY" target="TJX">
+      <data key="d3">1.157194512843839</data>
+    </edge>
+    <edge source="CAT" target="CMI">
+      <data key="d3">0.7724530669137079</data>
+    </edge>
+    <edge source="CAT" target="EMR">
+      <data key="d3">0.8119032518893238</data>
+    </edge>
+    <edge source="CAT" target="GNRC">
+      <data key="d3">0.9732042942495758</data>
+    </edge>
+    <edge source="CB" target="TRV">
+      <data key="d3">0.7124859867403106</data>
+    </edge>
+    <edge source="CBOE" target="CME">
+      <data key="d3">0.9568210180953811</data>
+    </edge>
+    <edge source="CBOE" target="ED">
+      <data key="d3">1.1024843287769328</data>
+    </edge>
+    <edge source="CBRE" target="TYL">
+      <data key="d3">0.9805674967670087</data>
+    </edge>
+    <edge source="CBRE" target="CSGP">
+      <data key="d3">1.0164814955143038</data>
+    </edge>
+    <edge source="CCL" target="NCLH">
+      <data key="d3">0.5518829048247452</data>
+    </edge>
+    <edge source="CCL" target="RCL">
+      <data key="d3">0.6022094127737357</data>
+    </edge>
+    <edge source="CCL" target="HLT">
+      <data key="d3">0.8436052952872429</data>
+    </edge>
+    <edge source="CDNS" target="SNPS">
+      <data key="d3">0.736108442776462</data>
+    </edge>
+    <edge source="CDNS" target="KLAC">
+      <data key="d3">0.9568248145697034</data>
+    </edge>
+    <edge source="CDNS" target="MSFT">
+      <data key="d3">0.9629829963379849</data>
+    </edge>
+    <edge source="CDNS" target="UBER">
+      <data key="d3">1.0736337189988667</data>
+    </edge>
+    <edge source="CDW" target="SWKS">
+      <data key="d3">0.8982135951098613</data>
+    </edge>
+    <edge source="CEG" target="VST">
+      <data key="d3">0.6060933761429997</data>
+    </edge>
+    <edge source="CF" target="MOS">
+      <data key="d3">0.9347802317867467</data>
+    </edge>
+    <edge source="CFG" target="TFC">
+      <data key="d3">0.4562632889375807</data>
+    </edge>
+    <edge source="CFG" target="KEY">
+      <data key="d3">0.4633297541753552</data>
+    </edge>
+    <edge source="CFG" target="RF">
+      <data key="d3">0.46743230336451463</data>
+    </edge>
+    <edge source="CFG" target="SYF">
+      <data key="d3">0.6262657130501234</data>
+    </edge>
+    <edge source="CFG" target="PH">
+      <data key="d3">0.7955970951084111</data>
+    </edge>
+    <edge source="CFG" target="GM">
+      <data key="d3">1.0208369834965807</data>
+    </edge>
+    <edge source="CHD" target="PG">
+      <data key="d3">0.8360722545185059</data>
+    </edge>
+    <edge source="CHRW" target="EXPD">
+      <data key="d3">0.899562488924599</data>
+    </edge>
+    <edge source="CHTR" target="CMCSA">
+      <data key="d3">0.8617953158434406</data>
+    </edge>
+    <edge source="CI" target="ELV">
+      <data key="d3">1.0501837750775873</data>
+    </edge>
+    <edge source="CIEN" target="LITE">
+      <data key="d3">0.7577570314547796</data>
+    </edge>
+    <edge source="CINF" target="L">
+      <data key="d3">0.633009368647472</data>
+    </edge>
+    <edge source="CL" target="PG">
+      <data key="d3">0.7515536978046876</data>
+    </edge>
+    <edge source="CL" target="KO">
+      <data key="d3">0.8621779759617606</data>
+    </edge>
+    <edge source="CL" target="KVUE">
+      <data key="d3">1.112918063363367</data>
+    </edge>
+    <edge source="CLX" target="PG">
+      <data key="d3">0.9274336318846423</data>
+    </edge>
+    <edge source="CMCSA" target="UPS">
+      <data key="d3">1.0711221947094849</data>
+    </edge>
+    <edge source="CMS" target="DTE">
+      <data key="d3">0.5380363271534286</data>
+    </edge>
+    <edge source="CMS" target="WEC">
+      <data key="d3">0.5726511415523788</data>
+    </edge>
+    <edge source="CNC" target="ELV">
+      <data key="d3">0.8865995295239365</data>
+    </edge>
+    <edge source="CNP" target="DTE">
+      <data key="d3">0.8384525264608661</data>
+    </edge>
+    <edge source="COF" target="SYF">
+      <data key="d3">0.5335341191396129</data>
+    </edge>
+    <edge source="COHR" target="LITE">
+      <data key="d3">0.7041933822553208</data>
+    </edge>
+    <edge source="COIN" target="HOOD">
+      <data key="d3">0.7209199325083109</data>
+    </edge>
+    <edge source="COO" target="PPG">
+      <data key="d3">1.052524032141066</data>
+    </edge>
+    <edge source="COP" target="DVN">
+      <data key="d3">0.5497091391134722</data>
+    </edge>
+    <edge source="COP" target="CVX">
+      <data key="d3">0.6437359277490226</data>
+    </edge>
+    <edge source="COP" target="HAL">
+      <data key="d3">0.7305314163892301</data>
+    </edge>
+    <edge source="COR" target="MCK">
+      <data key="d3">0.7822765800796694</data>
+    </edge>
+    <edge source="COST" target="WMT">
+      <data key="d3">0.9044385002095683</data>
+    </edge>
+    <edge source="COST" target="TJX">
+      <data key="d3">1.0608682508878906</data>
+    </edge>
+    <edge source="CPAY" target="GPN">
+      <data key="d3">0.9445283276841492</data>
+    </edge>
+    <edge source="CPB" target="GIS">
+      <data key="d3">0.728451943564565</data>
+    </edge>
+    <edge source="CPT" target="MAA">
+      <data key="d3">0.4418582730581072</data>
+    </edge>
+    <edge source="CPT" target="UDR">
+      <data key="d3">0.4978444361610021</data>
+    </edge>
+    <edge source="CRH" target="VMC">
+      <data key="d3">0.8024295937769577</data>
+    </edge>
+    <edge source="CRH" target="PH">
+      <data key="d3">0.8301545555521066</data>
+    </edge>
+    <edge source="CRL" target="IQV">
+      <data key="d3">0.7605356282611847</data>
+    </edge>
+    <edge source="CRM" target="NOW">
+      <data key="d3">0.7463314261966115</data>
+    </edge>
+    <edge source="CRWD" target="PANW">
+      <data key="d3">0.8513339956541304</data>
+    </edge>
+    <edge source="CRWD" target="NOW">
+      <data key="d3">0.9182709274868371</data>
+    </edge>
+    <edge source="CRWD" target="DDOG">
+      <data key="d3">0.9356068107254188</data>
+    </edge>
+    <edge source="CSX" target="NSC">
+      <data key="d3">0.7034961191653495</data>
+    </edge>
+    <edge source="CTAS" target="ROL">
+      <data key="d3">1.0204021406439656</data>
+    </edge>
+    <edge source="CTRA" target="DVN">
+      <data key="d3">0.7924042517311127</data>
+    </edge>
+    <edge source="CTRA" target="EQT">
+      <data key="d3">0.8365814801975486</data>
+    </edge>
+    <edge source="CTSH" target="EPAM">
+      <data key="d3">0.8921386256658177</data>
+    </edge>
+    <edge source="CTSH" target="ROP">
+      <data key="d3">0.9074797933872574</data>
+    </edge>
+    <edge source="CTSH" target="GEN">
+      <data key="d3">0.983728172374795</data>
+    </edge>
+    <edge source="CTSH" target="IBM">
+      <data key="d3">1.0042005560013507</data>
+    </edge>
+    <edge source="CTVA" target="DE">
+      <data key="d3">1.0073262204054563</data>
+    </edge>
+    <edge source="CTVA" target="MOS">
+      <data key="d3">1.0116288857889004</data>
+    </edge>
+    <edge source="CVNA" target="META">
+      <data key="d3">1.0063658457300357</data>
+    </edge>
+    <edge source="CVS" target="UNH">
+      <data key="d3">1.046733973073266</data>
+    </edge>
+    <edge source="CVX" target="XOM">
+      <data key="d3">0.6113901566442812</data>
+    </edge>
+    <edge source="CVX" target="PSX">
+      <data key="d3">0.7576891872306691</data>
+    </edge>
+    <edge source="D" target="WEC">
+      <data key="d3">0.7295467639171769</data>
+    </edge>
+    <edge source="D" target="ES">
+      <data key="d3">0.8310867876987441</data>
+    </edge>
+    <edge source="DAL" target="UAL">
+      <data key="d3">0.491892619015526</data>
+    </edge>
+    <edge source="DAL" target="LUV">
+      <data key="d3">0.8706242065870764</data>
+    </edge>
+    <edge source="DASH" target="HOOD">
+      <data key="d3">1.0285783422841055</data>
+    </edge>
+    <edge source="DD" target="PPG">
+      <data key="d3">0.8408074467896676</data>
+    </edge>
+    <edge source="DD" target="GEHC">
+      <data key="d3">0.8893962592705138</data>
+    </edge>
+    <edge source="DD" target="DOW">
+      <data key="d3">0.9046748988960547</data>
+    </edge>
+    <edge source="DD" target="FCX">
+      <data key="d3">0.9074375935486262</data>
+    </edge>
+    <edge source="DD" target="VTRS">
+      <data key="d3">1.047217661539287</data>
+    </edge>
+    <edge source="DD" target="WBD">
+      <data key="d3">1.0894677177040997</data>
+    </edge>
+    <edge source="DDOG" target="TTD">
+      <data key="d3">1.1111486458648212</data>
+    </edge>
+    <edge source="DE" target="ITW">
+      <data key="d3">0.929290978839381</data>
+    </edge>
+    <edge source="DECK" target="RL">
+      <data key="d3">0.9708746040740036</data>
+    </edge>
+    <edge source="DECK" target="ROST">
+      <data key="d3">1.0281322704424107</data>
+    </edge>
+    <edge source="DELL" target="HPE">
+      <data key="d3">0.8616268892867389</data>
+    </edge>
+    <edge source="DG" target="DLTR">
+      <data key="d3">1.0268487878991153</data>
+    </edge>
+    <edge source="DGX" target="LH">
+      <data key="d3">0.7985183025505421</data>
+    </edge>
+    <edge source="DHI" target="PHM">
+      <data key="d3">0.42211011029064316</data>
+    </edge>
+    <edge source="DHR" target="TMO">
+      <data key="d3">0.6492203700510408</data>
+    </edge>
+    <edge source="DHR" target="ZTS">
+      <data key="d3">1.0609642924607712</data>
+    </edge>
+    <edge source="DLR" target="EQIX">
+      <data key="d3">0.8065702750868758</data>
+    </edge>
+    <edge source="DLR" target="IRM">
+      <data key="d3">0.8244670133679761</data>
+    </edge>
+    <edge source="DLR" target="ETN">
+      <data key="d3">0.9787088742153547</data>
+    </edge>
+    <edge source="DLTR" target="TGT">
+      <data key="d3">1.10524902399814</data>
+    </edge>
+    <edge source="DOC" target="KIM">
+      <data key="d3">0.8647141144959168</data>
+    </edge>
+    <edge source="DOV" target="PH">
+      <data key="d3">0.6859203999798457</data>
+    </edge>
+    <edge source="DOV" target="ITW">
+      <data key="d3">0.7342147133681045</data>
+    </edge>
+    <edge source="DOV" target="IR">
+      <data key="d3">0.7388026122024298</data>
+    </edge>
+    <edge source="DOV" target="PNR">
+      <data key="d3">0.8127576384668023</data>
+    </edge>
+    <edge source="DOV" target="FTV">
+      <data key="d3">0.8264255527624164</data>
+    </edge>
+    <edge source="DOV" target="STLD">
+      <data key="d3">0.9158644430270878</data>
+    </edge>
+    <edge source="DOV" target="TDY">
+      <data key="d3">0.942426351432798</data>
+    </edge>
+    <edge source="DOW" target="LYB">
+      <data key="d3">0.4758711927038851</data>
+    </edge>
+    <edge source="DPZ" target="YUM">
+      <data key="d3">1.0729112711962878</data>
+    </edge>
+    <edge source="DRI" target="HST">
+      <data key="d3">1.081011741641192</data>
+    </edge>
+    <edge source="DUK" target="SO">
+      <data key="d3">0.5725561137445653</data>
+    </edge>
+    <edge source="DUK" target="ED">
+      <data key="d3">0.6388820300459966</data>
+    </edge>
+    <edge source="DUK" target="EXC">
+      <data key="d3">0.6858915062764798</data>
+    </edge>
+    <edge source="DUK" target="KO">
+      <data key="d3">0.9912862471343842</data>
+    </edge>
+    <edge source="DUK" target="MO">
+      <data key="d3">1.0636170008810288</data>
+    </edge>
+    <edge source="DVA" target="UHS">
+      <data key="d3">1.1377830118937737</data>
+    </edge>
+    <edge source="DVN" target="FANG">
+      <data key="d3">0.5025520937008466</data>
+    </edge>
+    <edge source="DVN" target="EOG">
+      <data key="d3">0.5508077685923463</data>
+    </edge>
+    <edge source="DVN" target="OXY">
+      <data key="d3">0.5523462719784354</data>
+    </edge>
+    <edge source="EA" target="WRB">
+      <data key="d3">1.227255257285691</data>
+    </edge>
+    <edge source="EBAY" target="XYL">
+      <data key="d3">1.1181558029900713</data>
+    </edge>
+    <edge source="ECL" target="SHW">
+      <data key="d3">0.9433316329376812</data>
+    </edge>
+    <edge source="ECL" target="SYK">
+      <data key="d3">0.9937332456171253</data>
+    </edge>
+    <edge source="ECL" target="LH">
+      <data key="d3">1.006366673764989</data>
+    </edge>
+    <edge source="ED" target="WEC">
+      <data key="d3">0.6559948293689697</data>
+    </edge>
+    <edge source="ED" target="JNJ">
+      <data key="d3">1.0204015515698457</data>
+    </edge>
+    <edge source="ED" target="T">
+      <data key="d3">1.0560903560199144</data>
+    </edge>
+    <edge source="EFX" target="MCO">
+      <data key="d3">0.9268730008886418</data>
+    </edge>
+    <edge source="EIX" target="PCG">
+      <data key="d3">0.6867318824187969</data>
+    </edge>
+    <edge source="ELV" target="UNH">
+      <data key="d3">0.9431733509486703</data>
+    </edge>
+    <edge source="EME" target="FIX">
+      <data key="d3">0.5174060469642009</data>
+    </edge>
+    <edge source="EMR" target="PH">
+      <data key="d3">0.7331685024926777</data>
+    </edge>
+    <edge source="EMR" target="ROK">
+      <data key="d3">0.7427313932225205</data>
+    </edge>
+    <edge source="EMR" target="KEYS">
+      <data key="d3">0.8848935875686109</data>
+    </edge>
+    <edge source="EQR" target="ESS">
+      <data key="d3">0.47059994986107484</data>
+    </edge>
+    <edge source="EQR" target="UDR">
+      <data key="d3">0.481392221674791</data>
+    </edge>
+    <edge source="EQT" target="EXE">
+      <data key="d3">0.5876218787289866</data>
+    </edge>
+    <edge source="ETN" target="VRT">
+      <data key="d3">0.6117102482288659</data>
+    </edge>
+    <edge source="ETN" target="HUBB">
+      <data key="d3">0.7132143508349861</data>
+    </edge>
+    <edge source="ETN" target="TT">
+      <data key="d3">0.7783398417225004</data>
+    </edge>
+    <edge source="ETN" target="JCI">
+      <data key="d3">0.7998974248997613</data>
+    </edge>
+    <edge source="ETN" target="LRCX">
+      <data key="d3">0.8219452653795971</data>
+    </edge>
+    <edge source="ETN" target="JBL">
+      <data key="d3">0.8389742026469803</data>
+    </edge>
+    <edge source="ETN" target="LITE">
+      <data key="d3">0.85314763961618</data>
+    </edge>
+    <edge source="ETN" target="HPE">
+      <data key="d3">0.9296513817940507</data>
+    </edge>
+    <edge source="ETR" target="NI">
+      <data key="d3">0.7901781294380712</data>
+    </edge>
+    <edge source="EW" target="F">
+      <data key="d3">1.0974714274348318</data>
+    </edge>
+    <edge source="EXPD" target="JBHT">
+      <data key="d3">1.013167989833971</data>
+    </edge>
+    <edge source="EXR" target="PSA">
+      <data key="d3">0.4755229574875212</data>
+    </edge>
+    <edge source="F" target="GM">
+      <data key="d3">0.8415228201320971</data>
+    </edge>
+    <edge source="FANG" target="OKE">
+      <data key="d3">0.8021211439164256</data>
+    </edge>
+    <edge source="FANG" target="TPL">
+      <data key="d3">0.9538958686741039</data>
+    </edge>
+    <edge source="FAST" target="GWW">
+      <data key="d3">0.7909380562844259</data>
+    </edge>
+    <edge source="FCX" target="NEM">
+      <data key="d3">1.0101594977651858</data>
+    </edge>
+    <edge source="FDS" target="SPGI">
+      <data key="d3">0.8823067450468703</data>
+    </edge>
+    <edge source="FDX" target="UPS">
+      <data key="d3">0.8923835885602577</data>
+    </edge>
+    <edge source="FDX" target="ODFL">
+      <data key="d3">0.9353402453373009</data>
+    </edge>
+    <edge source="FE" target="PPL">
+      <data key="d3">0.770323804188444</data>
+    </edge>
+    <edge source="FFIV" target="KKR">
+      <data key="d3">0.9956866253048957</data>
+    </edge>
+    <edge source="FICO" target="MCO">
+      <data key="d3">1.0473818705066145</data>
+    </edge>
+    <edge source="FIS" target="JKHY">
+      <data key="d3">0.9228581904373924</data>
+    </edge>
+    <edge source="FITB" target="RF">
+      <data key="d3">0.4802999076161462</data>
+    </edge>
+    <edge source="FIX" target="PWR">
+      <data key="d3">0.6280379577424101</data>
+    </edge>
+    <edge source="FIX" target="VRT">
+      <data key="d3">0.6735376181870838</data>
+    </edge>
+    <edge source="FOX" target="FOXA">
+      <data key="d3">0.1774578103215842</data>
+    </edge>
+    <edge source="FOX" target="NWSA">
+      <data key="d3">0.9564513896324209</data>
+    </edge>
+    <edge source="FRT" target="KIM">
+      <data key="d3">0.5663973416405774</data>
+    </edge>
+    <edge source="FRT" target="REG">
+      <data key="d3">0.5759122208146819</data>
+    </edge>
+    <edge source="FRT" target="SPG">
+      <data key="d3">0.7429242472496363</data>
+    </edge>
+    <edge source="FRT" target="UDR">
+      <data key="d3">0.7755015919013564</data>
+    </edge>
+    <edge source="FRT" target="PLD">
+      <data key="d3">0.8470470656873402</data>
+    </edge>
+    <edge source="FTNT" target="PANW">
+      <data key="d3">0.947843986502984</data>
+    </edge>
+    <edge source="FTV" target="J">
+      <data key="d3">0.9092444079720859</data>
+    </edge>
+    <edge source="GD" target="LHX">
+      <data key="d3">0.860916024275319</data>
+    </edge>
+    <edge source="GD" target="TXT">
+      <data key="d3">0.9493991030606233</data>
+    </edge>
+    <edge source="GD" target="LDOS">
+      <data key="d3">0.9563847995613505</data>
+    </edge>
+    <edge source="GD" target="HII">
+      <data key="d3">0.9703585765328717</data>
+    </edge>
+    <edge source="GDDY" target="XYZ">
+      <data key="d3">1.0479807814633897</data>
+    </edge>
+    <edge source="GE" target="HWM">
+      <data key="d3">0.8166538105006704</data>
+    </edge>
+    <edge source="GE" target="TDG">
+      <data key="d3">0.9744998840870086</data>
+    </edge>
+    <edge source="GEV" target="VRT">
+      <data key="d3">0.7393369633951382</data>
+    </edge>
+    <edge source="GILD" target="INCY">
+      <data key="d3">1.116621566524556</data>
+    </edge>
+    <edge source="GIS" target="KHC">
+      <data key="d3">0.785286537799154</data>
+    </edge>
+    <edge source="GIS" target="MDLZ">
+      <data key="d3">0.8327089440844362</data>
+    </edge>
+    <edge source="GIS" target="PEP">
+      <data key="d3">0.874192327548005</data>
+    </edge>
+    <edge source="GIS" target="SJM">
+      <data key="d3">0.9254110940338324</data>
+    </edge>
+    <edge source="GIS" target="HRL">
+      <data key="d3">0.978695705292054</data>
+    </edge>
+    <edge source="GL" target="HIG">
+      <data key="d3">0.9431407990501268</data>
+    </edge>
+    <edge source="GLW" target="LITE">
+      <data key="d3">0.85068542006273</data>
+    </edge>
+    <edge source="GOOG" target="GOOGL">
+      <data key="d3">0.06901578068953278</data>
+    </edge>
+    <edge source="GPC" target="ITW">
+      <data key="d3">0.9887609495517353</data>
+    </edge>
+    <edge source="GPC" target="ORLY">
+      <data key="d3">1.071483027378242</data>
+    </edge>
+    <edge source="GRMN" target="IEX">
+      <data key="d3">0.9858265718045982</data>
+    </edge>
+    <edge source="GS" target="MS">
+      <data key="d3">0.4930234814570312</data>
+    </edge>
+    <edge source="GS" target="JPM">
+      <data key="d3">0.6380747593364041</data>
+    </edge>
+    <edge source="GS" target="IBKR">
+      <data key="d3">0.8256647324417968</data>
+    </edge>
+    <edge source="GS" target="UAL">
+      <data key="d3">0.8671346336110269</data>
+    </edge>
+    <edge source="GS" target="SATS">
+      <data key="d3">1.2009692055376502</data>
+    </edge>
+    <edge source="GWW" target="IR">
+      <data key="d3">0.8634857579806429</data>
+    </edge>
+    <edge source="HAL" target="SLB">
+      <data key="d3">0.6151499953869554</data>
+    </edge>
+    <edge source="HAS" target="SWK">
+      <data key="d3">0.9408007992870132</data>
+    </edge>
+    <edge source="HBAN" target="RF">
+      <data key="d3">0.4734495624217647</data>
+    </edge>
+    <edge source="HBAN" target="PNC">
+      <data key="d3">0.483299476858147</data>
+    </edge>
+    <edge source="HCA" target="UHS">
+      <data key="d3">0.7291616326861492</data>
+    </edge>
+    <edge source="HD" target="LOW">
+      <data key="d3">0.48971084578908175</data>
+    </edge>
+    <edge source="HD" target="TSCO">
+      <data key="d3">1.0196195006051687</data>
+    </edge>
+    <edge source="HIG" target="L">
+      <data key="d3">0.6055632493982748</data>
+    </edge>
+    <edge source="HIG" target="TRV">
+      <data key="d3">0.6260955508284682</data>
+    </edge>
+    <edge source="HIG" target="WRB">
+      <data key="d3">0.7698429665840789</data>
+    </edge>
+    <edge source="HIG" target="MRSH">
+      <data key="d3">0.9018809862469198</data>
+    </edge>
+    <edge source="HIG" target="UHS">
+      <data key="d3">1.0637515623823042</data>
+    </edge>
+    <edge source="HLT" target="MAR">
+      <data key="d3">0.5267545201422399</data>
+    </edge>
+    <edge source="HON" target="ITW">
+      <data key="d3">0.9034225924869169</data>
+    </edge>
+    <edge source="HOOD" target="IBKR">
+      <data key="d3">0.7850620105989929</data>
+    </edge>
+    <edge source="HOOD" target="XYZ">
+      <data key="d3">0.9817705293600758</data>
+    </edge>
+    <edge source="HOOD" target="PLTR">
+      <data key="d3">0.9877725458018252</data>
+    </edge>
+    <edge source="HOOD" target="TSLA">
+      <data key="d3">1.0260537407312438</data>
+    </edge>
+    <edge source="HPE" target="NTAP">
+      <data key="d3">0.8988398773076253</data>
+    </edge>
+    <edge source="HPQ" target="NTAP">
+      <data key="d3">0.9168574239151588</data>
+    </edge>
+    <edge source="HSIC" target="ITW">
+      <data key="d3">1.0655639883127987</data>
+    </edge>
+    <edge source="HST" target="MAR">
+      <data key="d3">0.7876598036758359</data>
+    </edge>
+    <edge source="HST" target="USB">
+      <data key="d3">0.840597824746447</data>
+    </edge>
+    <edge source="HST" target="MGM">
+      <data key="d3">0.8981898885716064</data>
+    </edge>
+    <edge source="HST" target="RL">
+      <data key="d3">0.9324884544787964</data>
+    </edge>
+    <edge source="HSY" target="MDLZ">
+      <data key="d3">1.0063397069232056</data>
+    </edge>
+    <edge source="HUBB" target="PH">
+      <data key="d3">0.8125314436834565</data>
+    </edge>
+    <edge source="HUM" target="UNH">
+      <data key="d3">0.9612351689620564</data>
+    </edge>
+    <edge source="HWM" target="PH">
+      <data key="d3">0.9066940847909045</data>
+    </edge>
+    <edge source="ICE" target="NDAQ">
+      <data key="d3">0.8943157056016552</data>
+    </edge>
+    <edge source="IDXX" target="ZTS">
+      <data key="d3">1.0513797763488124</data>
+    </edge>
+    <edge source="IEX" target="ITW">
+      <data key="d3">0.7901046717455928</data>
+    </edge>
+    <edge source="IEX" target="ODFL">
+      <data key="d3">0.8818058836220625</data>
+    </edge>
+    <edge source="IFF" target="PPG">
+      <data key="d3">0.9388106743309891</data>
+    </edge>
+    <edge source="INTC" target="LRCX">
+      <data key="d3">1.017185684443014</data>
+    </edge>
+    <edge source="INTU" target="NOW">
+      <data key="d3">0.8938708335645555</data>
+    </edge>
+    <edge source="INVH" target="UDR">
+      <data key="d3">0.7277712960145483</data>
+    </edge>
+    <edge source="IP" target="SW">
+      <data key="d3">0.800777754816296</data>
+    </edge>
+    <edge source="IP" target="PKG">
+      <data key="d3">0.8294621376583841</data>
+    </edge>
+    <edge source="IQV" target="TMO">
+      <data key="d3">0.7687955532780661</data>
+    </edge>
+    <edge source="IR" target="XYL">
+      <data key="d3">0.9145557957609673</data>
+    </edge>
+    <edge source="ISRG" target="SYK">
+      <data key="d3">0.9286075479521154</data>
+    </edge>
+    <edge source="ISRG" target="PODD">
+      <data key="d3">1.0869523185785592</data>
+    </edge>
+    <edge source="IT" target="VRTX">
+      <data key="d3">1.0889283072135358</data>
+    </edge>
+    <edge source="ITW" target="NDSN">
+      <data key="d3">0.7366018607958821</data>
+    </edge>
+    <edge source="ITW" target="PPG">
+      <data key="d3">0.7593505262965377</data>
+    </edge>
+    <edge source="ITW" target="MAS">
+      <data key="d3">0.7602082781013376</data>
+    </edge>
+    <edge source="ITW" target="TXT">
+      <data key="d3">0.8304114448836436</data>
+    </edge>
+    <edge source="ITW" target="SNA">
+      <data key="d3">0.8474260433632118</data>
+    </edge>
+    <edge source="ITW" target="UNP">
+      <data key="d3">0.8537912890780304</data>
+    </edge>
+    <edge source="ITW" target="PKG">
+      <data key="d3">0.8577092457884983</data>
+    </edge>
+    <edge source="ITW" target="PCAR">
+      <data key="d3">0.8683521328481438</data>
+    </edge>
+    <edge source="ITW" target="MMM">
+      <data key="d3">0.9300239392026471</data>
+    </edge>
+    <edge source="ITW" target="LIN">
+      <data key="d3">0.9788946159943591</data>
+    </edge>
+    <edge source="ITW" target="OTIS">
+      <data key="d3">1.0038027965598066</data>
+    </edge>
+    <edge source="ITW" target="SYY">
+      <data key="d3">1.0551514222255365</data>
+    </edge>
+    <edge source="IVZ" target="TROW">
+      <data key="d3">0.7728548063723782</data>
+    </edge>
+    <edge source="JBHT" target="ODFL">
+      <data key="d3">0.7919019097627802</data>
+    </edge>
+    <edge source="KDP" target="PEP">
+      <data key="d3">0.9603796998425461</data>
+    </edge>
+    <edge source="KHC" target="TSN">
+      <data key="d3">1.0378305986095155</data>
+    </edge>
+    <edge source="KKR" target="TRMB">
+      <data key="d3">0.8099108924085109</data>
+    </edge>
+    <edge source="KKR" target="PYPL">
+      <data key="d3">0.9691491252057686</data>
+    </edge>
+    <edge source="KLAC" target="LRCX">
+      <data key="d3">0.44964806801003776</data>
+    </edge>
+    <edge source="KLAC" target="MPWR">
+      <data key="d3">0.7276253858787867</data>
+    </edge>
+    <edge source="KMB" target="PG">
+      <data key="d3">0.9024805097318283</data>
+    </edge>
+    <edge source="KMI" target="WMB">
+      <data key="d3">0.5543644616631814</data>
+    </edge>
+    <edge source="KMI" target="OKE">
+      <data key="d3">0.7822880266463833</data>
+    </edge>
+    <edge source="KO" target="PEP">
+      <data key="d3">0.8960590888924189</data>
+    </edge>
+    <edge source="KO" target="MCD">
+      <data key="d3">1.0318824528298554</data>
+    </edge>
+    <edge source="KO" target="MNST">
+      <data key="d3">1.086497377382145</data>
+    </edge>
+    <edge source="L" target="MET">
+      <data key="d3">0.8557329693514085</data>
+    </edge>
+    <edge source="LEN" target="PHM">
+      <data key="d3">0.4541862668679132</data>
+    </edge>
+    <edge source="LHX" target="NOC">
+      <data key="d3">0.9512159433539578</data>
+    </edge>
+    <edge source="LHX" target="LMT">
+      <data key="d3">0.958831182458485</data>
+    </edge>
+    <edge source="LII" target="MAS">
+      <data key="d3">0.8356148060359907</data>
+    </edge>
+    <edge source="LIN" target="MSI">
+      <data key="d3">1.102734243501884</data>
+    </edge>
+    <edge source="LNT" target="XEL">
+      <data key="d3">0.6736519795256508</data>
+    </edge>
+    <edge source="LNT" target="NEE">
+      <data key="d3">0.8858571364989689</data>
+    </edge>
+    <edge source="LOW" target="MAS">
+      <data key="d3">0.6916635293012611</data>
+    </edge>
+    <edge source="LRCX" target="MU">
+      <data key="d3">0.6702559341385488</data>
+    </edge>
+    <edge source="LULU" target="RL">
+      <data key="d3">1.0452537449167287</data>
+    </edge>
+    <edge source="LVS" target="WYNN">
+      <data key="d3">0.7619082148294415</data>
+    </edge>
+    <edge source="LYB" target="PSX">
+      <data key="d3">0.9101571711780837</data>
+    </edge>
+    <edge source="LYV" target="PH">
+      <data key="d3">1.0342662241417633</data>
+    </edge>
+    <edge source="MA" target="V">
+      <data key="d3">0.49618175660513436</data>
+    </edge>
+    <edge source="MA" target="MET">
+      <data key="d3">0.8846172820752632</data>
+    </edge>
+    <edge source="MAS" target="SWK">
+      <data key="d3">0.6802269745003413</data>
+    </edge>
+    <edge source="MAS" target="PHM">
+      <data key="d3">0.7317061401337042</data>
+    </edge>
+    <edge source="MAS" target="SHW">
+      <data key="d3">0.8078051339064024</data>
+    </edge>
+    <edge source="MAS" target="POOL">
+      <data key="d3">0.8218108177541944</data>
+    </edge>
+    <edge source="MCD" target="YUM">
+      <data key="d3">0.963327317356537</data>
+    </edge>
+    <edge source="MCO" target="SPGI">
+      <data key="d3">0.5082546950097019</data>
+    </edge>
+    <edge source="MCO" target="NDAQ">
+      <data key="d3">0.7211878617187661</data>
+    </edge>
+    <edge source="MCO" target="VLTO">
+      <data key="d3">0.9384997874512072</data>
+    </edge>
+    <edge source="MDT" target="SYK">
+      <data key="d3">0.996860882907994</data>
+    </edge>
+    <edge source="MET" target="PRU">
+      <data key="d3">0.523615730343977</data>
+    </edge>
+    <edge source="MET" target="PFG">
+      <data key="d3">0.6178249172376075</data>
+    </edge>
+    <edge source="MGM" target="WYNN">
+      <data key="d3">0.8856711946518271</data>
+    </edge>
+    <edge source="MLM" target="VMC">
+      <data key="d3">0.4741803781361594</data>
+    </edge>
+    <edge source="MO" target="PM">
+      <data key="d3">1.011755008234349</data>
+    </edge>
+    <edge source="MPC" target="VLO">
+      <data key="d3">0.501406527060519</data>
+    </edge>
+    <edge source="MRK" target="PFE">
+      <data key="d3">1.0085490630181473</data>
+    </edge>
+    <edge source="MRNA" target="NXPI">
+      <data key="d3">1.097437762017223</data>
+    </edge>
+    <edge source="MSCI" target="SPGI">
+      <data key="d3">0.8638366783243581</data>
+    </edge>
+    <edge source="MSFT" target="NOW">
+      <data key="d3">0.9238872401108408</data>
+    </edge>
+    <edge source="MSFT" target="NFLX">
+      <data key="d3">1.1100857083098834</data>
+    </edge>
+    <edge source="MTB" target="RF">
+      <data key="d3">0.47037620229326543</data>
+    </edge>
+    <edge source="MTD" target="SWK">
+      <data key="d3">0.9005103130982798</data>
+    </edge>
+    <edge source="MU" target="WDC">
+      <data key="d3">0.7630096827210253</data>
+    </edge>
+    <edge source="NI" target="PEG">
+      <data key="d3">0.8437645482196702</data>
+    </edge>
+    <edge source="NI" target="SRE">
+      <data key="d3">0.9691000202486975</data>
+    </edge>
+    <edge source="NKE" target="SWK">
+      <data key="d3">1.051817515739241</data>
+    </edge>
+    <edge source="NOC" target="RTX">
+      <data key="d3">0.9077192351355482</data>
+    </edge>
+    <edge source="NOW" target="WDAY">
+      <data key="d3">0.9055395990146476</data>
+    </edge>
+    <edge source="NRG" target="VST">
+      <data key="d3">0.6654530649984588</data>
+    </edge>
+    <edge source="NSC" target="UNP">
+      <data key="d3">0.6618949127584225</data>
+    </edge>
+    <edge source="NTRS" target="STT">
+      <data key="d3">0.6563595846349571</data>
+    </edge>
+    <edge source="NUE" target="STLD">
+      <data key="d3">0.5362889835402725</data>
+    </edge>
+    <edge source="NVDA" target="VRT">
+      <data key="d3">0.7766627150867913</data>
+    </edge>
+    <edge source="NVDA" target="SMCI">
+      <data key="d3">1.028330439411754</data>
+    </edge>
+    <edge source="NVR" target="PHM">
+      <data key="d3">0.6119404371426987</data>
+    </edge>
+    <edge source="NWS" target="NWSA">
+      <data key="d3">0.32761423187911853</data>
+    </edge>
+    <edge source="NWSA" target="TROW">
+      <data key="d3">0.9642458088435035</data>
+    </edge>
+    <edge source="NWSA" target="OMC">
+      <data key="d3">1.017639391705663</data>
+    </edge>
+    <edge source="NXPI" target="ON">
+      <data key="d3">0.6227194441524868</data>
+    </edge>
+    <edge source="NXPI" target="QCOM">
+      <data key="d3">0.7357702917162882</data>
+    </edge>
+    <edge source="O" target="VICI">
+      <data key="d3">0.8068880871309949</data>
+    </edge>
+    <edge source="O" target="PSA">
+      <data key="d3">0.856232996250649</data>
+    </edge>
+    <edge source="O" target="WEC">
+      <data key="d3">0.9032926514125534</data>
+    </edge>
+    <edge source="OKE" target="TRGP">
+      <data key="d3">0.6255649097095195</data>
+    </edge>
+    <edge source="PCG" target="SRE">
+      <data key="d3">0.9738135577773146</data>
+    </edge>
+    <edge source="PFE" target="TECH">
+      <data key="d3">0.9577876974557797</data>
+    </edge>
+    <edge source="PH" target="WAB">
+      <data key="d3">0.7875557442476877</data>
+    </edge>
+    <edge source="PH" target="URI">
+      <data key="d3">0.8794460356568565</data>
+    </edge>
+    <edge source="PH" target="TKO">
+      <data key="d3">1.085404358175711</data>
+    </edge>
+    <edge source="PHM" target="WY">
+      <data key="d3">0.8730611121743216</data>
+    </edge>
+    <edge source="PLD" target="WY">
+      <data key="d3">0.891099827130456</data>
+    </edge>
+    <edge source="PNC" target="USB">
+      <data key="d3">0.5238365680803044</data>
+    </edge>
+    <edge source="PSKY" target="WBD">
+      <data key="d3">1.1099986860088606</data>
+    </edge>
+    <edge source="PSX" target="VLO">
+      <data key="d3">0.5472073706476381</data>
+    </edge>
+    <edge source="REG" target="WELL">
+      <data key="d3">0.9439440698659121</data>
+    </edge>
+    <edge source="RJF" target="SCHW">
+      <data key="d3">0.754419106591461</data>
+    </edge>
+    <edge source="RL" target="TPR">
+      <data key="d3">0.8173648375676266</data>
+    </edge>
+    <edge source="RL" target="ULTA">
+      <data key="d3">1.0959060877130888</data>
+    </edge>
+    <edge source="RMD" target="SOLV">
+      <data key="d3">1.112495434676922</data>
+    </edge>
+    <edge source="ROL" target="WM">
+      <data key="d3">0.9695129501168327</data>
+    </edge>
+    <edge source="ROST" target="TJX">
+      <data key="d3">0.8544697576764924</data>
+    </edge>
+    <edge source="RSG" target="WM">
+      <data key="d3">0.6209322024271683</data>
+    </edge>
+    <edge source="RVTY" target="TMO">
+      <data key="d3">0.7400047164219493</data>
+    </edge>
+    <edge source="RVTY" target="TECH">
+      <data key="d3">0.7458108817053559</data>
+    </edge>
+    <edge source="SBUX" target="SWK">
+      <data key="d3">1.0817097004281568</data>
+    </edge>
+    <edge source="SOLV" target="SWK">
+      <data key="d3">1.0199945601613438</data>
+    </edge>
+    <edge source="SPGI" target="VRSK">
+      <data key="d3">0.939755026283671</data>
+    </edge>
+    <edge source="STE" target="WAT">
+      <data key="d3">1.033637482555733</data>
+    </edge>
+    <edge source="STX" target="WDC">
+      <data key="d3">0.5686401376559272</data>
+    </edge>
+    <edge source="STZ" target="TAP">
+      <data key="d3">1.0231779721675136</data>
+    </edge>
+    <edge source="SWK" target="WSM">
+      <data key="d3">0.9480677665237252</data>
+    </edge>
+    <edge source="T" target="VZ">
+      <data key="d3">0.7634900241046391</data>
+    </edge>
+    <edge source="T" target="TMUS">
+      <data key="d3">0.9643699653766807</data>
+    </edge>
+    <edge source="TECH" target="WST">
+      <data key="d3">1.1547788552319858</data>
+    </edge>
+    <edge source="TRMB" target="ZBRA">
+      <data key="d3">0.8450643763273958</data>
+    </edge>
+    <edge source="TTWO" target="XYZ">
+      <data key="d3">1.0855923007024775</data>
+    </edge>
+    <edge source="VRT" target="VST">
+      <data key="d3">0.7857450774799171</data>
+    </edge>
+    <edge source="VTR" target="WELL">
+      <data key="d3">0.6775422180429991</data>
+    </edge>
+  </graph>
+</graphml>

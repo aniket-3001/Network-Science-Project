@@ -10,7 +10,7 @@
 \setbeamerfont{caption}{size=\scriptsize}
 
 \title[S\&P 500 Financial Network]{Structural and Influence Analysis of Financial Systems}
-\subtitle{S\&P 500 Network Construction and Rigor Analysis}
+\subtitle{S\&P 500 Correlation Network}
 \author{Network Science Project}
 \date{\today}
 
@@ -20,60 +20,60 @@
     \titlepage
 \end{frame}
 
-\begin{frame}{Agenda}
+\begin{frame}{Outline}
     \tableofcontents
 \end{frame}
 
 % ---------------------------------------------------------
-\section{1. Introduction \& Network Formation}
+\section{Network Construction}
 % ---------------------------------------------------------
-\begin{frame}{Forming the S\&P 500 Network}
+\begin{frame}{Network Construction}
     \begin{columns}[c]
         \begin{column}{0.5\textwidth}
-            \textbf{The Challenge:} 
+            \textbf{Problem:} 
             \vspace{0.1cm}
             \\
-            Raw correlations are overwhelmed by the macroeconomic ``Market Factor.'' 
+            Raw Pearson correlations are dominated by the common market factor, producing a dense, uninformative graph.
             
             \vspace{0.3cm}
             \textbf{Methodology:}
             \begin{itemize}
-                \item Extracted 2-year log-returns ($N=501$).
-                \item \textbf{Market-Mode Filtering}: We subtracted the equal-weight market index.
-                \item \textbf{Thresholding}: Kept true dependencies where $|\rho| > 0.3$.
+                \item 2-year daily log-returns for $N=501$ stocks.
+                \item \textbf{Market-mode filtering} (Onnela et al.\ 2003): subtracted equal-weight market index.
+                \item \textbf{Thresholding}: edges where $|\rho| > 0.3$.
             \end{itemize}
             
             \vspace{0.3cm}
-            \textbf{Result:} Noise reduction collapsed mean $|\rho|$ from $0.235$ down to $0.127$, localizing the graph uniquely to $10,002$ edges.
+            \textbf{Result:} Mean $|\rho|$ fell from $0.235 \to 0.127$; the filtered graph has $10{,}002$ edges.
         \end{column}
         
         \begin{column}{0.45\textwidth}
             \begin{figure}
                 \centering
                 \includegraphics[width=\linewidth,height=0.7\textheight,keepaspectratio]{../../figures/correlation_heatmap_comparison.png}
-                \caption{Raw vs Market-Filtered Heatmap}
+                \caption{Raw vs.\ filtered correlation heatmap.}
             \end{figure}
         \end{column}
     \end{columns}
 \end{frame}
 
 % ---------------------------------------------------------
-\section{2. Degree Distribution \& Topological Validation}
+\section{Scale-Free Analysis}
 % ---------------------------------------------------------
-\begin{frame}{Scale-Free Properties (Degree Distribution)}
+\begin{frame}{Degree Distribution}
     \begin{columns}[c]
         \begin{column}{0.5\textwidth}
-            \textbf{Graph Connectivity}
+            \textbf{Connectivity}
             \begin{itemize}
-                \item The network naturally established 47 isolated components, but the Giant Connected Component holds $89.4\%$ of the market structurally integrated.
+                \item 47 connected components; Giant Component holds $89.4\%$ of all nodes.
             \end{itemize}
 
             \vspace{0.2cm}
-            \textbf{Scale-Free Exponents}
+            \textbf{Power-Law Fit} (Clauset et al.\ 2009)
             \begin{itemize}
-                \item Validated heavy-tailed power-law decay.
-                \item Extracted mathematically strict $P(k) \sim k^{-\gamma}$.
-                \item $\gamma \approx 2.14$, indicating massive hub centralization.
+                \item Heavy-tailed degree distribution.
+                \item $P(k) \sim k^{-\gamma}$, \; $\gamma \approx 2.14$.
+                \item Confirms hub-dominated, scale-free topology.
             \end{itemize}
         \end{column}
         
@@ -88,19 +88,20 @@
     \end{columns}
 \end{frame}
 
-\begin{frame}{True Small-World Formulation ($\sigma$ limits)}
+\begin{frame}{Small-World}
     \begin{columns}[c]
         \begin{column}{0.5\textwidth}
-            \textbf{Erd\H{o}s-R\'enyi vs Reality}
+            \textbf{ER Baseline}
             \begin{itemize}
-                \item Theoretical $ER$ graphs map $\sigma_{ER} = 4.56$ but misrepresent organic clustering driven by degree hierarchies.
+                \item Against Erd\H{o}s--R\'enyi: $\sigma_{ER} = 4.56$.
+                \item ER underestimates clustering due to ignoring degree heterogeneity.
             \end{itemize}
             
             \vspace{0.2cm}
-            \textbf{Configuration Validation}
+            \textbf{Configuration Model}
             \begin{itemize}
-                \item Bypassed $ER$ relying mathematically on synthetic degree-preserving Configurations mapping $\sigma_{config} = 1.75$.
-                \item Non-parametric $(B=200)$ permutations establishing triad integrations natively.
+                \item Degree-preserving null model gives $\sigma_{config} = 1.75$; still $> 1$.
+                \item Bootstrap ($B=200$): $p < 0.001$, confirming significance.
             \end{itemize}
         \end{column}
 
@@ -116,19 +117,20 @@
 \end{frame}
 
 % ---------------------------------------------------------
-\section{3. Financial Influence \& Contagion}
+\section{Contagion}
 % ---------------------------------------------------------
-\begin{frame}{Contagion Cascade Exogenous Spreads}
+\begin{frame}{Influence Propagation}
     \begin{columns}[c]
         \begin{column}{0.5\textwidth}
-            \textbf{Simulated SIR Viral Growth}
+            \textbf{Cascade Model}
             \begin{itemize}
-                \item Centralities inversely correlated severely against viral spread intensity volumes, computing structurally $r=-0.61$. Highly centralized firms serve as core shock-absorber mechanisms rather than initiators.
+                \item Degree centrality vs.\ cascade spread: $r = -0.61$. High-degree nodes dilute per-edge impact through row-normalised weights.
             \end{itemize}
             \vspace{0.3cm}
-            \textbf{Targeted Failure vs Stability}
+            \textbf{Robustness} (Barab\'asi Ch.\ 8)
             \begin{itemize}
-                \item Random structural node drops trivially bypass the overall global Giant Component stability. Conversely, total targeted betweenness eliminations uniquely and fatally decapitate systemic market flow entirely.
+                \item Random failure: GCC degrades gracefully (scale-free resilience).
+                \item Targeted betweenness attack: GCC collapses rapidly.
             \end{itemize}
         \end{column}
         
@@ -136,29 +138,29 @@
             \begin{figure}
                 \centering
                 \includegraphics[width=\linewidth,height=0.65\textheight,keepaspectratio]{../../figures/robustness_analysis.png}
-                \caption{System Vulnerability Mechanics}
+                \caption{Robustness under random vs.\ targeted attack.}
             \end{figure}
         \end{column}
     \end{columns}
 \end{frame}
 
 % ---------------------------------------------------------
-\section{4. Real Event Validation}
+\section{Event Validation}
 % ---------------------------------------------------------
-\begin{frame}{Validating Models with Empirical Reality}
+\begin{frame}{Event Validation}
     \begin{columns}[c]
         \begin{column}{0.5\textwidth}
-            \textbf{Empirical Tracking}
+            \textbf{Approach}
             \vspace{0.2cm}
             \\
-            Isolated network theory actively avoids empirical validation parameters. We bypassed theoretical shock values explicitly ingesting $T=0$ real market observation returns, ensuring network cascades map to historically observed reality.
+            Rather than synthetic shocks, we seed propagation with actual event-day returns and compare model predictions against realised post-event performance.
             
             \vspace{0.3cm}
-            \textbf{Scenarios Validated (Trailing R-Squared):}
+            \textbf{Scenarios:}
             \begin{itemize}
-                \item Information Tech Surge (Jul '24)
-                \item Yen Market Unwind (Aug '24)
-                \item Global Tariff Action (Apr '25)
+                \item AI / Semiconductor Rally (Jul 2024)
+                \item Yen Carry-Trade Unwind (Aug 2024)
+                \item Tariff Shock (Apr 2025)
             \end{itemize}
         \end{column}
         
@@ -166,28 +168,28 @@
             \begin{figure}
                 \centering
                 \includegraphics[width=\linewidth,height=0.65\textheight,keepaspectratio]{../../figures/AI_Semiconductor_Rally_validation.png}
-                \caption{AI Rally 5-Day Regression: mapping network cascade propagation intensity directly to historical market performance.}
+                \caption{Model vs.\ actual 5-day returns.}
             \end{figure}
         \end{column}
     \end{columns}
 \end{frame}
 
 % ---------------------------------------------------------
-\section{5. Market Structure \& Latent Communities}
+\section{Community Structure}
 % ---------------------------------------------------------
-\begin{frame}{Community Detection vs Official Sectors}
+\begin{frame}{Community Detection}
     \begin{columns}[c]
         \begin{column}{0.5\textwidth}
-            \textbf{Latent Modularity Tracking}
+            \textbf{Louvain Partition}
             \begin{itemize}
-                \item Louvain Modularity algorithms partitioned the S\&P 500 into 57 statistically distinct commercial groups dynamically optimizing $Q = 0.26$.
+                \item 57 communities, modularity $Q = 0.27$.
             \end{itemize}
             
             \vspace{0.3cm}
-            \textbf{GICS vs Reality ($NMI = 0.44$)}
+            \textbf{Alignment with GICS}
             \begin{itemize}
-                \item Comparing these mathematical clusters against rigid GICS institutional boundaries shows stark deviation.
-                \item Proof that cross-sector supply chains dictate network performance far more heavily than official Wall Street categorizations.
+                \item $NMI = 0.45$: partial overlap.
+                \item Network communities capture cross-sector supply-chain linkages that official GICS sectors do not.
             \end{itemize}
         \end{column}
         
@@ -203,20 +205,21 @@
 \end{frame}
 
 % ---------------------------------------------------------
-\section{6. Temporal Elasticity \& Rolling Dynamics}
+\section{Temporal Dynamics}
 % ---------------------------------------------------------
-\begin{frame}{Evolving Topologies over Time}
+\begin{frame}{Rolling Windows}
     \begin{columns}[c]
         \begin{column}{0.5\textwidth}
-            \textbf{Rolling Window Analysis}
+            \textbf{Setup}
             \begin{itemize}
-                \item Financial networks are highly fluid structural entities. We segmented real history across 18 sequential overlapping 6-month windows.
+                \item 18 overlapping 6-month windows spanning the full 2-year period.
             \end{itemize}
             
             \vspace{0.3cm}
-            \textbf{Macro-Transitions}
+            \textbf{Findings}
             \begin{itemize}
-                \item Structural tightness (modularity and clustering coefficients) massively densifies precisely during localized macroeconomic panics. Markets tighten fundamentally when external pressures hit.
+                \item Clustering and modularity increase during stress periods.
+                \item The network tightens when macro shocks hit---consistent with ``flight to correlation'' behaviour.
             \end{itemize}
         \end{column}
         
@@ -224,31 +227,29 @@
             \begin{figure}
                 \centering
                 \includegraphics[width=\linewidth,height=0.7\textheight,keepaspectratio]{../../figures/rolling_window_metrics.png}
-                \caption{Evaluating network phase transitions capturing evolving small-world parameters over rolling epochs.}
+                \caption{Structural metrics over rolling windows.}
             \end{figure}
         \end{column}
     \end{columns}
 \end{frame}
 
-\begin{frame}{Conclusions \& Final Deliverables}
-    \begin{alertblock}{Core Finding}
-        The S\&P 500 perfectly adheres to empirical complex-science models: non-random, heavily modular, scale-free, and systematically vulnerable specifically across boundary lines.
+\begin{frame}{Conclusions}
+    \begin{alertblock}{Key Finding}
+        The S\&P 500 correlation network is scale-free, small-world, and highly modular---yet systematically vulnerable to targeted attacks on high-betweenness nodes.
     \end{alertblock}
     
     \vspace{0.3cm}
-    \textbf{Accomplishments:}
+    \textbf{Contributions:}
     \begin{itemize}
-        \item \textbf{Filtering}: Residual extraction decoupled false systemic graph density.
-        \item \textbf{Configuration Bounds}: Verified mathematically valid topological triads.
-        \item \textbf{Empirical Validity}: Accurately backtested SIR-style decay regressions against real $T=0$ shocks.
+        \item \textbf{Filtering}: Market-mode subtraction removes spurious correlations.
+        \item \textbf{Null Models}: Configuration model confirms small-worldness beyond degree effects.
+        \item \textbf{Validation}: Propagation model tested against three real market events.
     \end{itemize}
 \end{frame}
 
 \begin{frame}
     \begin{center}
-        \Huge \textbf{Thank You.} \\
-        \vspace{0.5cm}
-        \Large \textit{Questions?}
+        \Huge \textbf{Thank You.}
     \end{center}
 \end{frame}
 

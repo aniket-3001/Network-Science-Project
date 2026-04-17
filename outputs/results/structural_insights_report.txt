@@ -1,0 +1,70 @@
+======================================================================
+ STRUCTURAL INSIGHTS — COMPREHENSIVE FINDINGS REPORT
+======================================================================
+
+1. COMMUNITY DETECTION VS GICS SECTORS (Barabási Ch. 9)
+--------------------------------------------------
+   Louvain detected 57 communities.
+   Modularity Q = 0.2686
+   NMI with GICS sectors = 0.4462
+   → Partial alignment: communities capture latent co-movement patterns beyond formal sectors.
+
+2. CENTRALITY → CASCADE SIZE CORRELATION
+--------------------------------------------------
+   Degree Centrality              → r = -0.6175
+   Betweenness                    → r = -0.5627
+   Eigenvector                    → r = -0.4547
+   Closeness                      → r = -0.5335
+   → Best predictor: degree_centrality (|r| = 0.6175)
+
+   Top-3 cascade generators:
+     CCI: spread=0.8702, affected=152
+     KR: spread=0.8701, affected=149
+     VICI: spread=0.8698, affected=149
+
+3. SECTOR VULNERABILITY ANALYSIS
+--------------------------------------------------
+   Shock to Communication Services: most exposed = Utilities (impact = 0.0061)
+   Shock to Consumer Discretionary: most exposed = Utilities (impact = 0.0060)
+   Shock to Consumer Staples: most exposed = Utilities (impact = 0.0059)
+   Shock to Energy: most exposed = Utilities (impact = 0.0097)
+   Shock to Financials: most exposed = Utilities (impact = 0.0062)
+   Shock to Health Care: most exposed = Utilities (impact = 0.0059)
+   Shock to Industrials: most exposed = Utilities (impact = 0.0058)
+   Shock to Information Technology: most exposed = Utilities (impact = 0.0054)
+   Shock to Materials: most exposed = Utilities (impact = 0.0074)
+   Shock to Real Estate: most exposed = Utilities (impact = 0.0063)
+   Shock to Utilities: most exposed = Consumer Staples (impact = 0.0036)
+
+4. INFLUENCE LEAKAGE — IN-SECTOR VS CROSS-SECTOR
+--------------------------------------------------
+   Communication Services        : in-sector=2.6%  cross-sector=97.4%
+   Consumer Discretionary        : in-sector=3.4%  cross-sector=96.6%
+   Consumer Staples              : in-sector=16.8%  cross-sector=83.2%
+   Energy                        : in-sector=30.4%  cross-sector=69.6%
+   Financials                    : in-sector=17.9%  cross-sector=82.1%
+   Health Care                   : in-sector=8.1%  cross-sector=91.9%
+   Industrials                   : in-sector=11.8%  cross-sector=88.2%
+   Information Technology        : in-sector=23.1%  cross-sector=76.9%
+   Materials                     : in-sector=1.8%  cross-sector=98.2%
+   Real Estate                   : in-sector=11.7%  cross-sector=88.3%
+   Utilities                     : in-sector=21.6%  cross-sector=78.4%
+
+   Network average: 13.6% in-sector, 86.4% cross-sector
+   → High leakage: influence rapidly crosses sector boundaries — the network exhibits strong cross-sector financial contagion.
+
+5. KEY OBSERVATIONS
+--------------------------------------------------
+   • Most central company: ED (Consolidated Edison, Utilities)
+   • Largest sector: Industrials (79 companies)
+   • Small-world σ_ER = 4.56 (YES small-world vs ER null)
+   • Small-world σ_config = 1.75 (YES small-world vs configuration model null)
+   • Clustering C = 0.6431 (C_ER = 0.0997, C_config = 0.3059)
+   • Avg path length L = 2.7034 (L_ER = 1.9106, L_config = 2.2507)
+     → Network is small-world even when controlling for degree sequence (configuration model).
+   • Degree assortativity r = 0.0039
+     → Assortative: hubs tend to connect to hubs.
+
+======================================================================
+ END OF FINDINGS REPORT
+======================================================================

@@ -23,10 +23,13 @@ env/
 .DS_Store
 Thumbs.db
 
-# Output (keep structure, ignore generated files)
-# outputs/figures/*.png
-outputs/results/*.csv
-outputs/results/*.txt
-outputs/results/*.graphml
-!outputs/figures/.gitkeep
-!outputs/results/.gitkeep
+# LaTeX build artifacts
+*.aux
+*.log
+*.nav
+*.out
+*.snm
+*.toc
+*.fls
+*.fdb_latexmk
+*.synctex.gz

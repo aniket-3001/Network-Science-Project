@@ -1,0 +1,41 @@
+================================================================
+  Filtered Correlation Graph — Validation Report
+================================================================
+  Nodes (companies)          : 501
+  Edges (connections)        : 10002
+  Density                    : 0.079856
+  Average degree             : 39.93
+  Median degree              : 18
+  Min / Max degree           : 0 / 205
+  Average weighted degree    : 16.05
+  Connected components       : 47
+  Giant component fraction   : 89.42%
+================================================================
+
+================================================================
+  Raw Correlation Graph — Validation Report
+================================================================
+  Nodes (companies)          : 501
+  Edges (connections)        : 37946
+  Density                    : 0.302962
+  Average degree             : 151.48
+  Median degree              : 143
+  Min / Max degree           : 0 / 340
+  Average weighted degree    : 60.86
+  Connected components       : 4
+  Giant component fraction   : 99.40%
+================================================================
+
+================================================================
+  Minimum Spanning Tree — Validation Report
+================================================================
+  Nodes (companies)          : 501
+  Edges (connections)        : 500
+  Density                    : 0.003992
+  Average degree             : 2.00
+  Median degree              : 1
+  Min / Max degree           : 1 / 22
+  Average weighted degree    : 1.67
+  Connected components       : 1
+  Giant component fraction   : 100.00%
+================================================================

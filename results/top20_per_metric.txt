@@ -1,0 +1,120 @@
+
+================================================================
+  TOP-20 BY DEGREE CENTRALITY
+================================================================
+   1. ED       Consolidated Edison                 Sector: Utilities                 Score: 0.410000
+   2. DUK      Duke Energy                         Sector: Utilities                 Score: 0.400000
+   3. SO       Southern Company                    Sector: Utilities                 Score: 0.382000
+   4. AWK      American Water Works                Sector: Utilities                 Score: 0.378000
+   5. CMS      CMS Energy                          Sector: Utilities                 Score: 0.376000
+   6. WEC      WEC Energy Group                    Sector: Utilities                 Score: 0.374000
+   7. KO       Coca-Cola Company (The)             Sector: Consumer Staples          Score: 0.372000
+   8. CL       Colgate-Palmolive                   Sector: Consumer Staples          Score: 0.364000
+   9. EXC      Exelon                              Sector: Utilities                 Score: 0.358000
+  10. O        Realty Income                       Sector: Real Estate               Score: 0.350000
+  11. PG       Procter & Gamble                    Sector: Consumer Staples          Score: 0.350000
+  12. JNJ      Johnson & Johnson                   Sector: Health Care               Score: 0.350000
+  13. PNW      Pinnacle West Capital               Sector: Utilities                 Score: 0.346000
+  14. GIS      General Mills                       Sector: Consumer Staples          Score: 0.346000
+  15. ATO      Atmos Energy                        Sector: Utilities                 Score: 0.346000
+  16. LNT      Alliant Energy                      Sector: Utilities                 Score: 0.342000
+  17. EVRG     Evergy                              Sector: Utilities                 Score: 0.332000
+  18. AEP      American Electric Power             Sector: Utilities                 Score: 0.332000
+  19. PPL      PPL Corporation                     Sector: Utilities                 Score: 0.330000
+  20. AEE      Ameren                              Sector: Utilities                 Score: 0.328000
+
+================================================================
+  TOP-20 BY WEIGHTED DEGREE
+================================================================
+   1. ED       Consolidated Edison                 Sector: Utilities                 Score: 95.398183
+   2. DUK      Duke Energy                         Sector: Utilities                 Score: 92.673547
+   3. SO       Southern Company                    Sector: Utilities                 Score: 87.213582
+   4. WEC      WEC Energy Group                    Sector: Utilities                 Score: 85.750765
+   5. CMS      CMS Energy                          Sector: Utilities                 Score: 85.332909
+   6. AWK      American Water Works                Sector: Utilities                 Score: 83.603905
+   7. KO       Coca-Cola Company (The)             Sector: Consumer Staples          Score: 81.641049
+   8. EXC      Exelon                              Sector: Utilities                 Score: 79.455130
+   9. PNW      Pinnacle West Capital               Sector: Utilities                 Score: 77.502540
+  10. ATO      Atmos Energy                        Sector: Utilities                 Score: 77.293838
+  11. CL       Colgate-Palmolive                   Sector: Consumer Staples          Score: 77.207485
+  12. LNT      Alliant Energy                      Sector: Utilities                 Score: 77.092641
+  13. O        Realty Income                       Sector: Real Estate               Score: 74.693031
+  14. AEE      Ameren                              Sector: Utilities                 Score: 74.394909
+  15. EVRG     Evergy                              Sector: Utilities                 Score: 74.241996
+  16. AEP      American Electric Power             Sector: Utilities                 Score: 73.896762
+  17. PPL      PPL Corporation                     Sector: Utilities                 Score: 73.885929
+  18. PG       Procter & Gamble                    Sector: Consumer Staples          Score: 73.848166
+  19. GIS      General Mills                       Sector: Consumer Staples          Score: 71.807170
+  20. JNJ      Johnson & Johnson                   Sector: Health Care               Score: 71.728996
+
+================================================================
+  TOP-20 BY BETWEENNESS
+================================================================
+   1. ED       Consolidated Edison                 Sector: Utilities                 Score: 0.087808
+   2. SWK      Stanley Black & Decker              Sector: Industrials               Score: 0.055319
+   3. DUK      Duke Energy                         Sector: Utilities                 Score: 0.048938
+   4. MO       Altria                              Sector: Consumer Staples          Score: 0.039279
+   5. XOM      ExxonMobil                          Sector: Energy                    Score: 0.036425
+   6. JNJ      Johnson & Johnson                   Sector: Health Care               Score: 0.033764
+   7. SYF      Synchrony Financial                 Sector: Financials                Score: 0.028265
+   8. ITW      Illinois Tool Works                 Sector: Industrials               Score: 0.027134
+   9. GIS      General Mills                       Sector: Consumer Staples          Score: 0.024850
+  10. RSG      Republic Services                   Sector: Industrials               Score: 0.021868
+  11. ADP      Automatic Data Processing           Sector: Industrials               Score: 0.021122
+  12. KMI      Kinder Morgan                       Sector: Energy                    Score: 0.020481
+  13. AWK      American Water Works                Sector: Utilities                 Score: 0.019575
+  14. KO       Coca-Cola Company (The)             Sector: Consumer Staples          Score: 0.019519
+  15. VRT      Vertiv                              Sector: Industrials               Score: 0.019447
+  16. VRSK     Verisk Analytics                    Sector: Industrials               Score: 0.016994
+  17. CRWD     CrowdStrike                         Sector: Information Technology    Score: 0.016922
+  18. CME      CME Group                           Sector: Financials                Score: 0.015888
+  19. PG       Procter & Gamble                    Sector: Consumer Staples          Score: 0.014533
+  20. PFE      Pfizer                              Sector: Health Care               Score: 0.014461
+
+================================================================
+  TOP-20 BY EIGENVECTOR
+================================================================
+   1. ED       Consolidated Edison                 Sector: Utilities                 Score: 0.149039
+   2. DUK      Duke Energy                         Sector: Utilities                 Score: 0.146798
+   3. SO       Southern Company                    Sector: Utilities                 Score: 0.141390
+   4. WEC      WEC Energy Group                    Sector: Utilities                 Score: 0.141121
+   5. CMS      CMS Energy                          Sector: Utilities                 Score: 0.139739
+   6. AWK      American Water Works                Sector: Utilities                 Score: 0.134884
+   7. EXC      Exelon                              Sector: Utilities                 Score: 0.133055
+   8. LNT      Alliant Energy                      Sector: Utilities                 Score: 0.132569
+   9. PNW      Pinnacle West Capital               Sector: Utilities                 Score: 0.131690
+  10. ATO      Atmos Energy                        Sector: Utilities                 Score: 0.131516
+  11. KO       Coca-Cola Company (The)             Sector: Consumer Staples          Score: 0.130566
+  12. AEE      Ameren                              Sector: Utilities                 Score: 0.128698
+  13. EVRG     Evergy                              Sector: Utilities                 Score: 0.127621
+  14. PPL      PPL Corporation                     Sector: Utilities                 Score: 0.127584
+  15. AEP      American Electric Power             Sector: Utilities                 Score: 0.126487
+  16. DTE      DTE Energy                          Sector: Utilities                 Score: 0.126156
+  17. CL       Colgate-Palmolive                   Sector: Consumer Staples          Score: 0.123063
+  18. O        Realty Income                       Sector: Real Estate               Score: 0.122641
+  19. PG       Procter & Gamble                    Sector: Consumer Staples          Score: 0.119878
+  20. FE       FirstEnergy                         Sector: Utilities                 Score: 0.117314
+
+================================================================
+  TOP-20 BY CLOSENESS
+================================================================
+   1. ED       Consolidated Edison                 Sector: Utilities                 Score: 0.218364
+   2. DUK      Duke Energy                         Sector: Utilities                 Score: 0.216508
+   3. SO       Southern Company                    Sector: Utilities                 Score: 0.211439
+   4. WEC      WEC Energy Group                    Sector: Utilities                 Score: 0.208302
+   5. AWK      American Water Works                Sector: Utilities                 Score: 0.208207
+   6. CMS      CMS Energy                          Sector: Utilities                 Score: 0.207532
+   7. KO       Coca-Cola Company (The)             Sector: Consumer Staples          Score: 0.205884
+   8. EXC      Exelon                              Sector: Utilities                 Score: 0.203553
+   9. ATO      Atmos Energy                        Sector: Utilities                 Score: 0.202500
+  10. PNW      Pinnacle West Capital               Sector: Utilities                 Score: 0.202326
+  11. CL       Colgate-Palmolive                   Sector: Consumer Staples          Score: 0.202125
+  12. AEE      Ameren                              Sector: Utilities                 Score: 0.201028
+  13. LNT      Alliant Energy                      Sector: Utilities                 Score: 0.200425
+  14. EVRG     Evergy                              Sector: Utilities                 Score: 0.200273
+  15. AEP      American Electric Power             Sector: Utilities                 Score: 0.199960
+  16. JNJ      Johnson & Johnson                   Sector: Health Care               Score: 0.199769
+  17. O        Realty Income                       Sector: Real Estate               Score: 0.198759
+  18. PG       Procter & Gamble                    Sector: Consumer Staples          Score: 0.198394
+  19. PPL      PPL Corporation                     Sector: Utilities                 Score: 0.198262
+  20. GIS      General Mills                       Sector: Consumer Staples          Score: 0.197916
